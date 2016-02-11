@@ -72,11 +72,6 @@ Host githubhn
 [include]
     path = /p/.gitconfig
 ```
-<!---
-- Åpne Rstudio og gå inn på `Tools/Global Options...`. Hos meg ser det slik ut:
-
-![Alt text](figurer/r-git-setup.png)
---->
 
 ## Rstudio og github-pakker
 
