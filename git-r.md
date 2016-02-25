@@ -29,7 +29,8 @@ $ git config --global user.email johndoe@example.com
 ```
 - Lag ssh-nøkkelpar. Vi legger den på `c:`, slik at Rstudio kan lese den senere (bytt ut `ast046` med ditt brukernavn):
 
-```
+```sh
+$ mkdir /c/Users/ast046/.ssh
 $ ssh-keygen
 Enter file in which to save the key (/p/.ssh/id_rsa): /c/Users/ast046/.ssh/id_rsa
 Enter passphrase (empty for no passphrase):
