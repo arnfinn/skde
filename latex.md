@@ -1,6 +1,8 @@
 ﻿# Hvordan installere LaTeX på SKDE-maskiner
 
-Hvis det oppstår problemer med denne fremgangsmåten, gi gjerne beskjed til arnfinn.steindal@[skde.no|gmail.com|uit.no]
+*Det anbefales sterkt å bruke overleaf.com i steden for å installere sin egen LaTeX på maskinen*
+
+Hvis det oppstår problemer med denne fremgangsmåten, gi gjerne beskjed til arnfinn.steindal@skde.no.
 
 ## Installere MikTeX
 
@@ -20,6 +22,9 @@ Dette er selve LaTeX.
 ![Alt text](figurer/miktex_repository_proxy.png)
   3. Trykk `OK` og `Neste`, og skriv inn ditt brukernavn og passord i SKDE
   4. Velg en `remote package repository` nær deg
+  5. Gå inn på START/Alle programmer/MikTeX 2.9/Maintenance/Settings, og velg Roots.
+  6. Trykk 'Add...' og legg inn stien 'E:\ANALYSE\Dataverktoy\LaTeX\miktex'. Her ligger alle pakkene til LaTeX, så man slipper å laste de ned selv.
+![Alt text](figurer/miktex_repository1.png)  
 
 ## Installere Texmaker 
 
