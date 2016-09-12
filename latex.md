@@ -1,6 +1,6 @@
 ﻿# Hvordan installere LaTeX på SKDE-maskiner
 
-*Det anbefales sterkt å bruke overleaf.com i steden for å installere sin egen LaTeX på maskinen*
+*Det anbefales sterkt å bruke [overleaf.com](https://www.overleaf.com) i steden for å installere sin egen LaTeX på maskinen*
 
 Hvis det oppstår problemer med denne fremgangsmåten, gi gjerne beskjed til arnfinn.steindal@skde.no.
 
