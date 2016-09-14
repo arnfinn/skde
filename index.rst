@@ -11,6 +11,7 @@ Innhold:
 .. toctree::
    :maxdepth: 2
 
+   sas.md
    git-r.md
    latex.md
-
+   python.md
