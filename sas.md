@@ -21,7 +21,22 @@ run;
 
 ## Inkludere macroer etc.
 
-Kommer
+### Laste inn vår egen autocomplete-fil
+
+- Dette gjøres slik at man kan enkelt få inn rateprogram etc. i sas-prosjektet
+
+1. Gå inn på *Program/Editor Macros/Macros*
+2. *Import...*
+3. Gå inn på `E:\ANALYSE\Data\SAS\Makroer\Abb_macro` og velg *Auto_Makro.kmf*
+4. *Close*
+5. Med ujevne mellomrom oppdateres *Abb_macro*, og man må da kjøre stegene 1 til 4 på nytt. Vi får prøve å gi beskjed om dette internt...
+
+- Hvis man nå begynner å skrive `auto` vil *AUTO_MACRO* kommer opp i en liste.
+- Hvis man velger denne, vil følgende tekst legge seg inn i sas-programmet ditt
+```
+%let filbane=\\hn.helsenord.no\UNN-Avdelinger\SKDE.avd\Analyse\Data\SAS\;
+options sasautos=("&filbane.Makroer" SASAUTOS);
+```
 
 ## Lage en makro
 
