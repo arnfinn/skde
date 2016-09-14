@@ -19,3 +19,20 @@ set npr_utva.ahs_utvalg1;
 run;
 ```
 
+## Inkludere macroer etc.
+
+Kommer
+
+## Lage en makro
+
+Kommer
+
+
+## gtitle
+
+Mer tekst kommer her når jeg husker hvorfor man måtte gjøre dette...
+
+- Gå inn på `Tools/Options...` og skriv inn følgende:
+![Alt text](figurer/sas_gtitle.png)
+
+
