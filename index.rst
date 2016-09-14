@@ -14,5 +14,7 @@ Innhold:
    sas.md
    git.md
    git-r.md
+   r-shiny.md
    latex.md
+   latex_intro.md
    python.md
