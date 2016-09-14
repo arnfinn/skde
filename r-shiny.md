@@ -1,3 +1,4 @@
+# Rshiny
 
 ## Rstudio og shinyapps gjennom proxy
 
@@ -23,10 +24,22 @@ options(shinyapps.http = "rcurl")
 shinyapps::deployApp('../my_new_shinyapp')
 ```
 
-## Alternativ fremgangsmåte 
+
+### Alternativ fremgangsmåte
+
+- Denne må dokumenteres...
 
 ```r
 library(rsconnect)
 deployApp()
 ```
 
+
+## Hvordan opprette en ny Rshiny applikasjon
+
+
+![Alt text](figurer/rshiny_1.png)
+![Alt text](figurer/rshiny_2.png)
+![Alt text](figurer/rshiny_3.png)
+![Alt text](figurer/rshiny_4.png)
+![Alt text](figurer/rshiny_5.png)
