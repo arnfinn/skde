@@ -6,12 +6,12 @@ Du kan fint installere *git* på nytt og på nytt uten risiko. Den fjerner gamme
 
 - Last ned fra [git-scm.com](https://git-scm.com/download/win) og installer med default (ikke endre noen valg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; git-bash.exe legges her:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; git-bash.exe legges sannsynligvis her:
 ```bash
 C:\Users\$USERNAME\AppData\Local\Programs\Git\
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; connect.exe, git.exe etc. legges her:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; connect.exe, git.exe etc. legges sannsynligvis her:
 ```bash
 C:\Users\$USERNAME\AppData\Local\Programs\Git\mingw64\bin
 ```
@@ -40,7 +40,8 @@ Enter same passphrase again:
 
 ## Hvordan få git til å snakke med github gjennom proxy
 
-- Gå inn på https://github.com/settings/ssh og legg inn din nye SSH-nøkkel (kopier over det som ligger i `/c/Users/$USERNAME/.ssh/id_rsa.pub`).
+- Lag deg en profil på [github.com](https://github.com)
+- Gå inn på [github.com/settings/ssh](https://github.com/settings/ssh) og legg inn din nye SSH-nøkkel (kopier over det som ligger i `/c/Users/$USERNAME/.ssh/id_rsa.pub`).
 - Lag en mappe `p/.ssh/`:
 
 ```bash
@@ -56,7 +57,7 @@ Host githubhn
    User git
    ProxyCommand /mingw64/bin/connect.exe -H www-proxy.helsenord.no:8080 %h %p
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dette kan enten gjøres med `Notisblokk`, eller gjennom terminal:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dette kan gjøres med `Notisblokk`, eller gjennom terminal:
 
 ```bash
 $ vi /p/.ssh/config

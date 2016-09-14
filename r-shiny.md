@@ -1,5 +1,8 @@
 # Rshiny
 
+Hvis det oppstår problemer med noen av disse fremgangsmåtene, send gjerne en beskjed til <A HREF="mailto:&#097;&#114;&#110;&#102;&#105;&#110;&#110;&#046;&#115;&#116;&#101;&#105;&#110;&#100;&#097;&#108;&#064;&#115;&#107;&#100;&#101;&#046;&#110;&#111;">arnfinn</A>.
+
+
 ## Rstudio og shinyapps gjennom proxy
 
 - [Opprett en ny](new_rshiny.md) eller åpne en gammel "Shiny web application" i Rstudio.
