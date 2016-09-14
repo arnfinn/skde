@@ -1,12 +1,14 @@
 ﻿# Hvordan installere LaTeX på SKDE-maskiner
 
-*Det anbefales sterkt å bruke [overleaf.com](https://www.overleaf.com) i steden for å installere sin egen LaTeX på maskinen*
+Hvis det oppstår problemer med denne fremgangsmåten, gi gjerne beskjed til <A HREF="mailto:&#097;&#114;&#110;&#102;&#105;&#110;&#110;&#046;&#115;&#116;&#101;&#105;&#110;&#100;&#097;&#108;&#064;&#115;&#107;&#100;&#101;&#046;&#110;&#111;">&#097;&#114;&#110;&#102;&#105;&#110;&#110;&#046;&#115;&#116;&#101;&#105;&#110;&#100;&#097;&#108;&#064;&#115;&#107;&#100;&#101;&#046;&#110;&#111;</A>
 
-Hvis det oppstår problemer med denne fremgangsmåten, gi gjerne beskjed til arnfinn.steindal@skde.no.
+## Bruk heller Overleaf
+
+*Det anbefales sterkt å bruke [overleaf.com](https://www.overleaf.com) i steden for å installere sin egen LaTeX på maskinen*. 
 
 ## Installere MikTeX
 
-Dette er selve LaTeX.
+Dette er selve LaTeX. 
 
 1. Last ned fra [denne siden](http://miktex.org/download)
 2. Installér programmet på ditt hjemmeområdet på `c:`
