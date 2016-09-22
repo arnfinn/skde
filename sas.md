@@ -7,6 +7,12 @@
 ![Alt text](figurer/sas_server.png)
 
 
+## Legge SAS-server til utforsker
+
+- Gå på `Verktøy/Koble til nettverkstasjon`
+- Stasjon: `Z` (ikke kritisk, men de fleste andre har valgt Z)
+- Mappe: `\\tos-sastest-07\SKDE`
+
 ## Lagring av sensitive datasett
 
 - Sensitive datasett *skal* lagres på npr_utva! Disse skal slettes hvert år, når vi får nye data i hus
