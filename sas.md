@@ -46,14 +46,58 @@ options sasautos=("&filbane.Makroer" SASAUTOS);
 
 ## Lage en makro
 
-Kommer
+- En makro kan se omtrent slik ut:
+```
+%macro macronavn(datasett=);
 
+data &datasett;
+run &datasett;
+...
+*gjør noe her med datasettet;
+...
+
+%mend macronavn;
+```
+- Hvis man lagrer en fil med navn `macronavn.sas` i `ANALYSE/Data/SAS/Makroer/` kan andre bruke denne hvis de har kjørt følgende kode i SAS-prosjektet:
+```
+%let filbane=\\hn.helsenord.no\UNN-Avdelinger\SKDE.avd\Analyse\Data\SAS\;
+options sasautos=("&filbane.Makroer" SASAUTOS);
+```
 
 ## gtitle
 
-Mer tekst kommer her når jeg husker hvorfor man måtte gjøre dette...
+For at tittel skal bli lagt på figurene som produseres i SAS, må følgende gjøres i SAS Enterprise Guide:
 
 - Gå inn på `Tools/Options...` og skriv inn følgende:
 ![Alt text](figurer/sas_gtitle.png)
+
+## Redusere størrelsen på datasett
+
+Alle verdier lagres som standard med 8 bytes. Dette er i de fleste av våre tilfeller ikke nødvendig. SAS kan redusere plassen hvert tall tar på disk ned til 3 bytes. I tillegg har SAS verktøy for å komprimere datasett.
+
+- Jeg har lagt til en macro som heter squeeze, som finner ut hvor liten plass hver variabel kan reduseres til (denne har jeg ikke skrevet selv). Den kjøres slik:
+```
+%squeeze(inndata, utdata);
+```
+- Hvis man vil komprimere datasett, gjør man følgende (dette vil føre til at SAS bruker lenger tid på å lese datasettet neste gang, siden datasettet må pakkes opp igjen):
+```
+data komprimertDatasett (compress=binary);
+set ukomprimertDatasett;
+run;
+```
+- Det er også mulig med `compress=yes` og `compress=char`
+
+| Type | Kommando | Størrelse (GB) |
+|------|----------|-----------|
+|Original |          | 8.99 |
+|Squeeze  | %squeeze | 5.53 |
+|Compress | yes      | 3.34 |
+|Compress | char     | 3.34 |
+|Compress | binary   | 2.68 |
+|Squeeze-Compress | %squeeze/binary | 2.37 |
+
+
+
+
 
 
