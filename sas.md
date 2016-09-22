@@ -75,7 +75,7 @@ For at tittel skal bli lagt på figurene som produseres i SAS, må følgende gj�
 
 Alle verdier lagres som standard med 8 bytes. Dette er i de fleste av våre tilfeller ikke nødvendig. SAS kan redusere plassen hvert tall tar på disk ned til 3 bytes. I tillegg har SAS verktøy for å komprimere datasett.
 
-- Jeg har lagt til en macro som heter squeeze, som finner ut hvor liten plass hver variabel kan reduseres til (denne har jeg ikke skrevet selv). Den kjøres slik:
+- Jeg har lagt til en macro som heter squeeze, som finner ut hvor liten plass hver variabel kan reduseres til, og reduserer antall bytes tilsvarende (denne har jeg ikke skrevet selv). Den kjøres slik:
 ```
 %squeeze(inndata, utdata);
 ```
@@ -86,6 +86,8 @@ set ukomprimertDatasett;
 run;
 ```
 - Det er også mulig med `compress=yes` og `compress=char`
+
+Jeg har kjørt ulike komprimeringer på et årssett (2011) og fått følgende størrelser:
 
 | Type     | Kommando | Størrelse (GB) |
 | ------ | ---------- | ----------- |
