@@ -72,3 +72,20 @@ $ git clone githubhn:arnfinn/git-r.git tmp-mappe
 $ rm -rf tmp-mappe # hvis alt gikk etter planen (fjerner mappen igjen)
 ```
 
+## Ekskluder fil fra merge
+
+I enkelte prosjekter vil det være filer man ikke vil oppdatere i en merge mellom brancher. I mitt tilfelle var det en csv-fil som er forskjellig i de ulike branchene, og skal være det. Denne oppskriften er tatt [herfra](https://medium.com/@porteneuve/how-to-make-git-preserve-specific-files-while-merging-18c92343826b#.sk2g4seov).
+
+- Definér en merge-driver:
+```bash
+git config --global merge.ours.driver true
+```
+- Legge vår fil inn i .gitattributes:
+```bash
+echo 'unix.csv merge=ours' >> .gitattributes
+git add .gitattributes
+git commit -m 'Preserve unix.csv during merges'
+```
+
+
+
