@@ -90,14 +90,13 @@ run;
 Jeg har kjørt ulike komprimeringer på et årssett (2011) og fått følgende størrelser:
 
 
-| Type     | Kommando   | Størrelse (GB) |
-| ------   | ---------- | -----------    |
-| Original |            | 8.99 |
-| Squeeze  | %squeeze   | 5.53 |
-| Compress | yes        | 3.34 |
-| Compress | char       | 3.34 |
-| Compress | binary     | 2.68 |
-| Squeeze-Compress | %squeeze/binary | 2.37 |
+- Type     | Kommando   | Størrelse (GB) |
+- Original |            | 8.99 |
+- Squeeze  | %squeeze   | 5.53 |
+- Compress | yes        | 3.34 |
+- Compress | char       | 3.34 |
+- Compress | binary     | 2.68 |
+- Squeeze-Compress | %squeeze/binary | 2.37 |
 
 
 
