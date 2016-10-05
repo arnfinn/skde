@@ -28,7 +28,7 @@ C:\Users\$USERNAME\AppData\Local\Programs\Git\mingw64\bin
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
-- Lag ssh-nøkkelpar. Vi legger den på `c:`, slik at Rstudio kan lese den senere (bytt ut `ast046` med ditt brukernavn):
+- Lag ssh-nøkkelpar. Vi legger den på `c:`, slik at Rstudio kan lese den senere (bytt ut `ast046` med ditt brukernavn). Hvis du ikke planer om å bruke git sammen med Rstudio så legger du nøkkelen på `p:` (så slipper du å lage ny nøkkel hver gang du må reinstallere maskinen, og nøkkelen din vil fungere på alle skde sine maskiner):
 
 ```bash
 $ mkdir /c/Users/ast046/.ssh
@@ -41,13 +41,13 @@ Enter same passphrase again:
 ## Hvordan få git til å snakke med github gjennom proxy
 
 - Lag deg en profil på [github.com](https://github.com)
-- Gå inn på [github.com/settings/ssh](https://github.com/settings/ssh) og legg inn din nye SSH-nøkkel (kopier over det som ligger i `/c/Users/$USERNAME/.ssh/id_rsa.pub`).
+- Gå inn på [github.com/settings/ssh](https://github.com/settings/ssh) og legg inn din nye SSH-nøkkel (kopier over det som ligger i `/c/Users/$USERNAME/.ssh/id_rsa.pub`, eller `/p/.ssh/id_rsa.pub`).
 - Lag en mappe `p/.ssh/`:
 
 ```bash
 $ mkdir /p/.ssh
 ```
-- Lag en fil kalt `config` i mappen `p/.ssh/` med følgende innhold (igjen: bytt ut `ast046` med ditt brukernavn): 
+- Lag en fil kalt `config` i mappen `p/.ssh/` med følgende innhold (igjen: bytt ut `ast046` med ditt brukernavn; kutt ut første linje hvis du la din ssh-nøkkel på `p`):
 
 ```
 IdentityFile /c/Users/ast046/.ssh/id_rsa
@@ -57,7 +57,8 @@ Host githubhn
    User git
    ProxyCommand /mingw64/bin/connect.exe -H www-proxy.helsenord.no:8080 %h %p
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dette kan gjøres med `Notisblokk`, eller gjennom terminal:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dette gjøres for å kunne kommunisere med github, som må gjøres gjennom proxy her på Helse-Nord-nettet.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Filen kan lages med `Notisblokk`, eller gjennom terminal (ved bruk av vim):
 
 ```bash
 $ vi /p/.ssh/config
@@ -72,7 +73,9 @@ $ git clone githubhn:arnfinn/git-r.git tmp-mappe
 $ rm -rf tmp-mappe # hvis alt gikk etter planen (fjerner mappen igjen)
 ```
 
-## Ekskluder fil fra merge
+## Diverse mer eller mindre obskure git-triks
+
+### Ekskluder fil fra merge
 
 I enkelte prosjekter vil det være filer man ikke vil oppdatere i en merge mellom brancher. I mitt tilfelle var det en csv-fil som er forskjellig i de ulike branchene, og skal være det. Denne oppskriften er tatt [herfra](https://medium.com/@porteneuve/how-to-make-git-preserve-specific-files-while-merging-18c92343826b#.sk2g4seov).
 
