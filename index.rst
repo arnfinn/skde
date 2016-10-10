@@ -18,3 +18,4 @@ Innhold:
    latex.md
    latex_intro.md
    python.md
+   arnfinn.md
