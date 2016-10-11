@@ -26,5 +26,16 @@ Installerer alt på `c/Users/ast046/AppData/Local/Programs/`
 [1] "C:/Users/ast046/AppData/Local/Programs/R-3.3.1/library"
 ```
 
+- Installere pakker
+```r
+install.packages("devtools")
+install.packages("shiny")
+install.packages("rsconnect")
+install.packages("knitr")
+install.packages("BH")
+install.packages(c("DBI","DT","assertthat","caTools","dplyr", "htmlwidgets", "lazyeval","rmarkdown","tibble"))
+install.packages("tidyr")
+```
+
 
 
