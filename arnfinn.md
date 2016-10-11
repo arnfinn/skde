@@ -1,4 +1,4 @@
-# Arnfinn
+﻿# Arnfinn
 
 Mine egne notater, som er lite interessant for andre
 
@@ -13,6 +13,18 @@ Installerer alt på `c/Users/ast046/AppData/Local/Programs/`
 5. Installér [RStudio](https://www.rstudio.com/products/rstudio/download/)
 6. Installér [MiKTeX](https://miktex.org/download) (basic MiKTeX installer)
 7. Installèr [Texmaker](http://www.xm1math.net/texmaker/download.html)
+
+### RStudio
+
+- bytte libpath
+```r
+> .libPaths()
+[1] "\\\\hn.helsenord.no/unn-ansatte/a-ans/ast046/R/library"
+[2] "C:/Users/ast046/AppData/Local/Programs/R-3.3.1/library"
+> .libPaths("C:/Users/ast046/AppData/Local/Programs/R-3.3.1/library")
+> .libPaths()
+[1] "C:/Users/ast046/AppData/Local/Programs/R-3.3.1/library"
+```
 
 
 
