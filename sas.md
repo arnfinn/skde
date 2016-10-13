@@ -15,14 +15,6 @@
 - Stasjon: `Z` (ikke kritisk, men de fleste andre har valgt Z)
 - Mappe: `\\tos-sastest-07\SKDE`
 
-
-### 'Fikse' følgende feilmelding
-
-![Alt text](figurer/sas_error1.png)
-![Alt text](figurer/sas_error2.png)
-
-- Lag en mappe `Styles` under `C:\Users\ast046\AppData\Roaming\SAS\SharedSettings`
-
 ### Slå av advarsel om sletting av midlertidig datasett
 
 - Gå inn på ´Tools/Options.../Data/Data General/´ og huk vekk 'Always prompt when closing...'
