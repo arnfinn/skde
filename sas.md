@@ -1,17 +1,32 @@
 # Huskeliste for arbeid med SAS på SKDE
 
-## Koble til server i SAS Enterprise Guide
+## Diverse engang-oppgaver
+
+### Koble til server i SAS Enterprise Guide
 
 - Gå på `Tools/Connections...`
 - Legg til en profil. Den skal se noe slik ut, med maskinnavn `TOS-SASTEST-07`
 ![Alt text](figurer/sas_server.png)
 
 
-## Legge SAS-server til utforsker
+### Legge SAS-server til utforsker
 
 - Gå på `Verktøy/Koble til nettverkstasjon`
 - Stasjon: `Z` (ikke kritisk, men de fleste andre har valgt Z)
 - Mappe: `\\tos-sastest-07\SKDE`
+
+
+### 'Fikse' følgende feilmelding
+
+![Alt text](figurer/sas_error1.png)
+![Alt text](figurer/sas_error2.png)
+
+- Lag en mappe `Styles` under `C:\Users\ast046\AppData\Roaming\SAS\SharedSettings`
+
+### Slå av advarsel om sletting av midlertidig datasett
+
+- Gå inn på ´Tools/Options.../Data/Data General/´ og huk vekk 'Always prompt when closing...'
+![Alt text](figurer/sas_tmpdata.png)
 
 ## Lagring av sensitive datasett
 
