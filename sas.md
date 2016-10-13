@@ -1,10 +1,8 @@
 # Huskeliste for arbeid med SAS på SKDE
 
-
-
 ## Lagring av sensitive datasett
 
-- Sensitive datasett *skal* lagres på npr_utva! Disse skal slettes hvert år, når vi får nye data i hus
+- Sensitive datasett skal *kun* lagres på npr_utva! Disse skal slettes hvert år, når vi får nye data i hus
 ```sas
 data mittutvalg;
 set npr_utva.ahs_utvalg1;
@@ -14,7 +12,8 @@ set npr_utva.ahs_utvalg1;
 run;
 ```
 
-## Inkludere macroer etc.
+
+## Macroer
 
 ### Laste inn vår egen autocomplete-fil
 
@@ -33,7 +32,7 @@ run;
 options sasautos=("&filbane.Makroer" SASAUTOS);
 ```
 
-## Lage en makro
+### Lage en makro
 
 - En makro kan se omtrent slik ut:
 ```
@@ -53,14 +52,32 @@ run &datasett;
 options sasautos=("&filbane.Makroer" SASAUTOS);
 ```
 
-## gtitle
+## Formater
+
+- Bruk de formatene som ligger under `ANALYSE/Data/SAS/Formater/master/`, som f.eks
+```
+%include "&filbane.Formater\master\SKDE_somatikk.sas";
+%include "&filbane.Formater\master\bo.sas";
+%include "&filbane.Formater\master\beh.sas";
+```
+- Hvis man vil ha spesialtilpasset macro, kan man enten 
+  - kopiere over det som står i en av sas-filene som ligger på master rett inn i programmet sitt, eller
+  - kopiere mappen `master` og endre direkte i den nye mappen.
+
+## Rateprogrammet
+
+
+  
+## Annet
+
+### gtitle
 
 For at tittel skal bli lagt på figurene som produseres i SAS, må følgende gjøres i SAS Enterprise Guide:
 
 - Gå inn på `Tools/Options...` og skriv inn følgende:
 ![Alt text](figurer/sas_gtitle.png)
 
-## Redusere størrelsen på datasett
+### Redusere størrelsen på datasett
 
 Alle verdier lagres som standard med 8 bytes. Dette er i de fleste av våre tilfeller ikke nødvendig. SAS kan redusere plassen hvert tall tar på disk ned til 3 bytes. I tillegg har SAS verktøy for å komprimere datasett.
 
