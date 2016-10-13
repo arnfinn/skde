@@ -1,24 +1,6 @@
 # Huskeliste for arbeid med SAS på SKDE
 
-## Diverse engang-oppgaver
 
-### Koble til server i SAS Enterprise Guide
-
-- Gå på `Tools/Connections...`
-- Legg til en profil. Den skal se noe slik ut, med maskinnavn `TOS-SASTEST-07`
-![Alt text](figurer/sas_server.png)
-
-
-### Legge SAS-server til utforsker
-
-- Gå på `Verktøy/Koble til nettverkstasjon`
-- Stasjon: `Z` (ikke kritisk, men de fleste andre har valgt Z)
-- Mappe: `\\tos-sastest-07\SKDE`
-
-### Slå av advarsel om sletting av midlertidig datasett
-
-- Gå inn på ´Tools/Options.../Data/Data General/´ og huk vekk 'Always prompt when closing...'
-![Alt text](figurer/sas_tmpdata.png)
 
 ## Lagring av sensitive datasett
 
@@ -107,7 +89,25 @@ Jeg har kjørt ulike komprimeringer på et årssett (2011) og fått følgende st
 - Compress (binary): 2.68 GB
 - Squeeze-Compress (%squeeze/binary): 2.37 GB
 
+## Diverse engangs-oppgaver
 
+### Koble til server i SAS Enterprise Guide
+
+- Gå på `Tools/Connections...`
+- Legg til en profil. Den skal se noe slik ut, med maskinnavn `TOS-SASTEST-07`
+![Alt text](figurer/sas_server.png)
+
+
+### Legge SAS-server til utforsker
+
+- Gå på `Verktøy/Koble til nettverkstasjon`
+- Stasjon: `Z` (ikke kritisk, men de fleste andre har valgt Z)
+- Mappe: `\\tos-sastest-07\SKDE`
+
+### Slå av advarsel om sletting av midlertidig datasett
+
+- Gå inn på `Tools/Options.../Data/Data General/` og huk vekk `Always prompt when closing...`
+![Alt text](figurer/sas_tmpdata.png)
 
 
 
