@@ -129,7 +129,7 @@ Jeg har kjørt ulike komprimeringer på et årssett (2011) og fått følgende st
 
 ### SAS-syntax i Notepad++
 
-- Legg følgende i en fil kalt `UserDefineLang.xml` og lagre den (sannsynligvis) i mappen `C:\Users\<ditt brukernavn>\AppData\Roaming\Notepad++`:
+- Legg følgende i en fil kalt `UserDefineLang.xml` og lagre den (sannsynligvis) i mappen `C:\Users\<ditt brukernavn>\AppData\Roaming\Notepad++` (hvis filen finnes allerede, legger man inn innholdet mellom de eksisterende <NotepadPlus>):
 ```xml
 <NotepadPlus>
     <UserLang name="SAS" ext="sas SAS" udlVersion="2.0">
@@ -194,4 +194,5 @@ Jeg har kjørt ulike komprimeringer på et årssett (2011) og fått følgende st
 </NotepadPlus>
 ```
 
+- Restart Notepad++ og gå inn på `Språk`. Der kan man velge `SAS` nest nederst.
 
