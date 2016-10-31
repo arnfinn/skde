@@ -13,6 +13,8 @@ Installerer alt på `c/Users/ast046/AppData/Local/Programs/`
 5. Installér [RStudio](https://www.rstudio.com/products/rstudio/download/)
 6. Installér [MiKTeX](https://miktex.org/download) (basic MiKTeX installer)
 7. Installèr [Texmaker](http://www.xm1math.net/texmaker/download.html)
+8. Installèr [gvim](http://mirror.netinch.com/pub/vim/pc/) (for å kunne få bedre vimdiff)
+9. Installèr [python](https://www.python.org/downloads/) 3 (custom installasjon, slik at man kan skru av "for alle")
 
 ### RStudio
 
