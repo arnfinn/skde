@@ -2,6 +2,16 @@
 
 Mine egne notater, som er lite interessant for andre
 
+
+## Diverse om figurer
+
+### Fjerne hvit bakgrunn på eps/pdf-filer
+
+- Åpne i Inkscape
+- Velg objekt (klikk på bildet)
+- Filtre - transparency utilities - Light eraser
+- Lagre fil
+
 ## Etter en retank av maskin
 
 Installerer alt på `c/Users/ast046/AppData/Local/Programs/`
