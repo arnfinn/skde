@@ -2,6 +2,12 @@
 
 Mine egne notater, som er lite interessant for andre
 
+## Proxy
+
+- curl gjennom proxy (f.eks for å få været i Tromsø:)):
+```
+curl.exe --proxy http://www-proxy.helsenord.no:8080/ wttr.in/Tromso
+```
 
 ## Diverse om figurer
 
