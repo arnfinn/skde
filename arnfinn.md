@@ -55,5 +55,10 @@ install.packages(c("DBI","DT","assertthat","caTools","dplyr", "htmlwidgets", "la
 install.packages("tidyr")
 ```
 
+## Bytte standard nettleser
+
+- Kan kun endres hvis man har administratorrettigheter på maskinen. Dette må Helse-Nord IKT gi brukeren.
+
+
 
 
