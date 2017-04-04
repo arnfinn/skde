@@ -59,6 +59,14 @@ install.packages("tidyr")
 
 - Kan kun endres hvis man har administratorrettigheter på maskinen. Dette må Helse-Nord IKT gi brukeren.
 
+### Overleaf
+
+## regex
+
+- Erstatt ´/(\d)\s+(?=\d)/´ med ´$1,´ for bytte ut tusentallsmellomrom med komma (norsk til engelsk).
+
+
+
 
 
 
