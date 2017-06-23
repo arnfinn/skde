@@ -4,13 +4,17 @@
 
 - Sensitive datasett skal *kun* lagres på npr_utva! Disse skal slettes hvert år, når vi får nye data i hus
 ```sas
-data mittutvalg;
-set npr_utva.ahs_utvalg1;
+data npr_utva.ahs_utvalg1;
+set mittutvalg;
+
 
 ...
 
 run;
 ```
+
+- Med sensitive data menes datasett der det er en mulighet for å identifisere pasienter (pid, kjønn, alder, bosted og/eller behandlingssted etc. ikke er slettet)
+
 
 ## Overgang til ny sas-server
 
