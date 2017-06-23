@@ -17,23 +17,29 @@ run;
 ### Koble til ny server i SAS Enterprise guide
 
 - Trykk på symbol/blå tekst nede i høyre hjørne
+
 ![Alt text](figurer/nySASserver0.png)
 
 - Trykk på `Add...`
+
 ![Alt text](figurer/nySASserver1.png)
 
-- Skriv inn omtrent som her (*Name* og *Description* er valgfritt; bruk eget brukernavn og passord), og trykk på *Save*
+- Skriv inn omtrent som her (*Name* og *Description* er valgfritt; bruk eget brukernavn og passord; Machine: `tos-sas-skde-01`; Port: `8561`), og trykk på *Save*
+
 ![Alt text](figurer/nySASserver2.png)
 
 - Markér din nylagde profil og trykk på *Set Active*. Trykk *OK* på advarsel som kommer opp.
+
 ![Alt text](figurer/nySASserver3.png)
 
 ### Feilmelding ala `ERROR: Libref NPR_SKDE is not assigned.`
 
 - Dette betyr at man må *assigne* mappen `NPR_SKDE` (den vil vises som grå i SAS Enterprise)
+
 ![Alt text](figurer/nySASserver4.png)
 
 - Det gjøres ved å gå inn til denne mappen, høyreklikk og velg *Assign*
+
 ![Alt text](figurer/nySASserver5.png)
 
 ### Ny *filbane*
