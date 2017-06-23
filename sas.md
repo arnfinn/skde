@@ -12,6 +12,20 @@ set npr_utva.ahs_utvalg1;
 run;
 ```
 
+## Overgang til ny sas-server
+
+- Koble til ny server i SAS Enterprise guide
+
+![Alt text](figurer/nySASserver1.png)
+![Alt text](figurer/nySASserver2.png)
+![Alt text](figurer/nySASserver3.png)
+![Alt text](figurer/nySASserver4.png)
+![Alt text](figurer/nySASserver5.png)
+
+- Makroer, formater etc. er nå flyttet til den nye serveren. Det som ligger på ANALYSE/data brukes ikke lenger. `filbane` må derfor endres, og resten skal fungere stort sett som før
+```
+%let filbane=\\tos-sas-skde-01\skde_sas\;
+```
 
 ## Macroer
 
