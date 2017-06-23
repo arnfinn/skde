@@ -53,6 +53,23 @@ run;
 %let filbane=\\tos-sas-skde-01\skde_sas\;
 ```
 
+### Koble til ny server i utforskeren
+
+- Åpne utforsker og gå inn på *Verktøy/Koble til nettverksstasjon...* 
+
+![Alt text](figurer/nySASserver_utforsker1.png)
+
+- Velg stasjon og skriv inn `\\tos-sas-skde-01\skde_sas\` for å få tilgang til sas-koder (det som tidligere lå under *Analyse\Data\SAS\*)
+
+![Alt text](figurer/nySASserver_utforsker2.png)
+
+- Velg stasjon og skriv inn `\\tos-sas-skde-01\skde_felles\` for å få tilgang til området der felles ikke-sensitive datasett ligger.
+
+![Alt text](figurer/nySASserver_utforsker3.png)
+
+- De felles sensitive datesettene ligger på `\\tos-sas-skde-01\SKDE_Sensetiv`, men vi har ikke tilgang til denne stasjonen gjennom utforskeren.
+
+
 ## Macroer
 
 ### Laste inn vår egen autocomplete-fil
