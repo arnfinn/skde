@@ -78,7 +78,7 @@ run;
 
 1. Gå inn på *Program/Editor Macros/Macros*
 2. *Import...*
-3. Gå inn på `E:\ANALYSE\Data\SAS\Makroer\Abb_macro` og velg *Auto_Makro.kmf*
+3. Gå inn på `S:\Makroer\Abb_macro` og velg *Auto_Makro.kmf* (`S:` er her serveren `\\tos-sas-skde-01\skde_sas\`)
 4. *Close*
 5. Med ujevne mellomrom oppdateres *Abb_macro*, og man må da kjøre stegene 1 til 4 på nytt. Vi får prøve å gi beskjed om dette internt...
 
