@@ -12,6 +12,8 @@ Innhold:
    :maxdepth: 2
 
    sas.md
+   tilrettelegging.md
+   ia.md
    git.md
    git-r.md
    r-shiny.md
