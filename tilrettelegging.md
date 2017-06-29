@@ -6,8 +6,9 @@
 
 1. `vimdiff fil1 fil2 fil3 ...`
 2. `:TOhtml`
-3. `:save diff.html`
-4. `:qa`
+3. Press Enter, hvis man får beskjed om det
+4. `:save diff.html`
+5. `:qa`
 
 
 ### Kodeverk
