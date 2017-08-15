@@ -32,7 +32,7 @@ library(rsconnect)
 ```
 - Selve shinyappen lastes opp med følgende kommando
 ```r
-deployApp()
+deployApp(appName = "tabellverk")
 ```
 
 ## Hvordan opprette en ny Rshiny applikasjon
