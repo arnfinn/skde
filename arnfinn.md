@@ -59,9 +59,33 @@ install.packages("tidyr")
 
 - Kan kun endres hvis man har administratorrettigheter på maskinen. Dette må Helse-Nord IKT gi brukeren.
 
-### Overleaf
+## Oversettelse, Helseatlas
 
-## regex
+### Hvordan få et LaTeX-dokument klar for oversettelse
+
+- Fjern unødvendige sider (forside, side 2, bakside etc.) manuelt
+- Slå av fancyheadings (\pagestyle{empty})
+- Bruk \usepackage[none]{hyphenat} for å tvinge LaTeX til å ikke bryte ord. Ev. følgende kode
+'''
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+'''
+- Bruk \usepackage[demo]{graphicx} for å legge inn svarte bokser i steden for figurer. 
+  Fungerer ikke alltid, så bruk eventuelt '\usepackage[allfiguresdraft]{draftfigure}' (draftfigure.sty må lastes ned)
+- Konverter pdf-filen til word med adobe pro
+
+### Hvordan konvertere word-dokumentet tilbake til LaTeX
+
+- Lagre som rtf i word
+- Konvertere med ´rtf2latex2e -n -f -p 1 <filnavn.rtf>´ med en linux/unix-maskin
+- Hvis ikke dette går:
+   - Lagre først som doc
+   - Åpne doc og lagre som rtf
+
+
+### regex
 
 - Erstatt ´/(\d)\s+(?=\d)/´ med ´$1,´ for bytte ut tusentallsmellomrom med komma (norsk til engelsk).
 
