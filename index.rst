@@ -20,4 +20,5 @@ Innhold:
    latex.md
    latex_intro.md
    python.md
+   diverse.md
    arnfinn.md
