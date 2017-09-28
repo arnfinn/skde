@@ -81,7 +81,7 @@ $ vi /p/.ssh/config
 
 ```bash
 $ cd
-$ git clone githubhn:arnfinn/git-r.git tmp-mappe
+$ git clone githubhn:SKDE-Analyse/test.git tmp-mappe
 $ rm -rf tmp-mappe # hvis alt gikk etter planen (fjerner mappen igjen)
 ```
 
