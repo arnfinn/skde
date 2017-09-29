@@ -38,5 +38,5 @@ Man kan velge et annet skriveprogram hvis man vil, f.eks [TeXnicCenter](http://w
 
 ## Bruke LaTeX
 
-Introduksjon [her](latex_intro.md). Ellers er [google](http://www.google.no/search?q=introduction+to+latex) din venn.  
+Introduksjon [her](latex_intro.html). Ellers er [google](http://www.google.no/search?q=introduction+to+latex) din venn.  
 
