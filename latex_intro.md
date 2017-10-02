@@ -311,7 +311,7 @@ title = {Dagkirurgi i {N}orge 2011-2013, utvalgte inngrep},
 month = {Januar},
 year = {2015},
 isbn = {978-82-93141-16-7},
-note = {{ISBN:} 978-82-93141-16-7}
+note = {{ISBN: 978-82-93141-16-7}}
 }
 
 ```
