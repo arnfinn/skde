@@ -15,6 +15,7 @@ Innhold:
    tilrettelegging.md
    ia.md
    git.md
+   github.md
    git-r.md
    r-shiny.md
    latex.md
