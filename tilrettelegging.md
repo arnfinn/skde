@@ -15,14 +15,14 @@
 
 #### NCMP, NCRP, NCSP
 
-- Koder hentet fra ...
+- Koder hentet fra [Direktoratet for e-helse](https://ehelse.no/standarder-kodeverk-og-referansekatalog/helsefaglige-kodeverk/prosedyrekodeverkene-kodeverk-for-medisinske-kirurgiske-og-radiologiske-prosedyrer-ncmp-ncsp-og-ncrp)
 - Filene ligger på ANALYSE/Data/Kodeverk/NCMP_NCSP_NCRP/
 - txt-filer med tab-mellomrom mellom kode og tekst
 
 
 #### ICD-10
 
-- Koder hentet fra ...
+- Koder hentet fra [Direktoratet for e-helse](https://ehelse.no/standarder-kodeverk-og-referansekatalog/helsefaglige-kodeverk/kodeverket-icd-10-og-icd-11)
 - Filene ligger på ANALYSE/Data/Kodeverk/ICD10/
 - txt-filer med tab-mellomrom mellom kode og tekst
 
