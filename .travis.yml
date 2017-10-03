@@ -4,5 +4,5 @@ branches:
 sudo: false
 language: ruby
 cache: bundler
-script
+script:
   - ./build.sh
