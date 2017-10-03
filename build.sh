@@ -2,4 +2,4 @@
 
 echo "TEST"
 
-return 0
+#return 0
