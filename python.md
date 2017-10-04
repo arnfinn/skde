@@ -10,3 +10,25 @@ $ pip install filename.whl
 $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
+## Virtualenv
+
+```
+pip install virtualenv
+cd my_project_folder
+virtualenv my_project
+source my_project/bin/activate
+##
+## Install whatever packages
+##
+pip install request
+##
+## Deactivate current env
+##
+deactivate
+##
+## "Freeze" the current state
+##
+pip freeze > requirements.txt
+pip install -r requirements.txt
+```
+
