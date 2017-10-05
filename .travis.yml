@@ -2,8 +2,8 @@ language: R
 sudo: required
 cache: packages
 
-r_packages:
-  - bookdown
+#r_packages:
+#  - bookdown
 
 before_script:
   - chmod +x ./_build.sh
