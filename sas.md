@@ -85,8 +85,8 @@ run;
 - Hvis man nå begynner å skrive `auto` vil *AUTO_MACRO* kommer opp i en liste.
 - Hvis man velger denne, vil følgende tekst legge seg inn i sas-programmet ditt
 ```
-%let filbane=\\hn.helsenord.no\UNN-Avdelinger\SKDE.avd\Analyse\Data\SAS\;
-options sasautos=("&filbane.Makroer" SASAUTOS);
+%let filbane=\\tos-sas-skde-01\SKDE_SAS\;
+options sasautos=("&filbane.Makroer\master" SASAUTOS);
 ```
 
 ### Lage en makro
@@ -103,16 +103,17 @@ run &datasett;
 
 %mend macronavn;
 ```
-- Hvis man lagrer en fil med navn `macronavn.sas` i `ANALYSE/Data/SAS/Makroer/` kan andre bruke denne hvis de har kjørt følgende kode i SAS-prosjektet:
+- Hvis man lagrer en fil med navn `macronavn.sas` i `\\tos-sas-skde-01\SKDE_SAS\Makroer\master` kan andre bruke denne hvis de har kjørt følgende kode i SAS-prosjektet:
 ```
-%let filbane=\\hn.helsenord.no\UNN-Avdelinger\SKDE.avd\Analyse\Data\SAS\;
-options sasautos=("&filbane.Makroer" SASAUTOS);
+%let filbane=\\tos-sas-skde-01\SKDE_SAS\;
+options sasautos=("&filbane.Makroer\master" SASAUTOS);
 ```
 
 ## Formater
 
-- Bruk de formatene som ligger under `ANALYSE/Data/SAS/Formater/master/`, som f.eks
+- Bruk de formatene som ligger under `\\tos-sas-skde-01\SKDE_SAS\Formater\master\`, som f.eks
 ```
+%let filbane=\\tos-sas-skde-01\SKDE_SAS\;
 %include "&filbane.Formater\master\SKDE_somatikk.sas";
 %include "&filbane.Formater\master\bo.sas";
 %include "&filbane.Formater\master\beh.sas";
@@ -164,19 +165,6 @@ Jeg har kjørt ulike komprimeringer på et årssett (2011) og fått følgende st
 - Squeeze-Compress (%squeeze/binary): 2.37 GB
 
 ## Diverse engangs-oppgaver
-
-### Koble til server i SAS Enterprise Guide
-
-- Gå på `Tools/Connections...`
-- Legg til en profil. Den skal se noe slik ut, med maskinnavn `TOS-SASTEST-07`
-![Alt text](figurer/sas_server.png)
-
-
-### Legge SAS-server til utforsker
-
-- Gå på `Verktøy/Koble til nettverkstasjon`
-- Stasjon: `Z` (ikke kritisk, men de fleste andre har valgt Z)
-- Mappe: `\\tos-sastest-07\SKDE`
 
 ### Slå av advarsel om sletting av midlertidig datasett
 
