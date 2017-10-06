@@ -8,6 +8,10 @@ Mine egne notater, som er lite interessant for andre
 ```
 curl.exe --proxy http://www-proxy.helsenord.no:8080/ wttr.in/Tromso
 ```
+- Sette opp proxy generelt:
+```
+export http_proxy=http://www-proxy.helsenord.no:8080/
+```
 
 ## Diverse om figurer
 
