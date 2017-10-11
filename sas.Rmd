@@ -1,14 +1,16 @@
-# Huskeliste for arbeid med SAS på SKDE
+# SAS
 
 ## Lagring av sensitive datasett
 
-- Sensitive datasett skal *kun* lagres på npr_utva! Disse skal slettes hvert år, når vi får nye data i hus
+- Sensitive datasett skal *kun* lagres på `npr_utva`! Disse skal slettes hvert år, når vi får nye data i hus og nye data er tilrettelagt.
+
 ```sas
 data npr_utva.ahs_utvalg1;
 set mittutvalg;
 
-
-...
+/*
+some code
+*/
 
 run;
 ```
@@ -22,29 +24,41 @@ run;
 
 - Trykk på symbol/blå tekst nede i høyre hjørne
 
-![Alt text](figurer/nySASserver0.png)
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/nySASserver0.png")
+```
 
 - Trykk på `Add...`
 
-![Alt text](figurer/nySASserver1.png)
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/nySASserver1.png")
+```
 
 - Skriv inn omtrent som her (*Name* og *Description* er valgfritt; bruk eget brukernavn og passord; Machine: `tos-sas-skde-01`; Port: `8561`), og trykk på *Save*
 
-![Alt text](figurer/nySASserver2.png)
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/nySASserver2.png")
+```
 
 - Markér din nylagde profil og trykk på *Set Active*. Trykk *OK* på advarsel som kommer opp.
 
-![Alt text](figurer/nySASserver3.png)
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/nySASserver3.png")
+```
 
 ### Feilmelding ala `ERROR: Libref NPR_SKDE is not assigned.`
 
 - Dette betyr at man må *assigne* mappen `NPR_SKDE` (den vil vises som grå i SAS Enterprise)
 
-![Alt text](figurer/nySASserver4.png)
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/nySASserver4.png")
+```
 
 - Det gjøres ved å gå inn til denne mappen, høyreklikk og velg *Assign*
 
-![Alt text](figurer/nySASserver5.png)
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/nySASserver5.png")
+```
 
 ### Ny *filbane*
 
@@ -57,15 +71,21 @@ run;
 
 - Åpne utforsker og gå inn på *Verktøy/Koble til nettverksstasjon...* 
 
-![Alt text](figurer/nySASserver_utforsker1.png)
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/nySASserver_utforsker1.png")
+```
 
-- Velg stasjon og skriv inn `\\tos-sas-skde-01\skde_sas\` for å få tilgang til sas-koder (det som tidligere lå under *Analyse\Data\SAS\*)
+- Velg stasjon og skriv inn `\\tos-sas-skde-01\skde_sas\` for å få tilgang til sas-koder (det som tidligere lå under `Analyse\Data\SAS\`)
 
-![Alt text](figurer/nySASserver_utforsker2.png)
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/nySASserver_utforsker2.png")
+```
 
 - Velg stasjon og skriv inn `\\tos-sas-skde-01\skde_felles\` for å få tilgang til området der felles ikke-sensitive datasett ligger.
 
-![Alt text](figurer/nySASserver_utforsker3.png)
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/nySASserver_utforsker3.png")
+```
 
 - De felles sensitive datesettene ligger på `\\tos-sas-skde-01\SKDE_Sensetiv`, men vi har ikke tilgang til denne stasjonen gjennom utforskeren.
 
@@ -92,6 +112,7 @@ options sasautos=("&filbane.Makroer\master" SASAUTOS);
 ### Lage en makro
 
 - En makro kan se omtrent slik ut:
+
 ```
 %macro macronavn(datasett=);
 
@@ -104,6 +125,7 @@ run &datasett;
 %mend macronavn;
 ```
 - Hvis man lagrer en fil med navn `macronavn.sas` i `\\tos-sas-skde-01\SKDE_SAS\Makroer\master` kan andre bruke denne hvis de har kjørt følgende kode i SAS-prosjektet:
+
 ```
 %let filbane=\\tos-sas-skde-01\SKDE_SAS\;
 options sasautos=("&filbane.Makroer\master" SASAUTOS);
@@ -112,6 +134,7 @@ options sasautos=("&filbane.Makroer\master" SASAUTOS);
 ## Formater
 
 - Bruk de formatene som ligger under `\\tos-sas-skde-01\SKDE_SAS\Formater\master\`, som f.eks
+
 ```
 %let filbane=\\tos-sas-skde-01\SKDE_SAS\;
 %include "&filbane.Formater\master\SKDE_somatikk.sas";
@@ -124,7 +147,8 @@ options sasautos=("&filbane.Makroer\master" SASAUTOS);
 
 ## Rateprogrammet
 
-
+- Dokumentasjon kan finnes [her](http://skde-analyse.github.io/rateprogram/)
+- Koden ligger på [*github*](https://github.com/SKDE-Analyse/rateprogram)
   
 ## Annet
 
@@ -133,22 +157,26 @@ options sasautos=("&filbane.Makroer\master" SASAUTOS);
 For at tittel skal bli lagt på figurene som produseres i SAS, må følgende gjøres i SAS Enterprise Guide:
 
 - Gå inn på `Tools/Options...` og skriv inn følgende:
-![Alt text](figurer/sas_gtitle.png)
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/sas_gtitle.png")
+```
 
 ### Redusere størrelsen på datasett
 
 Alle verdier lagres som standard med 8 bytes. Dette er i de fleste av våre tilfeller ikke nødvendig. SAS kan redusere plassen hvert tall tar på disk ned til 3 bytes. I tillegg har SAS verktøy for å komprimere datasett.
 
 - Hvis man vil redusere størrelsen på en variabel til 3 bytes, legger man inn følgende i et datasteg:
-```
+
+```sas
 length variabelnavn 3;
 ```
 - Jeg har lagt til en macro som heter squeeze, som finner ut hvor liten plass hver variabel kan reduseres til, og reduserer antall bytes tilsvarende (denne har jeg ikke skrevet selv). Den kjøres slik:
-```
+
+```sas
 %squeeze(inndata, utdata);
 ```
 - Hvis man vil komprimere datasett, gjør man følgende (dette vil føre til at SAS bruker lenger tid på å lese datasettet neste gang, siden datasettet må pakkes opp igjen):
-```
+```sas
 data komprimertDatasett (compress=binary);
 set ukomprimertDatasett;
 run;
@@ -169,8 +197,9 @@ Jeg har kjørt ulike komprimeringer på et årssett (2011) og fått følgende st
 ### Slå av advarsel om sletting av midlertidig datasett
 
 - Gå inn på `Tools/Options.../Data/Data General/` og huk vekk `Always prompt when closing...`
-![Alt text](figurer/sas_tmpdata.png)
-
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/sas_tmpdata.png")
+```
 
 ### SAS-syntax i Notepad++
 
@@ -239,5 +268,5 @@ Jeg har kjørt ulike komprimeringer på et årssett (2011) og fått følgende st
 </NotepadPlus>
 ```
 
-- Restart Notepad++ og gå inn på `Språk`. Der kan man velge `SAS` nest nederst.
+- Restart *Notepad++* og gå inn på *Språk*. Der kan man velge *SAS* nest nederst.
 

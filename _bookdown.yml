@@ -1,0 +1,32 @@
+output_dir: "docs"
+delete_merged_file: TRUE
+
+rmd_files:
+  html: 
+    - "index.Rmd"
+    - "sas.Rmd"
+    - "tilrettelegging.Rmd"
+    - "ia.Rmd"
+    - "git.Rmd"
+    - "github.Rmd"
+    - "git-r.Rmd"
+    - "r-shiny.Rmd"
+    - "latex.Rmd"
+    - "latex_intro.Rmd"
+    - "python.Rmd"
+    - "diverse.Rmd"
+    - "arnfinn.Rmd"
+  latex:
+    - "sas.Rmd"
+    - "tilrettelegging.Rmd"
+    - "ia.Rmd"
+    - "git.Rmd"
+    - "github.Rmd"
+    - "git-r.Rmd"
+    - "r-shiny.Rmd"
+    - "latex.Rmd"
+    - "latex_intro.Rmd"
+    - "python.Rmd"
+    - "diverse.Rmd"
+    - "arnfinn.Rmd"
+
