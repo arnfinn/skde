@@ -3,7 +3,6 @@ delete_merged_file: TRUE
 
 rmd_files:
   html: 
-    - "index.Rmd"
     - "sas.Rmd"
     - "tilrettelegging.Rmd"
     - "ia.Rmd"
