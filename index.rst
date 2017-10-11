@@ -11,4 +11,15 @@ Innhold:
 .. toctree::
    :maxdepth: 2
 
-   flyttet.md
+   sas.md
+   tilrettelegging.md
+   ia.md
+   git.md
+   github.md
+   git-r.md
+   r-shiny.md
+   latex.md
+   latex_intro.md
+   python.md
+   diverse.md
+   arnfinn.md
