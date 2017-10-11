@@ -7,9 +7,3 @@ description: Diverse dokumentasjon etc. for å (forhåpentligvis) gjøre hverdag
 papersize: A4
 site: bookdown::bookdown_site
 ---
-
-
-# Forord {-}
-
-...
-
