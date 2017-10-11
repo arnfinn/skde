@@ -1,9 +1,24 @@
 # Hvordan opprette en ny Rshiny applikasjon
 
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/rshiny_1.png")
+```
 
-![Alt text](figurer/rshiny_1.png)
-![Alt text](figurer/rshiny_2.png)
-![Alt text](figurer/rshiny_3.png)
-![Alt text](figurer/rshiny_4.png)
-![Alt text](figurer/rshiny_5.png)
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/rshiny_2.png")
+```
+
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/rshiny_3.png")
+```
+
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/rshiny_4.png")
+```
+
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/rshiny_5.png")
+```
+
+
 

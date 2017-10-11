@@ -157,6 +157,7 @@ options sasautos=("&filbane.Makroer\master" SASAUTOS);
 For at tittel skal bli lagt på figurene som produseres i SAS, må følgende gjøres i SAS Enterprise Guide:
 
 - Gå inn på `Tools/Options...` og skriv inn følgende:
+
 ```{r, echo=FALSE}
 knitr::include_graphics("figurer/sas_gtitle.png")
 ```
@@ -197,6 +198,7 @@ Jeg har kjørt ulike komprimeringer på et årssett (2011) og fått følgende st
 ### Slå av advarsel om sletting av midlertidig datasett
 
 - Gå inn på `Tools/Options.../Data/Data General/` og huk vekk `Always prompt when closing...`
+
 ```{r, echo=FALSE}
 knitr::include_graphics("figurer/sas_tmpdata.png")
 ```
