@@ -111,10 +111,10 @@ cat faktaark-eldre-til-oversettelse_-EN.tex |grep '\\section' | cut -d '{' -f 3 
 
 
 
-### Kompilere denne dokumentasjonen lokalt
+## Kompilere denne dokumentasjonen lokalt
 
 
-#### Linux
+### Linux
 
 *R* må være installert, samt pakken *bookdown*. Gjør følgende i terminal (dette gjelder for Debian/Ubuntu:
 
@@ -126,7 +126,7 @@ sudo Rscript -e 'install.packages("devtools","/usr/local/lib/R/site-library","ht
 sudo apt-get install pandoc pandoc-citeproc
 ```
 
-#### Kompilere selve dokumentasjonen
+### Kompilere selve dokumentasjonen
 
 ```
 sudo Rscript -e 'devtools::install_github("rstudio/bookdown")' # kun hvis pakken ikke er installert enda
