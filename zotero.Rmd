@@ -1,0 +1,14 @@
+# Zotero
+
+Referanseverktøy
+
+Toril har lagd en database over aktuelle artikler hun har funnet i løpet av sin tid ved SKDE. Denne databasen er laget med *Zotero* og kan deles med (og oppdateres av) alle ved SKDE.
+
+- Registrer deg på [zotero.org](https://www.zotero.org/user/register/)
+- Be Arnfinn om å legge deg til gruppen *SKDE*
+- [Last ned](https://www.zotero.org/download/) og installér *Zotero* lokalt på din maskin.
+- Åpne programmet og logg inn (`Edit/Preferences/Sync`)
+- Trykk på den grønne *sync*-knappen oppe til høyre
+
+
+
