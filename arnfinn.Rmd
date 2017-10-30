@@ -8,9 +8,10 @@ Mine egne notater, som er lite interessant for andre
 ```
 curl.exe --proxy http://www-proxy.helsenord.no:8080/ wttr.in/Tromso
 ```
-- Sette opp proxy generelt:
+- Sette opp proxy generelt (kan eventuelt legges inn i `.bash_profile`:
 ```
 export http_proxy=http://www-proxy.helsenord.no:8080/
+export https_proxy=https://www-proxy.helsenord.no:8080/
 ```
 
 ## Diverse om figurer
