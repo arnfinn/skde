@@ -87,6 +87,8 @@ knitr::include_graphics("figurer/nySASserver_utforsker2.png")
 knitr::include_graphics("figurer/nySASserver_utforsker3.png")
 ```
 
+- Velg stasjon og skriv inn `\\tos-sas-skde-01\skde_analytikere\` for å få tilgang til området der dine ikke-sensitive datasett ligger.
+
 - De felles sensitive datesettene ligger på `\\tos-sas-skde-01\SKDE_Sensetiv`, men vi har ikke tilgang til denne stasjonen gjennom utforskeren.
 
 
