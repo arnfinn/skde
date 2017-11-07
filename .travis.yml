@@ -2,7 +2,7 @@ language: R
 sudo: required
 #sudo: false
 cache: packages
-latex: false
+#latex: false
 
 r_packages:
   - bookdown
