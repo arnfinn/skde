@@ -9,7 +9,7 @@ bookdown::pdf_book:
     in_header: tex/preamble.tex
 #    before_body: tex/prebody.tex
 #  dev: "cairo_pdf"
-  latex_engine: lualatex
+#  latex_engine: lualatex
 bookdown::epub_book:
   dev: svglite
   stylesheet: css/style.css

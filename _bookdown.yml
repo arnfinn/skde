@@ -1,8 +1,6 @@
 output_dir: "docs"
 delete_merged_file: TRUE
 
-test: &mytest
-  
 rmd_files:
   html:
     - "index.Rmd"
