@@ -15,7 +15,7 @@ Hvis det oppstår problemer med noen av disse fremgangsmåtene, send gjerne en b
 install.packages("shiny")
 ```
 - Opprett en bruker på [shinyapps.io](http://www.shinyapps.io)
-- [Opprett en ny](new_rshiny.md) eller åpne en gammel "Shiny web application" i Rstudio.
+- Opprett en ny eller åpne en gammel "Shiny web application" i Rstudio.
 - Kopier din token fra [shinyapps](http://www.shinyapps.io/admin/#/tokens) og kopier over i "Manage Accounts"
 
 ```{r, echo=FALSE}
