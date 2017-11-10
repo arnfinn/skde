@@ -1,8 +1,6 @@
 language: R
 sudo: required
-#sudo: false
 cache: packages
-#latex: false
 
 r_packages:
   - bookdown
@@ -14,7 +12,7 @@ before_install:                           # Install Ruby and html-proofer
   - rvm get stable --auto-dotfiles
   - rvm install 2.3.3
   - gem install html-proofer
-  - tlmgr install xcolor sectsty babel babel-norsk framed
+  - tlmgr install xcolor sectsty babel babel-norsk framed luatex
 
 script:
   - ./_build.sh

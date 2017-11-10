@@ -1,19 +1,35 @@
 output_dir: "docs"
 delete_merged_file: TRUE
 
+test: &mytest
+  
 rmd_files:
-  html: ["index.Rmd"]
-  - "sas.Rmd"
-  - "tilrettelegging.Rmd"
-  - "ia.Rmd"
-  - "zotero.Rmd"
-  - "git.Rmd"
-  - "github.Rmd"
-  - "git-r.Rmd"
-  - "r-shiny.Rmd"
-  - "latex.Rmd"
-  - "latex_intro.Rmd"
-  - "python.Rmd"
-  - "diverse.Rmd"
-  - "arnfinn.Rmd"
-
+  html:
+    - "index.Rmd"
+    - "rmd/sas.Rmd"
+    - "rmd/tilrettelegging.Rmd"
+    - "rmd/ia.Rmd"
+    - "rmd/zotero.Rmd"
+    - "rmd/git.Rmd"
+    - "rmd/github.Rmd"
+    - "rmd/git-r.Rmd"
+    - "rmd/r-shiny.Rmd"
+    - "rmd/latex.Rmd"
+    - "rmd/latex_intro.Rmd"
+    - "rmd/python.Rmd"
+    - "rmd/diverse.Rmd"
+    - "rmd/arnfinn.Rmd"
+  latex:
+    - "rmd/sas.Rmd"
+    - "rmd/tilrettelegging.Rmd"
+    - "rmd/ia.Rmd"
+    - "rmd/zotero.Rmd"
+    - "rmd/git.Rmd"
+    - "rmd/github.Rmd"
+    - "rmd/git-r.Rmd"
+    - "rmd/r-shiny.Rmd"
+    - "rmd/latex.Rmd"
+    - "rmd/latex_intro.Rmd"
+    - "rmd/python.Rmd"
+    - "rmd/diverse.Rmd"
+    - "rmd/arnfinn.Rmd"
