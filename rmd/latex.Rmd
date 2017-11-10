@@ -73,17 +73,16 @@ note = {{ISBN: 978-82-93141-16-7}}
 
 ```
 
-- `Adler2013` og `dagkir` er "nøkkelen" man bruker for å sitere disse referansene i teksten. Det gjør man ved å skrive "\cite{Adler2013}" der man vil putte siteringen.
-- Man skiller forfattere med "and"
-- Alt, bortsett fra første bokstav, i tittel blir små bokstaver, så hvis man vil beholde stor bokstav må bokstaven "beskyttes" med klammeparantes (som i {I}nfliximab).
+- `Adler2013` og `dagkir` er "nøkkelen" man bruker for å sitere disse referansene i teksten. Det gjør man ved å skrive `\cite{Adler2013}` der man vil putte siteringen.
+- Man skiller forfattere med `and`
+- Alt, bortsett fra første bokstav, i tittel blir små bokstaver, så hvis man vil beholde stor bokstav må bokstaven "beskyttes" med klammeparantes (som i `{I}nfliximab`).
 - Når man skal kompilere LaTeX-dokumentet når man bruker bibtex må man gjøre dette flere ganger for at alt skal bli riktig. I TeXmaker må man typisk gjøre følgende: `F6`, `F11`, `F6`, `F6` (`F11` for å kompilere bibtex-filen).
-- Å finne "riktig" referansestil, både i tekst og i referanselisten til slutt, kan være litt pes. Kan være lurt å bruke enten `natbib` eller `biblatex`.
+- Å finne "riktig" referansestil, både i tekst og i referanselisten til slutt, kan være litt pes. Kan være lurt å bruke enten *natbib* eller *biblatex*.
 - Se ellers annen bibtex-dokumentasjon på nett.
 - I barnehelseatlasrapporten ville vi ha to referanselister: en for de som ble sitert i teksten og en for resten av artiklene i vår bib-fil. Dette ble gjort ved bruk av pakken `bibtopic` og det som står etter `\begin{btSect}`.
 
 
-
-﻿## Hvordan installere LaTeX på SKDE-maskiner
+## Hvordan installere LaTeX på SKDE-maskiner
 
 **Bruk heller Overleaf**
 
