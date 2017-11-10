@@ -207,7 +207,7 @@ knitr::include_graphics("figurer/sas_tmpdata.png")
 
 ### SAS-syntax i Notepad++
 
-- Legg følgende i en fil kalt `UserDefineLang.xml` og lagre den (sannsynligvis) i mappen `C:\Users\<ditt brukernavn>\AppData\Roaming\Notepad++` (hvis filen finnes allerede, legger man inn innholdet mellom de eksisterende <NotepadPlus>):
+- Legg følgende i en fil kalt `UserDefineLang.xml` og lagre den i mappen `C:\Brukere\<ditt brukernavn>\AppData\Roaming\Notepad++` (hvis filen finnes allerede, legger man inn innholdet mellom de eksisterende <NotepadPlus>):
 ```xml
 <NotepadPlus>
     <UserLang name="SAS" ext="sas SAS" udlVersion="2.0">
@@ -273,4 +273,12 @@ knitr::include_graphics("figurer/sas_tmpdata.png")
 ```
 
 - Restart *Notepad++* og gå inn på *Språk*. Der kan man velge *SAS* nest nederst.
+- Mappen `AppData` er en skjult mappe, så gjør følgende hvis man ikke ser denne i utforskeren:
+  - Trykk på *Windows*-knappen
+  - Skriv `mappe`
+  - Velg `Vis skjulte filer og mapper`
+  - Huk av på valget `Vis skjulte filer, mapper og stasjoner` og trykk OK (se figur)
 
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/vis_skjulte_mapper.png")
+```
