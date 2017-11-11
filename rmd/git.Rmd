@@ -1,4 +1,4 @@
-# Intro til git for windows
+# git
 
 ## Installèr git
 
