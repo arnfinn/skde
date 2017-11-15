@@ -12,15 +12,25 @@ $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ## Virtualenv
 
+
+### installere
+
 ```
 pip install virtualenv
+```
+
+### Bruke
+
+```
 cd my_project_folder
 virtualenv my_project
-source my_project/bin/activate
+
+source my_project/bin/activate # for linux/unix
+source my_project/Scripts/activate # for windows
 ##
 ## Install whatever packages
 ##
-pip install request
+pip install <pythonpakke>
 ##
 ## Deactivate current env
 ##

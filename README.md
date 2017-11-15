@@ -2,5 +2,5 @@
 
 # Diverse instruksjoner
 
-- Sidene kan leses [her](http://arnfinn.github.io/dokumentasjon/)
+- Sidene kan leses [her](http://SKDE-analyse.github.io/dokumentasjon/)
 
