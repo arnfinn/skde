@@ -18,9 +18,7 @@ run;
 - Med sensitive data menes datasett der det er en mulighet for å identifisere pasienter (pid, kjønn, alder, bosted og/eller behandlingssted etc. ikke er slettet)
 
 
-## Overgang til ny sas-server
-
-### Koble til sas-server i SAS Enterprise guide
+## Koble til sas-server i SAS Enterprise guide
 
 - Trykk på symbol/blå tekst nede i høyre hjørne
 
@@ -46,15 +44,16 @@ knitr::include_graphics("figurer/nySASserver2.png")
 knitr::include_graphics("figurer/nySASserver3.png")
 ```
 
-
-### Ny *filbane*
+<!--
+## *filbane*
 
 - Makroer, formater etc. er nå flyttet til den nye serveren. Det som ligger på ANALYSE/data brukes ikke lenger. `filbane` må derfor endres, og resten skal fungere stort sett som før
 ```
 %let filbane=\\tos-sas-skde-01\skde_sas\;
 ```
+-->
 
-### Koble til ny server i utforskeren
+## Koble til sas-server i utforskeren
 
 - Åpne utforsker og gå inn på *Verktøy/Koble til nettverksstasjon...*
 
@@ -79,23 +78,34 @@ knitr::include_graphics("figurer/nySASserver_utforsker3.png")
 - De felles sensitive datesettene ligger på `\\tos-sas-skde-01\SKDE_Sensetiv`, men vi har ikke tilgang til denne stasjonen gjennom utforskeren.
 
 
-## Macroer
+## Laste inn vår egen autocomplete-fil
 
-### Laste inn vår egen autocomplete-fil
-
-- Dette gjøres slik at man kan enkelt få inn rateprogram etc. i sas-prosjektet
+Dette gjøres slik at man kan enkelt få inn rateprogram etc. i sas-prosjektet
 
 1. Gå inn på *Program/Editor Macros/Macros*
-2. *Import...*
-3. Gå inn på `S:\Makroer\Abb_macro` og velg *Auto_Makro.kmf* (`S:` er her serveren `\\tos-sas-skde-01\skde_sas\`)
-4. *Close*
+2. Marker alle og slett dem (hvis du ikke har lagd dine egne makroer du vil ta vare på)
+3. *Import...*
+4. Gå inn på `S:\Makroer\Abb_macro` og velg *Auto_Makro.kmf* (`S:` er her serveren `\\tos-sas-skde-01\skde_sas\`)
+5. *Close*
 
-- Med ujevne mellomrom oppdateres *Abb_macro*, og man må da kjøre stegene 1 til 4 på nytt. Vi får prøve å gi beskjed om dette internt...
-- Hvis man nå begynner å skrive *auto* vil `AUTO_MACRO` kommer opp i en liste, og hvis man velger denne vil følgende tekst legge seg inn i sas-programmet ditt
+Med ujevne mellomrom oppdateres *Abb_macro*, og man må da kjøre stegene 1 til 5 på nytt. Vi får prøve å gi beskjed om dette internt...
+
+#### (Ufullstending) oversikt over autocomplete som finnes nå
+- `AUTO_MACRO` legger inn kode som definerer *filbane* og link til makroene våre 
+- `INCLUDE` inkluderer noen av formatene våre
+- `RATEPROGRAM` legger inn kode for å kjøre rateprogrammet
+- ...
+
+Som et eksempel, hvis man nå begynner å skrive *auto* vil `AUTO_MACRO` kommer opp i en liste. Denne har grønn skrift, i motsetning til blå for de innebygde autocompletene. Hvis man velger denne vil følgende tekst legge seg inn i sas-programmet ditt
 ```
 %let filbane=\\tos-sas-skde-01\SKDE_SAS\;
 options sasautos=("&filbane.Makroer\master" SASAUTOS);
 ```
+
+
+
+## Makroer
+
 
 ### Lage en makro
 
@@ -119,6 +129,10 @@ run &datasett;
 options sasautos=("&filbane.Makroer\master" SASAUTOS);
 ```
 
+Mer informasjon finnes [her](http://skde-analyse.github.io/sas_macroer/). Legg spesielt merke til hvordan man skal dokumentere sine makroer. 
+
+Makroene som lages i `&filbane.Makroer\master` legges, med ujevne mellomrom, på [github](https://github.com/SKDE-Analyse/sas_macroer).
+
 ## Formater
 
 Bruk de formatene som ligger under `\\tos-sas-skde-01\SKDE_SAS\Formater\master\`, som f.eks
@@ -129,7 +143,7 @@ Bruk de formatene som ligger under `\\tos-sas-skde-01\SKDE_SAS\Formater\master\`
 %include "&filbane.Formater\master\bo.sas";
 %include "&filbane.Formater\master\beh.sas";
 ```
-Hvis man vil ha spesialtilpasset macro, kan man enten
+Hvis man vil ha spesialtilpasset formater, kan man enten
 - kopiere over det som står i en av sas-filene som ligger på master rett inn i programmet sitt, eller
 - kopiere mappen `master` og endre direkte i den nye mappen.
 
