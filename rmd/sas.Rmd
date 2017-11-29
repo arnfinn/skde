@@ -90,7 +90,8 @@ Dette gjøres slik at man kan enkelt få inn rateprogram etc. i sas-prosjektet
 
 Med ujevne mellomrom oppdateres *Abb_macro*, og man må da kjøre stegene 1 til 5 på nytt. Vi får prøve å gi beskjed om dette internt...
 
-#### (Ufullstending) oversikt over autocomplete som finnes nå
+**(Ufullstending) oversikt over autocomplete som finnes nå**
+
 - `AUTO_MACRO` legger inn kode som definerer *filbane* og link til makroene våre 
 - `INCLUDE` inkluderer noen av formatene våre
 - `RATEPROGRAM` legger inn kode for å kjøre rateprogrammet
@@ -101,8 +102,6 @@ Som et eksempel, hvis man nå begynner å skrive *auto* vil `AUTO_MACRO` kommer 
 %let filbane=\\tos-sas-skde-01\SKDE_SAS\;
 options sasautos=("&filbane.Makroer\master" SASAUTOS);
 ```
-
-
 
 ## Makroer
 
