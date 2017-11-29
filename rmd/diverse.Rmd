@@ -1,5 +1,10 @@
 # Diverse annet
 
+## Koble til skriver
+
+1. Gå inn på http://tos-print-04.hn.helsenord.no/Printers/ipp_0004.asp?eprinter=TOS-UNN-C0.511A-03&view=p&page=1608 med Internett Explorer.
+2. Trykk på *Connect*
+
 ## Koble til nettverksstasjonen `\\hn.helsenord.no\unn-avdelinger\skde.avd`
 
 Av en eller annen grunn må man i noen tilfeller koble til nettverksstasjonen på nytt når man logger seg på maskinen. Da gjør man følgende:
