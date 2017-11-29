@@ -95,6 +95,8 @@ Med ujevne mellomrom oppdateres *Abb_macro*, og man må da kjøre stegene 1 til 
 - `AUTO_MACRO` legger inn kode som definerer *filbane* og link til makroene våre 
 - `INCLUDE` inkluderer noen av formatene våre
 - `RATEPROGRAM` legger inn kode for å kjøre rateprogrammet
+- `DATA_MAGNUS` legger inn datasteg for å laste inn de fem årgangene av `T17_magnus_avd_`
+- `DATA_AVTSPES` legger inn datasteg for å laste inn tre årganger av `T17_magnus_avtspes_`
 - ...
 
 Som et eksempel, hvis man nå begynner å skrive *auto* vil `AUTO_MACRO` kommer opp i en liste. Denne har grønn skrift, i motsetning til blå for de innebygde autocompletene. Hvis man velger denne vil følgende tekst legge seg inn i sas-programmet ditt
