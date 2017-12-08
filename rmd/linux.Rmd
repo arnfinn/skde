@@ -1,0 +1,38 @@
+# Linux
+
+
+
+## Installere Linux på stasjonære jobb-pc
+
+1. Få Helse Nord IKT til å installere *VirtualBox*
+2. [Last ned Linux Mint Mate](https://linuxmint.com/download.php). Det er [mange distroer](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) å velge mellom, men det er Linux Mint Mate resten av oppskriften tar utgangspunkt i.
+3. Lag en ny *Virtal Machine* med *VirtualBox* (omtrent 15 GB harddisk, ikke dynamisk), start opp denne med mint-iso-filen og installer Linux
+
+## Linux gjennom proxy
+
+- `Menu/Control Center/Internett and Network/Network Proxy/Proxy Configuration/Manual proxy configuration`
+
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/linux_proxy.png")
+```
+
+- Legg følgende i `.bashrc` (ikke sikker på om dette er nødvendig):
+
+```
+export http_proxy=http://www-proxy.helsenord.no:8080/
+export https_proxy=https://www-proxy.helsenord.no:8080/
+```
+
+- Man må bruke `sudo -E` i steden for kun `sudo` ved installering av pakker etc. F.eks
+```
+sudo -E apt install r-base-core
+```
+
+- For å kommunisere med github legges følgende i filen `.ssh/config`:
+```
+Host githubhn
+        HostName github.com
+        User git
+        ProxyCommand /bin/nc -X connect -x www-proxy.helsenord.no:8080 %h %p
+```
+
