@@ -1,11 +1,12 @@
 # Linux
 
-
-
 ## Installere Linux på stasjonære jobb-pc
 
 1. Få Helse Nord IKT til å installere *VirtualBox*
-2. [Last ned Linux Mint Mate](https://linuxmint.com/download.php). Det er [mange distroer](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) å velge mellom, men det er Linux Mint Mate resten av oppskriften tar utgangspunkt i.
+2. [Last ned Linux Mint Mate](https://linuxmint.com/download.php). 
+```{block2, linux-mint, type='rmdinfo'}
+Det er [mange distroer](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) å velge mellom, men det er *Linux Mint Mate* resten av oppskriften tar utgangspunkt i. Jeg har også prøvd *Lubuntu* og en *Fedora*-versjon, men fikk ikke disse til å fungere.
+```
 3. Lag en ny *Virtal Machine* med *VirtualBox* (omtrent 15 GB harddisk, ikke dynamisk), start opp denne med mint-iso-filen og installer Linux
 
 ## Linux gjennom proxy
@@ -23,7 +24,11 @@ export http_proxy=http://www-proxy.helsenord.no:8080/
 export https_proxy=https://www-proxy.helsenord.no:8080/
 ```
 
-- Man må bruke `sudo -E` i steden for kun `sudo` ved installering av pakker etc. F.eks
+```{block2, sudo-E, type='rmdimportant'}
+Man må bruke `sudo -E` (*preserve existing environment*) i steden for kun `sudo` ved installering av pakker etc. Dette for å kunne kommunisere ut og inn gjennom proxy.
+```
+
+- For eksempel:
 ```
 sudo -E apt install r-base-core
 ```
@@ -35,4 +40,23 @@ Host githubhn
         User git
         ProxyCommand /bin/nc -X connect -x www-proxy.helsenord.no:8080 %h %p
 ```
+
+## Installere RStudio
+
+```{block2, rstudio, type='rmdinfo'}
+Linux Mint er basert på LTS-versjon av Ubuntu. Derfor skal man velge (per des. 2017) Ubuntu 12.04-15.10-versjonen av RStudio.
+```
+
+- Følgende pakke må installeres før man kan installere RStudio:
+```
+sudo -E apt install libjpeg62 
+```
+- Last ned `rstudio-...-amd64.deb` 
+- Installer RStudio med `sudo dpkg -i Downloads/rstudio-...-amd64.deb`
+
+
+## Eksternt skrivebord
+
+
+Mer kommer når vi finner ut av dette...
 
