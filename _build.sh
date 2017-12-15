@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 export PATH=~/pandoc/1.19/usr/bin/:$PATH
 
