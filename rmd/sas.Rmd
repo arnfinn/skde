@@ -8,6 +8,7 @@ Sensitive datasett skal *kun* lagres på `npr_utva`! Disse skal slettes hvert å
 
 - Med sensitive data menes datasett der det er en mulighet for å identifisere pasienter (pid, kjønn, alder, bosted og/eller behandlingssted etc. ikke er slettet)
 - Merk gjerne datasettet med dine initialer, slik som dette
+
 ```sas
 data npr_utva.ahs_utvalg1;
 set mittutvalg;
