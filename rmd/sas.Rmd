@@ -2,7 +2,7 @@
 
 ## Lagring av sensitive datasett
 
-```{block2, sudo-E, type='rmdimportant'}
+```{block2, sensdatasett, type='rmdimportant'}
 Sensitive datasett skal *kun* lagres på `npr_utva`! Disse skal slettes hvert år, når vi får nye data i hus og nye data er tilrettelagt.
 ```
 
@@ -77,7 +77,7 @@ knitr::include_graphics("figurer/nySASserver_utforsker3.png")
 
 - Velg stasjon og skriv inn `\\tos-sas-skde-01\skde_analytikere\` for å få tilgang til området der dine ikke-sensitive datasett ligger.
 
-```{block2, rstudio, type='rmdinfo'}
+```{block2, sensmappe, type='rmdinfo'}
 De felles sensitive datesettene ligger på `\\tos-sas-skde-01\SKDE_Sensetiv`, men vi har ikke tilgang til denne stasjonen gjennom utforskeren.
 ```
 
@@ -91,7 +91,7 @@ Dette gjøres slik at man kan enkelt få inn rateprogram etc. i sas-prosjektet
 4. Gå inn på `S:\Makroer\Abb_macro` og velg *Auto_Makro.kmf* (`S:` er her serveren `\\tos-sas-skde-01\skde_sas\`)
 5. *Close*
 
-```{block2, rstudio, type='rmdinfo'}
+```{block2, abbmacro, type='rmdinfo'}
 Med ujevne mellomrom oppdateres *Abb_macro*, og man må da kjøre stegene 1 til 5 på nytt. Vi får prøve å gi beskjed om dette internt...
 ```
 
