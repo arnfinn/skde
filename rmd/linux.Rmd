@@ -58,5 +58,9 @@ sudo -E apt install libjpeg62
 ## Eksternt skrivebord
 
 
+1. Installer citrix receiver 
+2. Gå inn på portal.helsenord.no/vpn
+
+
 Mer kommer når vi finner ut av dette...
 
