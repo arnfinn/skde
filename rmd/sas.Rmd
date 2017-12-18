@@ -274,6 +274,7 @@ Legg følgende i en fil kalt `UserDefineLang.xml` og lagre den i mappen `C:\Bruk
 Restart *Notepad++* og gå inn på *Språk*. Der kan man velge *SAS* nest nederst.
 
 Mappen `AppData` er en skjult mappe, så gjør følgende hvis man ikke ser denne i utforskeren:
+
 1. Trykk på *Windows*-knappen
 2. Skriv `mappe`
 3. Velg `Vis skjulte filer og mapper`
