@@ -2,14 +2,26 @@
 
 ## Installere Linux på stasjonære jobb-pc
 
-1. Få Helse Nord IKT til å installere *VirtualBox*
-2. [Last ned Linux Mint Mate](https://linuxmint.com/download.php). 
+1. Få først Helse Nord IKT til å installere *VirtualBox*
+2. Last ned [Lubuntu Alternate 64 bit](https://lubuntu.net/downloads/) eller [Linux Mint Mate](https://linuxmint.com/download.php). 
+
 ```{block2, linux-mint, type='rmdinfo'}
-Det er [mange distroer](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) å velge mellom, men det er *Linux Mint Mate* resten av oppskriften tar utgangspunkt i. Jeg har også prøvd *Lubuntu* og en *Fedora*-versjon, men fikk ikke disse til å fungere.
+Det er [mange distroer](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) å velge mellom, men det er disse to distroene jeg har fått til å fungere. Jeg har også prøvd følgende distroer uten hell: *Lubuntu Desktop* 64 bit og 32 bit (problemer med skjerm) og *Fedora LXDE 27.1* (fikk ikke til proxy).
 ```
-3. Lag en ny *Virtal Machine* med *VirtualBox* (omtrent 15 GB harddisk, ikke dynamisk), start opp denne med mint-iso-filen og installer Linux
+3. Lag en ny *Virtal Machine* med *VirtualBox*, start opp med iso-filen og installer Linux.
 
 ## Linux gjennom proxy
+
+### Lubuntu
+
+Under installasjonen får man spørsmål om proxy, hvis man installerer *Alternate*-versjonen. Da skriver man inn http://www-proxy.helsenord.no:8080/. Hvis man ikke blir spurt om dette, kan man legge følgende inn i `/etc/apt/apt.conf`:
+```
+ACQUIRE::http::Proxy "http://www-proxy.helsenord.no:8080/";
+```
+
+Proxy for *Firefox* legges inn i instillinger. Proxy for *Chrome* var ikke like enkelt... (enklere i Ubuntu). 
+
+### Linux Mint
 
 - `Menu/Control Center/Internett and Network/Network Proxy/Proxy Configuration/Manual proxy configuration`
 
@@ -32,6 +44,8 @@ Man må bruke `sudo -E` (*preserve existing environment*) i steden for kun `sudo
 ```
 sudo -E apt install r-base-core
 ```
+
+### Generelt
 
 - For å kommunisere med github legges følgende i filen `.ssh/config`:
 ```
