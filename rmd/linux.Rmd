@@ -57,10 +57,10 @@ sudo -E apt install libjpeg62
 
 ## Eksternt skrivebord
 
-
-1. Installer citrix receiver 
-2. Gå inn på portal.helsenord.no/vpn
+Jeg (Arnfinn) fikk dette til å fungere på Lubuntu, som tilsvarer vanlig Ubuntu. Jeg installerte først *Remmina*, men sannsynligvis ikke nødvendig (skriver det her sånn i tilfelle det er nødvendig for at *Citrix Receiver* skal fungere). 
 
 
-Mer kommer når vi finner ut av dette...
+1. Installer [Citrix Receiver for Linux](https://www.citrix.no/downloads/citrix-receiver/linux/receiver-for-linux-latest.html). Hvis du bruker Ubuntu, velg *Debian Package* og *Full Package (Self-Service Support)*  
+2. Gå inn på [portal.helsenord.no/vpn](https://portal.helsenord.no/vpn/index.html) og logg inn som vanlig.
+3. Dobbeltklikk på *ica*-filen, som lastes ned. Denne vil så åpnes i *Citrix Receiver*
 
