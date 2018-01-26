@@ -10,6 +10,41 @@ Det er [mange distroer](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linu
 ```
 3. Lag en ny *Virtal Machine* med *VirtualBox*, start opp med iso-filen og installer Linux.
 
+### Lubuntu
+
+#### Under installasjonen
+
+- Installer Lubuntu Alternate 64 bit (se over)
+- Skriv inn mellomtjener/proxy-adresse når man får spørsmål om det (se under)
+- Velg statisk størrelse på harddisk, for å unngå kræsj hvis din windowsmaskin-harddisk fylles opp.
+
+#### Etter installasjonen
+
+- Koble til nett
+- Legg inn følgende i `.bashrc`:
+```
+export http_proxy=http://www-proxy.helsenord.no:8080/
+export https_proxy=https://www-proxy.helsenord.no:8080/
+```
+- Kjør programvareoppdatering
+- Installer `at-spi2-core` for å unngå advarsler senere
+- Installer [Chrome](https://www.linuxbabe.com/ubuntu/install-google-chrome-ubuntu-16-04-lts) gjennom terminal
+- Kjør Chrome gjennom terminal `google-chrome-stable` for å få det til å fungere med proxy (ev. `Alt + F2`)
+
+ 
+#### R
+
+```
+sudo apt-get install r-base
+```
+
+- Last ned RStudio, og installer i terminal:
+
+```
+sudo apt-get install libjpeg62
+sudo dpkg -i Downloads/rstudio-*
+```
+
 ## Linux gjennom proxy
 
 ### Lubuntu
