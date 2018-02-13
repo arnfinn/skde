@@ -21,6 +21,7 @@ Det er [mange distroer](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linu
 #### Etter installasjonen
 
 - Koble til nett
+  - Fikk problemer med dette i ett tilfelle med Lubuntu.
 - Legg inn følgende i `.bashrc`:
 ```
 export http_proxy=http://www-proxy.helsenord.no:8080/
