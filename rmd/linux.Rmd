@@ -37,6 +37,7 @@ export https_proxy=https://www-proxy.helsenord.no:8080/
 
 ```
 sudo apt-get install r-base
+sudo apt-get install r-base-dev # sannsynligvis greit også å installere denne
 ```
 
 - Last ned RStudio, og installer i terminal:
@@ -48,15 +49,6 @@ sudo dpkg -i Downloads/rstudio-*
 
 ## Linux gjennom proxy
 
-### Lubuntu
-
-Under installasjonen får man spørsmål om proxy, hvis man installerer *Alternate*-versjonen. Da skriver man inn `http://www-proxy.helsenord.no:8080/`. Hvis man ikke blir spurt om dette, kan man legge følgende inn i `/etc/apt/apt.conf`:
-```
-ACQUIRE::http::Proxy "http://www-proxy.helsenord.no:8080/";
-```
-
-Proxy for *Firefox* legges inn i instillinger. Proxy for *Chrome* var ikke like enkelt... (enklere i Ubuntu). 
-
 ### Linux Mint
 
 - `Menu/Control Center/Internett and Network/Network Proxy/Proxy Configuration/Manual proxy configuration`
@@ -65,7 +57,7 @@ Proxy for *Firefox* legges inn i instillinger. Proxy for *Chrome* var ikke like 
 knitr::include_graphics("figurer/linux_proxy.png")
 ```
 
-- Legg følgende i `.bashrc` (ikke sikker på om dette er nødvendig):
+- Legg følgende i `.bashrc`:
 
 ```
 export http_proxy=http://www-proxy.helsenord.no:8080/
@@ -81,6 +73,16 @@ Man må bruke `sudo -E` (*preserve existing environment*) i steden for kun `sudo
 sudo -E apt install r-base-core
 ```
 
+
+### Lubuntu
+
+Under installasjonen får man spørsmål om proxy, hvis man installerer *Alternate*-versjonen. Da skriver man inn `http://www-proxy.helsenord.no:8080/`. Hvis man ikke blir spurt om dette, kan man legge følgende inn i `/etc/apt/apt.conf`:
+```
+ACQUIRE::http::Proxy "http://www-proxy.helsenord.no:8080/";
+```
+
+Proxy for *Firefox* legges inn i instillinger. Proxy for *Chrome* var ikke like enkelt... (enklere i Ubuntu). 
+
 ### Generelt
 
 - For å kommunisere med github legges følgende i filen `.ssh/config`:
@@ -94,7 +96,7 @@ Host githubhn
 ## Installere RStudio
 
 ```{block2, rstudio, type='rmdinfo'}
-Linux Mint er basert på LTS-versjon av Ubuntu. Derfor skal man velge (per des. 2017) Ubuntu 12.04-15.10-versjonen av RStudio.
+Linux Mint er basert på LTS-versjon av Ubuntu. Per des. 2017 er dette Ubuntu 16.04.
 ```
 
 - Følgende pakke må installeres før man kan installere RStudio:
