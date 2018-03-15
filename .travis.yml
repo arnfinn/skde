@@ -18,7 +18,7 @@ before_install:                           # Install Ruby and html-proofer
 script:
   - ./_installPandoc.sh
   - ./_build.sh
-  - htmlproofer --alt-ignore '/.*/'  --url-ignore "http://tos-print-04.hn.helsenord.no/Printers/ipp_0004.asp?eprinter=TOS-UNN-C0.511A-03&view=p&page=1608" ./docs 
+  - htmlproofer --alt-ignore '/.*/'  --url-ignore "http://tos-print-04.hn.helsenord.no/Printers/ipp_0004.asp?eprinter=TOS-UNN-C0.511A-03&view=p&page=1608,Anneli@allegro-as.no" ./docs 
 
 deploy:
   provider: pages                         # Specify the gh-pages deployment method
