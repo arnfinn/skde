@@ -1,5 +1,7 @@
 # LaTeX
 
+Analyseenheten i SKDE skriver de fleste rapporter i LaTeX ved hjelp av [overleaf.com](https://www.overleaf.com). Dokumentmaler finner [her](https://www.overleaf.com/gallery/tagged/skde).
+
 ## En enkel start
 
 Dette dokumentet er omtrent så enkelt det kan bli med LaTeX
@@ -80,6 +82,40 @@ note = {{ISBN: 978-82-93141-16-7}}
 - Å finne "riktig" referansestil, både i tekst og i referanselisten til slutt, kan være litt pes. Kan være lurt å bruke enten *natbib* eller *biblatex*.
 - Se ellers annen bibtex-dokumentasjon på nett.
 - I barnehelseatlasrapporten ville vi ha to referanselister: en for de som ble sitert i teksten og en for resten av artiklene i vår bib-fil. Dette ble gjort ved bruk av pakken `bibtopic` og det som står etter `\begin{btSect}`.
+
+
+## Oversettelse av Helseatlas
+
+### Hvordan få et LaTeX-dokument klar for oversettelse
+
+Oversettelse av Helseatlas (rapporter og faktaark) har blir gjort av [Anneli Olsbø](Anneli@allegro-as.no) ved Allegro AS. Før dokumentene sendes til Allegro for oversettelse, må de konverteres til Word. For å få dette til mest mulig smertefritt gjøres følgende:
+
+- Fjern unødvendige sider (forside, side 2, bakside etc.).
+- Slå av fancyheadings ved å bruke `\pagestyle{empty}` på hele dokumentet.
+- Bruk `\usepackage[none]{hyphenat}` for å tvinge LaTeX til å ikke bryte ord. Ev. følgende kode
+```
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+```
+- Bruk `\usepackage[demo]{graphicx}` for å legge inn svarte bokser i steden for figurer. 
+  Fungerer ikke alltid, så bruk eventuelt `\usepackage[allfiguresdraft]{draftfigure}` (*draftfigure.sty* må lastes ned og legges sammen med tex-dokumentet)
+- Bruk en font som er enkel å konvertere til word.
+- Konverter pdf-filen til word med adobe pro
+
+### Hvordan konvertere word-dokumentet tilbake til LaTeX
+
+- Lagre som rtf i word
+- Konvertere med `rtf2latex2e -n -f -p 1 <filnavn.rtf>` med en linux/unix-maskin
+- Hvis ikke dette går:
+   - Lagre først som doc
+   - Åpne doc og lagre som rtf
+
+
+#### regex i Overleaf
+
+- Erstatt `/(\d)\s+(?=\d)/` med `$1,` for bytte ut tusentallsmellomrom med komma (norsk til engelsk).
 
 
 ## Hvordan installere LaTeX på SKDE-maskiner

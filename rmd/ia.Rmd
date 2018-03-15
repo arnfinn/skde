@@ -22,3 +22,22 @@ Kan enten modifiseres direkte eller gjennom InstantAtlas designer
 ## Lage et atlas fra bunnen av
 
 ...
+
+
+## Logo
+
+- Hvis man ikke definerer både høyde og bredde, men kun en av de, på logo i `config.xml` vil skaleringen alltid være riktig. Definer bredde på logo nederst til venstre; høyde på logo øverst til venstre.
+- Unngå å bruke jpg i logoer
+- Logo med kun tekst kan lages med følgende svg-kode
+```
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="66">
+  <text x="10" y="50" font-family="Verdana" font-size="55"
+        fill="#00509e" stroke="#00509e" stroke-width="2">
+          Elderly (&#8805;75 years), 2013-2015
+  </text>
+</svg>
+```
+
+- `width` og `height` justeres slik at hele teksten kommer med (men ikke mer). Dette gjøres ved å åpne fil i nettleser samtidig som man endrer på verdiene.
+- Det er mulig å bruke svg-filer på nettsidene, men har hatt noen problemer med dette i IA. Konverter figur til png, f.eks [her](http://svgtopng.com/)
+
