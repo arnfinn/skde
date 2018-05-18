@@ -2,6 +2,47 @@
 
 Mine egne notater, som er lite interessant for andre
 
+## Opprette automatisk dokumentasjonekstrasjon fra SAS-filer
+
+I mange av våre prosjekter på [github](https://github.com/SKDE-Analyse) lages det dokuemtasjonssider automatisk når man oppdaterer koden. Dette gjøres av [Travis CI](https://travis-ci.org/SKDE-Analyse).
+
+- Bruk følgende `.travis.yml` fil:
+```
+language: python
+
+python:
+  - "3.6"
+
+before_script:
+  # copy version 1.0.0 of the script from github
+  - wget https://raw.githubusercontent.com/SKDE-Analyse/python-scripts/v1.0.0/skde/extract_sas_documentation.py
+
+script:
+    # Will only extract documentation from sas-files on root directory of project
+  - python extract_sas_documentation.py
+
+deploy:
+  provider: pages                         # Specify the gh-pages deployment method
+  skip_cleanup: true                      # Don't remove files
+  github_token: $GITHUB_TOKEN             # Set in travis-ci.org dashboard
+  local_dir: docs                         # Deploy the docs folder
+  on:
+    branch: master
+
+notifications:
+  email: false
+```
+
+- Aktiver Travis CI [her](https://travis-ci.org/profile/SKDE-Analyse)
+
+- Trykk på *Settings* og legg inn `GITHUB_TOKEN`. Hent `GITHUB_TOKEN` fra `p/github/token.txt`.
+
+- Legg inn følgende `_config.yml` fil i `docs`-mappe (lag denne mappen hvis den ikke eksisterer):
+```
+theme: jekyll-theme-minimal
+```
+
+
 ## Proxy
 
 - curl gjennom proxy (f.eks for å få været i Tromsø:)):
