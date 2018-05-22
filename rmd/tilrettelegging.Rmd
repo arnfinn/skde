@@ -34,3 +34,17 @@ Dette kapitlet kan med fordel utvides.
 - Koder hentet [her](https://helsedirektoratet.no/finansieringsordninger/innsatsstyrt-finansiering-isf-og-drg-systemet).
 - Filene ligger på ANALYSE/Data/Kodeverk/DRG/
 - csv-filer produsert fra ISF xlsx-filer, med semikolon mellom kode og tekst
+
+
+### Hente ut Hdiag3tegn formater
+
+1. Lagre pdf, som hentes fra [Direktoratet for e-helse sine hjemmesider](https://ehelse.no/standarder-kodeverk-og-referansekatalog/helsefaglige-kodeverk/kodeverket-icd-10-og-icd-11), som tekstfil (`*.txt*`).
+  - Åpne dokumentet
+  - Merk all tekst (`CTRL + a`)
+  - Kopier (`CTRL + c`)
+  - Åpne et tomt tekstdokument i Notepad++ og lim inn (`CTRL + v`)
+2. Kjør script `extract_hdiag3tegn.py`, som ligger på `Analyse/Data/python/script/skde/`, på tekstfilen
+```
+python /e/Analyse/Data/python/script/skde/extract_hdiag3tegn.py ICD-10_2017.txt > tmp.sas
+```
+3. Gå gjennom filen `tmp.sas` og fiks feil. Skriptet ser etter linjer som begynner på `Xnn `, der X er en bokstav og n er et tall. I [denne](https://ehelse.no/Documents/Helsefaglig%20kodeverk/ICD-10%20-%202017.pdf) filen vil f.eks linjen "C74 gis tilleggskode E27.5, og et basofilt adenom i hypofyse med Cushings syndrom med koden" nederst på side 54, under merknader, bli ekstrahert.
