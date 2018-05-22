@@ -136,9 +136,9 @@ run &datasett;
 options sasautos=("&filbane.Makroer\master" SASAUTOS);
 ```
 
-Mer informasjon finnes [her](http://skde-analyse.github.io/sas_macroer/). Legg spesielt merke til hvordan man skal dokumentere sine makroer. 
+Mer informasjon finnes [her](http://skde-analyse.github.io/sas_makroer/). Legg spesielt merke til hvordan man skal dokumentere sine makroer. 
 
-Makroene som lages i `&filbane.Makroer\master` legges, med ujevne mellomrom, på [github](https://github.com/SKDE-Analyse/sas_macroer).
+Makroene som lages i `&filbane.Makroer\master` legges, med ujevne mellomrom, på [github](https://github.com/SKDE-Analyse/sas_makroer).
 
 ## Formater
 
