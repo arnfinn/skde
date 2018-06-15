@@ -1,8 +1,15 @@
-# Tilrettelegging av nye data fra NPR
+# Tilrettelegging av data 
 
-Dette kapitlet kan med fordel utvides.
+## Tilrettelegging av nye data fra NPR
 
-## Lage diff-filer
+**Dette kapitlet kan med fordel utvides.**
+
+### Lage nye datasett
+
+
+
+
+### Lage diff-filer
 
 - *gitbash* (og eventuelt *gvim*) må være installert
 
@@ -13,30 +20,30 @@ Dette kapitlet kan med fordel utvides.
 5. `:qa`
 
 
-## Kodeverk
+### Kodeverk
 
-### NCMP, NCRP, NCSP
+#### NCMP, NCRP, NCSP
 
 - Koder hentet fra [Direktoratet for e-helse](https://ehelse.no/standarder-kodeverk-og-referansekatalog/helsefaglige-kodeverk/prosedyrekodeverkene-kodeverk-for-medisinske-kirurgiske-og-radiologiske-prosedyrer-ncmp-ncsp-og-ncrp)
 - Filene ligger på ANALYSE/Data/Kodeverk/NCMP_NCSP_NCRP/
 - txt-filer med tab-mellomrom mellom kode og tekst
 
 
-### ICD-10
+#### ICD-10
 
 - Koder hentet fra [Direktoratet for e-helse](https://ehelse.no/standarder-kodeverk-og-referansekatalog/helsefaglige-kodeverk/kodeverket-icd-10-og-icd-11)
 - Filene ligger på ANALYSE/Data/Kodeverk/ICD10/
 - txt-filer med tab-mellomrom mellom kode og tekst
 
 
-### DRG
+#### DRG
 
 - Koder hentet [her](https://helsedirektoratet.no/finansieringsordninger/innsatsstyrt-finansiering-isf-og-drg-systemet).
 - Filene ligger på ANALYSE/Data/Kodeverk/DRG/
 - csv-filer produsert fra ISF xlsx-filer, med semikolon mellom kode og tekst
 
 
-### Hente ut Hdiag3tegn formater
+#### Hente ut Hdiag3tegn formater
 
 1. Lagre pdf, som hentes fra [Direktoratet for e-helse sine hjemmesider](https://ehelse.no/standarder-kodeverk-og-referansekatalog/helsefaglige-kodeverk/kodeverket-icd-10-og-icd-11), som tekstfil (`*.txt*`).
   - Åpne dokumentet
@@ -48,3 +55,21 @@ Dette kapitlet kan med fordel utvides.
 python /e/Analyse/Data/python/script/skde/extract_hdiag3tegn.py ICD-10_2017.txt > tmp.sas
 ```
 3. Gå gjennom filen `tmp.sas` og fiks feil. Skriptet ser etter linjer som begynner på `Xnn `, der X er en bokstav og n er et tall. I [denne](https://ehelse.no/Documents/Helsefaglig%20kodeverk/ICD-10%20-%202017.pdf) filen vil f.eks linjen "C74 gis tilleggskode E27.5, og et basofilt adenom i hypofyse med Cushings syndrom med koden" nederst på side 54, under merknader, bli ekstrahert.
+
+## Tilrettelegging av innbyggertall fra SSB
+
+Innbyggertallene for 1. januar 2018 brukes som nevner når ratene for 2017 beregnes. Før utlevering av nye data fra NPR for året før, kan innbyggertallene fra 1. januar dette år hentes fra SSB. Innbyggertall fordelt på kommune hentes fra [tabell 07459](https://www.ssb.no/statbank/table/07459) mens innbyggertall for bydelene hentes fra [tabell 10826](https://www.ssb.no/statbank/table/10826).
+
+1. Velg aktuelle kommuner/bydeler og siste år.
+2. Last ned data som *Semikolonseparert med overskrift (csv)*.
+3. Åpne csv-fil i Excel
+  - Fjern i to øverste radene
+  - Erstatt `kjønn` med `kjonn` og `Personer ÅÅÅÅ` med `Personer`
+  - Sjekk at fanen heter `Personer`
+  - Lagre som `xlxs`-fil med navnet `Innb20XX_bydel` eller `Innb20XX_kommune` i mappen `Analyse\Data\SAS\Tilrettelegging\Innbyggere`.
+4. Kjør SAS-prosjektet `oppdatere_innbyggerfil.egp` i mappen `Analyse\Data\SAS\Tilrettelegging\Innbyggere`.
+
+SAS-prosjektet vil lage et sas-datasett av Excel-filene og legge dem til fjorårets innbyggerfil.
+
+
+
