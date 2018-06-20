@@ -2,6 +2,14 @@
 
 Mine egne notater, som er lite interessant for andre
 
+## Bash
+
+`sed` vil konvertere fil fra windows til linux. Gjør derfor følgende:
+
+```
+for i in *.sas; do sed -e -i 's/foo/bar/g' $i; unix2dos $i; done
+```
+
 ## Opprette automatisk dokumentasjonekstrasjon fra SAS-filer
 
 I mange av våre prosjekter på [github](https://github.com/SKDE-Analyse) lages det dokuemtasjonssider automatisk når man oppdaterer koden. Dette gjøres av [Travis CI](https://travis-ci.org/SKDE-Analyse).
