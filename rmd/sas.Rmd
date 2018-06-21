@@ -52,7 +52,7 @@ knitr::include_graphics("figurer/nySASserver3.png")
 
 - Makroer, formater etc. er nå flyttet til den nye serveren. Det som ligger på ANALYSE/data brukes ikke lenger. `filbane` må derfor endres, og resten skal fungere stort sett som før
 ```
-%let filbane=\\tos-sas-skde-01\skde_sas\;
+%let filbane=\\tos-sas-skde-01\skde_sas\felleskoder\master;
 ```
 -->
 
@@ -89,11 +89,11 @@ Dette gjøres slik at man kan enkelt få inn rateprogram etc. i sas-prosjektet
 1. Gå inn på *Program/Editor Macros/Macros*
 2. Marker alle og slett dem (hvis du ikke har lagd dine egne makroer du vil ta vare på)
 3. *Import...*
-4. Gå inn på `S:\Makroer\Abb_macro` og velg *Auto_Makro.kmf* (`S:` er her serveren `\\tos-sas-skde-01\skde_sas\`)
+4. Gå inn på `\\tos-sas-skde-01\skde_sas\felleskoder\master\makroer\` og velg *autocomplete.kmf*
 5. *Close*
 
 ```{block2, abbmacro, type='rmdinfo'}
-Med ujevne mellomrom oppdateres *Abb_macro*, og man må da kjøre stegene 1 til 5 på nytt. Vi får prøve å gi beskjed om dette internt...
+Med ujevne mellomrom oppdateres *autocomplete.kmf*, og man må da kjøre stegene 1 til 5 på nytt. Vi får prøve å gi beskjed om dette internt...
 ```
 
 **(Ufullstending) oversikt over autocomplete som finnes nå**
@@ -107,8 +107,8 @@ Med ujevne mellomrom oppdateres *Abb_macro*, og man må da kjøre stegene 1 til 
 
 Som et eksempel, hvis man nå begynner å skrive *auto* vil `AUTO_MACRO` kommer opp i en liste. Denne har grønn skrift, i motsetning til blå for de innebygde autocompletene. Hvis man velger denne vil følgende tekst legge seg inn i sas-programmet ditt
 ```
-%let filbane=\\tos-sas-skde-01\SKDE_SAS\;
-options sasautos=("&filbane.Makroer\master" SASAUTOS);
+%let filbane=\\tos-sas-skde-01\SKDE_SAS\felleskoder\master;
+options sasautos=("&filbane\makroer" SASAUTOS);
 ```
 
 ## Makroer
@@ -129,26 +129,26 @@ run &datasett;
 
 %mend macronavn;
 ```
-- Hvis man lagrer en fil med navn `macronavn.sas` i `\\tos-sas-skde-01\SKDE_SAS\Makroer\master` kan andre bruke denne hvis de har kjørt følgende kode i SAS-prosjektet:
+- Hvis man lagrer en fil med navn `macronavn.sas` i `\\tos-sas-skde-01\SKDE_SAS\felleskoder\master\makroer\` kan andre bruke denne hvis de har kjørt følgende kode i SAS-prosjektet:
 
 ```
-%let filbane=\\tos-sas-skde-01\SKDE_SAS\;
-options sasautos=("&filbane.Makroer\master" SASAUTOS);
+%let filbane=\\tos-sas-skde-01\SKDE_SAS\felleskoder\master;
+options sasautos=("&filbane\makroer" SASAUTOS);
 ```
 
-Mer informasjon finnes [her](http://skde-analyse.github.io/sas_makroer/). Legg spesielt merke til hvordan man skal dokumentere sine makroer. 
+Mer informasjon finnes [her](http://skde-analyse.github.io/sas_codes/). Legg spesielt merke til hvordan man skal dokumentere sine makroer. 
 
-Makroene som lages i `&filbane.Makroer\master` legges, med ujevne mellomrom, på [github](https://github.com/SKDE-Analyse/sas_makroer).
+Makroene i `&filbane\makroer\` ligger på [github](https://github.com/SKDE-Analyse/sas_codes/tree/master/makroer).
 
 ## Formater
 
-Bruk de formatene som ligger under `\\tos-sas-skde-01\SKDE_SAS\Formater\master\`, som f.eks
+Bruk de formatene som ligger under `\\tos-sas-skde-01\SKDE_SAS\felleskoder\master\formater\`, som f.eks
 
 ```
-%let filbane=\\tos-sas-skde-01\SKDE_SAS\;
-%include "&filbane.Formater\master\SKDE_somatikk.sas";
-%include "&filbane.Formater\master\bo.sas";
-%include "&filbane.Formater\master\beh.sas";
+%let filbane=\\tos-sas-skde-01\SKDE_SAS\felleskoder\master\;
+%include "&filbane\Formater\SKDE_somatikk.sas";
+%include "&filbane\Formater\bo.sas";
+%include "&filbane\Formater\beh.sas";
 ```
 Hvis man vil ha spesialtilpasset formater, kan man enten
 - kopiere over det som står i en av sas-filene som ligger på master rett inn i programmet sitt, eller
@@ -156,8 +156,8 @@ Hvis man vil ha spesialtilpasset formater, kan man enten
 
 ## Rateprogrammet
 
-- Dokumentasjon kan finnes [her](http://skde-analyse.github.io/rateprogram/)
-- Koden ligger på [*github*](https://github.com/SKDE-Analyse/rateprogram)
+- Dokumentasjon kan finnes [her](http://skde-analyse.github.io/sas_codes/)
+- Koden ligger på [*github*](https://github.com/SKDE-Analyse/sas_codes)
 
 ## Annet
 
