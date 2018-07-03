@@ -98,7 +98,7 @@ Med ujevne mellomrom oppdateres *autocomplete.kmf*, og man må da kjøre stegene
 
 **(Ufullstending) oversikt over autocomplete som finnes nå**
 
-- `AUTO_MACRO` legger inn kode som definerer *filbane* og link til makroene våre 
+- `AUTO_MACRO` legger inn kode som definerer *filbane* og link til makroene våre
 - `INCLUDE` inkluderer noen av formatene våre
 - `RATEPROGRAM` legger inn kode for å kjøre rateprogrammet
 - `DATA_MAGNUS` legger inn datasteg for å laste inn de fem årgangene av `T17_magnus_avd_`
@@ -136,7 +136,7 @@ run &datasett;
 options sasautos=("&filbane\makroer" SASAUTOS);
 ```
 
-Mer informasjon finnes [her](http://skde-analyse.github.io/sas_codes/). Legg spesielt merke til hvordan man skal dokumentere sine makroer. 
+Mer informasjon finnes [her](http://skde-analyse.github.io/sas_codes/). Legg spesielt merke til hvordan man skal dokumentere sine makroer.
 
 Makroene i `&filbane\makroer\` ligger på [github](https://github.com/SKDE-Analyse/sas_codes/tree/master/makroer).
 
@@ -203,7 +203,11 @@ length variabelnavn 3;
 knitr::include_graphics("figurer/sas_tmpdata.png")
 ```
 
-### SAS-syntax i Notepad++
+### SAS-syntax i *Atom text editor*
+
+Gå inn på *Settings* (`ctrl-,`), velg `install`, søk etter og installer `language-sas`.
+
+### SAS-syntax i *Notepad++*
 
 Legg følgende i en fil kalt `UserDefineLang.xml` og lagre den i mappen `C:\Brukere\<ditt brukernavn>\AppData\Roaming\Notepad++` (hvis filen finnes allerede, legger man inn innholdet mellom de eksisterende <NotepadPlus>):
 

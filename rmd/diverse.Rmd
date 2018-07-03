@@ -1,5 +1,23 @@
 # Diverse annet
 
+## Atom text editor
+
+### Diverse oppsett
+
+Gå inn på *Settings* (`ctrl-,`)
+- Velg `Core` - `File encoding` og `Western (Windows 1252)` for å unngå at
+*Atom* alltid åpner filene i `utf-8`.
+- Velg `install`, søk etter, og installer, følgende pakker:
+  - `language-sas` for å få SAS syntax.
+  - `file-watcher` for at *Atom* skal oppdatere filer som lagres av andre.
+  - `block-select` for å kunne markere flere linjer
+
+### Annet
+
+- Bruk `ctrl-shift-m` for å vise hvordan en markdown-side vil se ut.
+- Hold inne `Alt`-tast og venstre museknapp for å velge flere linjer og blokk
+med tekst. `block-select`-pakken må være installert for at dette skal fungere.
+
 ## Koble til virtuelt møterom
 
 Are sin oppskrift
