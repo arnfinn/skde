@@ -11,6 +11,18 @@
 }
 ```
 
+### Extensions
+
+Utvidelser man burde installere:
+
+- `SAS-Syntax` av *77qingliu*
+- `R` av *Yuki Ueda*
+
+### Annet
+
+- Hold inne `Shift-Alt` og venstre museknapp for å velge flere linjer og blokk
+med tekst. Eventuelt `Shift-Ctrl-Alt` og piltastene. `Esc` for å komme seg ut igjen.
+
 ## Atom text editor
 
 ### Diverse oppsett
