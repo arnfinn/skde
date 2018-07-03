@@ -4,7 +4,8 @@
 
 ### Diverse oppsett
 
-Gå inn på *Settings* (`ctrl-,`)
+Gå inn på *Settings* (`ctrl-,`):
+
 - Velg `Core` - `File encoding` og `Western (Windows 1252)` for å unngå at
 *Atom* alltid åpner filene i `utf-8`.
 - Velg `install`, søk etter, og installer, følgende pakker:
@@ -37,6 +38,7 @@ Are sin oppskrift
 ## Koble til nettverksstasjonen `\\hn.helsenord.no\unn-avdelinger\skde.avd`
 
 Av en eller annen grunn må man i noen tilfeller koble til nettverksstasjonen på nytt når man logger seg på maskinen. Da gjør man følgende:
+
 - Velg `Verktøy/Koble til nettverksstajon...` i utforskeren
 - Legg inn følgende informasjon
 
