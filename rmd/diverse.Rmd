@@ -1,5 +1,16 @@
 # Diverse annet
 
+## Visual Studio Code
+
+### Diverse oppsett
+
+- "Auto detection" av "file encoding": Gå inn på *File/Preferences/Settings/* og legg inn følgende kode:
+```
+{
+    "files.autoGuessEncoding":true
+}
+```
+
 ## Atom text editor
 
 ### Diverse oppsett
@@ -27,6 +38,7 @@ Are sin oppskrift
 - Videokonferanse over helsenettet, ring *997515*
 - Skype, *997515@uc.nhn.no* ev *tos.felles.c0-513@uc.nhn.no*
 - For deltagere utenfor helsenettet, gå til siden https://join.nhn.no/ (installere klient), velg Delta i samtale (Join call), tast inn Samtale ID (Call ID) *997515* (Kode ikke nødvendig) og tast inn navnet ditt
+
 
 
 
