@@ -5,11 +5,9 @@
 ### Diverse oppsett
 
 - "Auto detection" av "file encoding": Gå inn på *File/Preferences/Settings/* og legg inn følgende kode:
-```
-{
-    "files.autoGuessEncoding":true
-}
-```
+    {
+        "files.autoGuessEncoding":true
+    }
 
 ### Extensions
 

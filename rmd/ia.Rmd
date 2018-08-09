@@ -41,3 +41,15 @@ Kan enten modifiseres direkte eller gjennom InstantAtlas designer
 - `width` og `height` justeres slik at hele teksten kommer med (men ikke mer). Dette gjøres ved å åpne fil i nettleser samtidig som man endrer på verdiene.
 - Det er mulig å bruke svg-filer på nettsidene, men har hatt noen problemer med dette i IA. Konverter figur til png, f.eks [her](http://svgtopng.com/)
 
+## Legge ut et atlas på helseatlas.no
+
+1. Gå inn på https://helseatlas.no/user og logg inn.
+2. Trykk på *Legg til innhold* og velg *Atlas*.
+3. Velg språk.
+4. Gå til *Publiseringsvalg* og huk bort *Publisert*, siden vi ikke vil legge ut atlaset for publisering før alt er sjekket og klart.
+5. Fyll ut punktene som har rød stjerne (*Navn* og *Tittel* i *Les mer*).
+6. Last opp en zip-fil med IA-filene i *Filer til atlaset*-fanen.
+7. Trykk på *Lagre*.
+
+Senere kan man gå inn å legge til nye filer, erstatte filer, og publisere atlaset for alle. 
+Så lenge man er logget inn kan man se atlaset på forsiden, slik det vil bli seende ut etter publisering.
