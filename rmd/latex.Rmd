@@ -23,7 +23,7 @@ For å bli kvitt denne informasjonen kan man
 
 ### Hvordan få et LaTeX-dokument klar for oversettelse
 
-Oversettelse av Helseatlas (rapporter og faktaark) har blir gjort av [Anneli Olsbø](Anneli@allegro-as.no) ved Allegro AS. 
+Oversettelse av Helseatlas (rapporter og faktaark) har blir gjort av [Anneli Olsbø](mailto:Anneli@allegro-as.no) ved Allegro AS. 
 Før dokumentene sendes til Allegro for oversettelse, må de konverteres til Word. 
 For å få dette til mest mulig smertefritt gjøres følgende:
 
