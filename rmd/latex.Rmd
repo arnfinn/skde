@@ -13,9 +13,11 @@ For å kunne endre teksten på forsiden og samtidig bevare samme font, må fonte
 Dette kan enten gjøres ved å få *Helse Nord IKT* til å installere fonten, eller ved å bruke [denne metoden (*install fonts without administrator access*)](https://woorkup.com/install-fonts-without-administrator-access/).
 
 Ved bytte av forsidebilde i *Adobe Acrobate Pro* vil informasjon om tidligere bilde ligge i filen, og filen vil derfor bli uhensiktsmessig stor. 
-For å bli kvitt denne informasjonen kan man gå inn på `Fil/Instillinger/Dokumenter` og huke av *Fjern skjult informasjon når du lukker dokumentet*. 
-Lukk så dokumentet og svar *Ja* på spørsmålet om du vil fjerne informasjon. 
-Ta bort avhuking på *Metadata* og *Overlappende objekter*, men fjern informasjon om *Slettet eller beskåret innhold*.
+For å bli kvitt denne informasjonen kan man
+- gå inn på `Fil/Instillinger/Dokumenter` og huke av *Fjern skjult informasjon når du lukker dokumentet*. 
+- Lukk så dokumentet og velg *Fjern all informasjon, men ikke lukk dokumentet*. 
+- Ta bort avhuking på *Metadata* og *Overlappende objekter*, men fjern informasjon om *Slettet eller beskåret innhold*.
+- Trykk på *Fjern* og lagre dokumentet.
 
 ## Oversettelse av Helseatlas
 
