@@ -74,3 +74,32 @@ Kan enten modifiseres direkte eller gjennom *InstantAtlas designer*
 
 Senere kan man gå inn å legge til nye filer, erstatte filer, og publisere atlaset for alle. 
 Så lenge man er logget inn kan man se atlaset på forsiden, slik det vil bli seende ut etter publisering.
+
+## Legge inn lenke til faktaark
+
+1. Last opp faktaark til nettsidene ved å gå på *Innhold* og *Filer*, og trykk på *Legg til fil*. **Ikke** gå på *Legg til innhold* og legg filene til der. Da vil filene sannsynligvis få tilfeldige navn.
+
+2. Legg lenkeadressen (der disse filene legger seg) inn i tredje linje i `IA-workbook`. Den legges over tre celler.
+
+3. Erstatt bolkene `ia-explorer-notes-icon` og `ia-explorer-notes-icon:hover` i filen `advanced.css` med følgende innhold:
+
+```css
+.ia-explorer-notes-icon 
+{ 
+	display:table-cell; /** Explorer notes icon: notes_hover.png --> pdfbw_notes.png*/
+	background-image:url(pdfbw_notes.png);
+	cursor:pointer;
+	background-repeat:no-repeat;
+	background-position:center left;
+	width:20px; /** width:20px; */
+	height:13px; /** height:13px; */		
+}
+.ia-explorer-notes-icon:hover
+{
+	background-image:url(pdf_notes_hover.png);  /** Explorer notes icon: notes_hover.png -->  pdf_notes_hover.png*/
+}
+```
+
+4. Kopier over filene `pdfbw_notes.png` og `pdf_notes_hover.png` fra et annet atlas (f.eks herfra: `Analyse/Helseatlas/Eldre/IA/eldre_atlas/`).
+
+5. *zip* mappen og last opp på nytt.
