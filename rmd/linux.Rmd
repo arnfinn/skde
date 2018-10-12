@@ -83,6 +83,25 @@ Host githubhn
 
 ## R/RStudio
 
+```{block2, rstudio, type='rmdinfo'}
+Bak proxy må RStudio kjøres fra terminal.
+```
+
+### Sett opp CRAN
+
+Åpne filen `/etc/apt/sources.list` med `sudo` og legg inn følgende:
+```
+deb https://cloud.r-project.org/bin/linux/ubuntu xenial/ 
+```
+Bytt ut `xenial` hvis du bruker en annen versjon av Ubuntu.
+
+Kjør følgende kommandoer:
+```
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+sudo apt-get update
+```
+
+
 ### Installere R
 
 ```
@@ -99,7 +118,7 @@ sudo apt-get install libjpeg62 # RStudio er avhengig av denne pakken
 sudo dpkg -i Downloads/rstudio-*
 ```
 
-```{block2, rstudio, type='rmdinfo'}
+```{block2, ubuntu, type='rmdinfo'}
 Linux Mint er basert på LTS-versjon av Ubuntu. Per des. 2017 er dette Ubuntu 16.04.
 ```
 
@@ -109,7 +128,7 @@ Linux Mint er basert på LTS-versjon av Ubuntu. Per des. 2017 er dette Ubuntu 16
 ```
 sudo apt-get install libssl-dev
 sudo apt-get install libcurl4-openssl-dev
-
+sudo apt-get install libssh2-1-dev
 ```
 
 ## Eksternt skrivebord
