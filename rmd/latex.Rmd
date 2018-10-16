@@ -135,6 +135,10 @@ note = {{ISBN: 978-82-93141-16-7}}
 - Se ellers annen bibtex-dokumentasjon på nett.
 - I barnehelseatlasrapporten ville vi ha to referanselister: en for de som ble sitert i teksten og en for resten av artiklene i vår bib-fil. Dette ble gjort ved bruk av pakken `bibtopic` og det som står etter `\begin{btSect}`.
 
+### Konvertere fra *Pubmed* til *BibTeX*
+
+Følgende nettside kan brukes til å søke opp artikler i [Pubmed](https://www.ncbi.nlm.nih.gov/pubmed) og konvertere til *BibTeX*: [www.bioinformatics.org/texmed](https://www.bioinformatics.org/texmed/)
+
 ## Hvordan installere LaTeX på SKDE-maskiner
 
 **Bruk heller Overleaf**
