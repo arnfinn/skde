@@ -15,7 +15,8 @@ for i in *.sas; do sed -e -i 's/foo/bar/g' $i; unix2dos $i; done
 I mange av våre prosjekter på [github](https://github.com/SKDE-Analyse) lages det dokuemtasjonssider automatisk når man oppdaterer koden. Dette gjøres av [Travis CI](https://travis-ci.org/SKDE-Analyse).
 
 - Bruk følgende `.travis.yml` fil:
-```
+
+```yml
 language: python
 
 python:
@@ -46,6 +47,7 @@ notifications:
 - Trykk på *Settings* og legg inn `GITHUB_TOKEN`. Hent `GITHUB_TOKEN` fra `p/github/token.txt`.
 
 - Legg inn følgende `_config.yml` fil i `docs`-mappe (lag denne mappen hvis den ikke eksisterer):
+
 ```
 theme: jekyll-theme-minimal
 ```
@@ -54,11 +56,13 @@ theme: jekyll-theme-minimal
 ## Proxy
 
 - curl gjennom proxy (f.eks for å få været i Tromsø:)):
+
 ```
 curl.exe --proxy http://www-proxy.helsenord.no:8080/ wttr.in/Tromso
 ```
 - Sette opp proxy generelt (kan eventuelt legges inn i `.bash_profile`:
-```
+
+```bash
 export http_proxy=http://www-proxy.helsenord.no:8080/
 export https_proxy=https://www-proxy.helsenord.no:8080/
 ```
@@ -99,6 +103,7 @@ Installerer alt på `c/Users/ast046/AppData/Local/Programs/`
 ### RStudio
 
 - bytte libpath
+
 ```r
 > .libPaths()
 [1] "\\\\hn.helsenord.no/unn-ansatte/a-ans/ast046/R/library"
@@ -109,6 +114,7 @@ Installerer alt på `c/Users/ast046/AppData/Local/Programs/`
 ```
 
 - Installere pakker
+
 ```r
 install.packages("devtools")
 install.packages("shiny")
@@ -143,7 +149,7 @@ cat faktaark-eldre-til-oversettelse_-EN.tex |grep '\\section' | cut -d '{' -f 3 
 
 *R* må være installert, samt pakken *bookdown*. Gjør følgende i terminal (dette gjelder for Debian/Ubuntu:
 
-```
+```bash
 sudo apt-get install r-base-core 
 sudo apt-get install libcurl4-openssl-dev
 sudo apt-get install libssl-dev
@@ -153,7 +159,7 @@ sudo apt-get install pandoc pandoc-citeproc
 
 ### Kompilere selve dokumentasjonen
 
-```
+```bash
 sudo Rscript -e 'devtools::install_github("rstudio/bookdown")' # kun hvis pakken ikke er installert enda
 Rscript -e "rmarkdown::render_site(output_format = c('bookdown::gitbook', 'bookdown::pdf_book', 'bookdown::epub_book'), encoding = 'UTF-8')"
 ```
