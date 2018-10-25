@@ -2,6 +2,23 @@
 
 Mine egne notater, som er lite interessant for andre
 
+## Regular expressions
+
+- Her kan man teste ut sine *regular expressions*: [regex101.com](https://regex101.com/)
+- Søke etter `per` som ikke har bokstaver ved siden av seg. Vil ikke få treff på f.eks. `Per Sandberg` (stor `P`) eller `ropert` (bokstaver inntil).
+
+```
+[^a-zæøåA-ZÆØÅ]per[^a-zæøåA-ZÆØÅ]
+```
+
+- Søke med start (`^`) og slutt (`$`) på linje.
+
+```
+^Dette er en setning på egen linje$
+```
+
+
+
 ## Bash
 
 `sed` vil konvertere fil fra windows til linux. Gjør derfor følgende:
