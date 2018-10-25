@@ -23,6 +23,7 @@ Det er [mange distroer](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linu
 - Koble til nett
   - Fikk problemer med dette i ett tilfelle med Lubuntu.
 - Legg inn følgende i `.bashrc`:
+
 ```
 export http_proxy=http://www-proxy.helsenord.no:8080/
 export https_proxy=https://www-proxy.helsenord.no:8080/
@@ -57,6 +58,7 @@ Man må bruke `sudo -E` (*preserve existing environment*) i steden for kun `sudo
 ```
 
 - For eksempel:
+
 ```
 sudo -E apt install r-base-core
 ```
@@ -65,6 +67,7 @@ sudo -E apt install r-base-core
 ### Lubuntu
 
 Under installasjonen får man spørsmål om proxy, hvis man installerer *Alternate*-versjonen. Da skriver man inn `http://www-proxy.helsenord.no:8080/`. Hvis man ikke blir spurt om dette, kan man legge følgende inn i `/etc/apt/apt.conf`:
+
 ```
 ACQUIRE::http::Proxy "http://www-proxy.helsenord.no:8080/";
 ```
@@ -74,6 +77,7 @@ Proxy for *Firefox* legges inn i instillinger. Proxy for *Chrome* var ikke like 
 ### Generelt
 
 - For å kommunisere med github legges følgende i filen `.ssh/config`:
+
 ```
 Host githubhn
         HostName github.com
@@ -90,12 +94,14 @@ Bak proxy må RStudio kjøres fra terminal.
 ### Sett opp CRAN
 
 Åpne filen `/etc/apt/sources.list` med `sudo` og legg inn følgende:
+
 ```
 deb https://cloud.r-project.org/bin/linux/ubuntu xenial/ 
 ```
 Bytt ut `xenial` hvis du bruker en annen versjon av Ubuntu.
 
 Kjør følgende kommandoer:
+
 ```
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 sudo apt-get update
@@ -125,6 +131,7 @@ Linux Mint er basert på LTS-versjon av Ubuntu. Per des. 2017 er dette Ubuntu 16
 ### Installere `devtools`
 
 `devtools` er avhengig av `git2r` og `httr`. Disse må ha følgende installert for å fungere
+
 ```
 sudo apt-get install libssl-dev
 sudo apt-get install libcurl4-openssl-dev
@@ -134,7 +141,6 @@ sudo apt-get install libssh2-1-dev
 ## Eksternt skrivebord
 
 Jeg (Arnfinn) fikk dette til å fungere på Lubuntu, som tilsvarer vanlig Ubuntu. Jeg installerte først *Remmina*, men sannsynligvis ikke nødvendig (skriver det her sånn i tilfelle det er nødvendig for at *Citrix Receiver* skal fungere). 
-
 
 1. Installer [Citrix Receiver for Linux](https://www.citrix.no/downloads/citrix-receiver/linux/receiver-for-linux-latest.html). Hvis du bruker Ubuntu, velg *Debian Package* og *Full Package (Self-Service Support)*  
 2. Gå inn på [portal.helsenord.no/vpn](https://portal.helsenord.no/vpn/index.html) og logg inn som vanlig.
