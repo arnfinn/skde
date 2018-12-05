@@ -17,7 +17,11 @@ Mine egne notater, som er lite interessant for andre
 ^Dette er en setning på egen linje$
 ```
 
+- Definere argument 1, 2 etc. ved å bruke `\(` og `\)`, som så kan brukes etterpå. Her vil man kunne erstatte komma med punktum som desimaltegn (norsk til engelsk):
 
+```
+ sed -e 's/\([0-9]\),\([0-9][^0-9]\)/\1.\2/g'
+```
 
 ## Bash
 

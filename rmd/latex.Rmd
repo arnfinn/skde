@@ -51,10 +51,19 @@ For å få dette til mest mulig smertefritt gjøres følgende:
    - Åpne doc og lagre som rtf
 
 
-#### regex i Overleaf
+#### regex
 
-- Erstatt `/(\d)\s+(?=\d)/` med `$1,` for bytte ut tusentallsmellomrom med komma (norsk til engelsk).
+- Erstatte tusenskilletegn
 
+```
+for i in *.tex; do sed -e 's/\([0-9]\)\\,\([0-9][0-9][0-9]\)/\1,\2/g' $i > tmp; mv tmp $i; done
+```
+
+- Erstatte desimaltegn komma med punktum
+
+```
+for i in *.tex; do sed -e 's/\([0-9]\)\\,\([0-9][0-9][0-9]\)/\1.\2/g' $i > tmp; mv tmp $i; done
+```
 
 ## En enkel start
 
@@ -90,6 +99,7 @@ Litt mer tekst med æ, ø og å.
 - Overskrifter og underoverskrifter skrives i `\section{}` og `\subsection{}`.
 
 Kopier teksten inn i et nytt dokument i TeXmaker, lagre det, og trykk på `F6`. Dokumentet blir da kompilert og lager en pdf. pdf-filen kan åpnes ved å trykke `F7`. Dette vil gi et dokument som ser slik ut:  
+
 ```{r, echo=FALSE}
 knitr::include_graphics("figurer/simple_tex.png")
 ```
@@ -106,7 +116,6 @@ knitr::include_graphics("figurer/simple_tex.png")
 Når man legger inn referanser i LaTeX bruker man som regel bibtex. Da lager man en egen fil som heter noe som ender på `.bib`. I denne skrives alle referansene, omtrent slik som dette:
 
 ```latex
-
 @article{Adler2013,
 author = {Adler, Jeremy and Sandberg, Kelly C. and Shpeen, Benjamin H. and Eder, Sally J. and Dhanani, Muhammad and Clark, Sarah J. and Freed, Gary L},
 title = {Variation in {I}nfliximab Administration Practices in the Treatment of Pediatric Inflammatory Bowel Disease},
@@ -152,7 +161,8 @@ Dette er selve LaTeX.
 1. Last ned fra [denne siden](http://miktex.org/download)
 2. Installér programmet på ditt hjemmeområdet på `c:`
 3. Gå inn på `Start/Alle programmer/MikTeX 2.9/Maintenance/Settings`
-    1. Sjekk at General-fanen ser omtrent slik ut:  
+    1. Sjekk at General-fanen ser omtrent slik ut:
+      
 ```{r, echo=FALSE}
 knitr::include_graphics("figurer/miktex_general.png")
 ```
