@@ -78,8 +78,8 @@ Ved å velge en annen stasjon enn `e:` kan man unngå at man må koble seg opp p
 # SKDE
 \\hn.helsenord.no\unn-avdelinger\skde.avd
 
-# Hjemmeområde
-\\hn.helsenord.no\Ansatte\a-and\<brukernavn>
+# Hjemmeområde, der <x> er første bokstav i brukernavn/fornavn.
+\\hn.helsenord.no\Ansatte\<x>-ans\<brukernavn>
 
 # SAS
 \\tos-sas-skde-01\skde_sas
