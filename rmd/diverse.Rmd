@@ -56,8 +56,9 @@ Are sin oppskrift
 
 ## Koble til skriver
 
-1. Gå inn på http://tos-print-04.hn.helsenord.no/Printers/ipp_0004.asp?eprinter=TOS-UNN-C0.511A-03&view=p&page=1608 med Internett Explorer.
-2. Trykk på *Connect*
+1. Gå inn på https://hnprint.hn.helsenord.no/ med Internett Explorer.
+2. Søk etter `TOS-FP.S3-01`
+3. Trykk på *Koble til*
 
 ## Koble til nettverksstasjoner
 
