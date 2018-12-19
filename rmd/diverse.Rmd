@@ -1,5 +1,49 @@
 # Diverse annet
 
+## Koble til virtuelt møterom
+
+Are sin oppskrift
+
+- Per telefon, ring *77 60 21 00*, konferanse ID *997515*
+- Videokonferanse over helsenettet, ring *997515*
+- Skype, *997515@uc.nhn.no* ev *tos.felles.c0-513@uc.nhn.no*
+- For deltagere utenfor helsenettet, gå til siden https://join.nhn.no/ (installere klient), velg Delta i samtale (Join call), tast inn Samtale ID (Call ID) *997515* (Kode ikke nødvendig) og tast inn navnet ditt
+
+## Koble til skriver
+
+1. Gå inn på https://hnprint.hn.helsenord.no/ med Internett Explorer.
+2. Søk etter `TOS-FP.S3-01`
+3. Trykk på *Koble til*
+
+## Koble til nettverksstasjoner
+
+Av ukjent grunn må man i noen tilfeller koble til nettverksstasjoner på nytt når man logger seg på maskinen. Da gjør man følgende:
+
+- Velg `Verktøy/Koble til nettverksstajon...` i utforskeren
+- Legg inn følgende informasjon
+
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/servertilkobling_skde.png")
+```
+
+Ved å velge en annen stasjon enn `e:` kan man unngå at man må koble seg opp på nytt hver dag.
+
+### Liste over stasjoner
+
+```
+# SKDE
+\\hn.helsenord.no\unn-avdelinger\skde.avd
+
+# Hjemmeområde, der <x> er første bokstav i brukernavn/fornavn.
+\\hn.helsenord.no\Ansatte\<x>-ans\<brukernavn>
+
+# SAS
+\\tos-sas-skde-01\skde_sas
+\\tos-sas-skde-01\skde_felles
+\\tos-sas-skde-01\SKDE_Analytikere
+\\tos-sas-skde-01\SKDE_Sensetiv
+```
+
 ## Visual Studio Code
 
 ### Diverse oppsett
@@ -42,49 +86,3 @@ Gå inn på *Settings* (`ctrl-,`):
 - Hold inne `Alt`-tast og venstre museknapp for å velge flere linjer og blokk
 med tekst. `block-select`-pakken må være installert for at dette skal fungere.
 
-## Koble til virtuelt møterom
-
-Are sin oppskrift
-
-- Per telefon, ring *77 60 21 00*, konferanse ID *997515*
-- Videokonferanse over helsenettet, ring *997515*
-- Skype, *997515@uc.nhn.no* ev *tos.felles.c0-513@uc.nhn.no*
-- For deltagere utenfor helsenettet, gå til siden https://join.nhn.no/ (installere klient), velg Delta i samtale (Join call), tast inn Samtale ID (Call ID) *997515* (Kode ikke nødvendig) og tast inn navnet ditt
-
-
-
-
-## Koble til skriver
-
-1. Gå inn på https://hnprint.hn.helsenord.no/ med Internett Explorer.
-2. Søk etter `TOS-FP.S3-01`
-3. Trykk på *Koble til*
-
-## Koble til nettverksstasjoner
-
-Av ukjent grunn må man i noen tilfeller koble til nettverksstasjoner på nytt når man logger seg på maskinen. Da gjør man følgende:
-
-- Velg `Verktøy/Koble til nettverksstajon...` i utforskeren
-- Legg inn følgende informasjon
-
-```{r, echo=FALSE}
-knitr::include_graphics("figurer/servertilkobling_skde.png")
-```
-
-Ved å velge en annen stasjon enn `e:` kan man unngå at man må koble seg opp på nytt hver dag.
-
-### Liste over stasjoner
-
-```
-# SKDE
-\\hn.helsenord.no\unn-avdelinger\skde.avd
-
-# Hjemmeområde, der <x> er første bokstav i brukernavn/fornavn.
-\\hn.helsenord.no\Ansatte\<x>-ans\<brukernavn>
-
-# SAS
-\\tos-sas-skde-01\skde_sas
-\\tos-sas-skde-01\skde_felles
-\\tos-sas-skde-01\SKDE_Analytikere
-\\tos-sas-skde-01\SKDE_Sensetiv
-```
