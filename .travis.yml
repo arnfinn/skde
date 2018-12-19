@@ -9,7 +9,7 @@ before_script:
   - chmod +x ./_build.sh
   - chmod +x ./_installPandoc.sh
 
-before_install:                           # Install Ruby and html-proofer
+before_install:
   - gem install html-proofer
   - tlmgr install xcolor sectsty babel babel-norsk framed libertine mweights fontaxes epigraph
 

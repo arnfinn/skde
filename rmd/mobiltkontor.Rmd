@@ -16,15 +16,16 @@ Følgende begrensninger gjelder for PC’er med mobilt kontor:
 - Chrome
 - Firefox
 - Notepad++
-- vscode
+- [Visual Studio Code](https://code.visualstudio.com/)
 - 7Zip
 - Stata
+- SPSS
 - Eduroam (hvis tilknyttet UiT)
     - installasjonsfil, se https://uit.no/om/orakelet/frag?p_document_id=319282
-- git
-- R
-- RStudio
-- Python 3
+- [git](https://git-scm.com/downloads)
+- [R](https://www.r-project.org/)
+- [RStudio](https://www.rstudio.com/products/RStudio)
+- [Python 3](https://www.python.org/downloads/)
 
 Kontakt HelpDesk (07022) eller xxx (vi trenger egentlig en spesifikk kontaktperson for dette) for å bestille nye program/tillegg og fyll inn på lista over.
 
