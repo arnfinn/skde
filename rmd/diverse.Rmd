@@ -62,6 +62,18 @@ Utvidelser man burde installere:
 - `SAS-Syntax` av *77qingliu*
 - `R` av *Yuki Ueda*
 
+### LaTeX
+
+- Installer *MikTeX* eller lignende på maskinen. Installer pakken `latexmk`.
+- Installer *vscode*-utvidelsen *LaTeX Workshop*
+- Hvis dokumentet må kompileres med *lualatex*, noe som gjelder de fleste av våre rapporter og notater, legges følgende inn helt først i dokumentet:
+
+```
+%! TEX program = lualatex
+```
+
+- Åpne pdf-filen i VScode ved å trykke på tegnet med liten rød strek og forstørrelsesglass oppe til høyre i en tex-fil.
+
 ### Annet
 
 - Hold inne `Shift-Alt` og venstre museknapp for å velge flere linjer og blokk
