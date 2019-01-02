@@ -57,14 +57,20 @@ Ved å velge en annen stasjon enn `e:` kan man unngå at man må koble seg opp p
 
 ### Extensions
 
-Utvidelser man burde installere:
+Når man åpner en type fil i VScode, vil en få forslag til utvidelser som kan installeres. Denne listen som kommer opp kan være lang, så her er en listen over utvidelser jeg har installert:
 
-- `SAS-Syntax` av *77qingliu*
+- `Excel Viewer` av *GrapeCity*
+- `LaTeX Workshop` av *James Yu*
+- `Python` av *Microsoft*
 - `R` av *Yuki Ueda*
+- `SAS-Syntax` av *77qingliu*
 
 ### LaTeX
 
-- Installer *MikTeX* eller lignende på maskinen. Installer pakken `latexmk`.
+*VScode* kan brukes som tekstprogram for *LaTeX*, inkludert automatisk kompilering av dokumentet tilsvarende *Overleaf*.
+
+- Installer *MikTeX* eller lignende på maskinen.
+- Installer pakken `latexmk` gjennom *MikTeX package manager*.
 - Installer *vscode*-utvidelsen *LaTeX Workshop*
 - Hvis dokumentet må kompileres med *lualatex*, noe som gjelder de fleste av våre rapporter og notater, legges følgende inn helt først i dokumentet:
 
