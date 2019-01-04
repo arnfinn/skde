@@ -30,7 +30,7 @@ Ved å velge en annen stasjon enn `e:` kan man unngå at man må koble seg opp p
 
 ### Liste over stasjoner
 
-```
+```bash
 # SKDE
 \\hn.helsenord.no\unn-avdelinger\skde.avd
 
@@ -56,6 +56,8 @@ Følgende begrensninger gjelder for PC’er med mobilt kontor:
 Ønsket programvare og tillegg bestilles ved bestilling av PC med mobilt kontor (lista bygges ut over tid):
 
 - SAS
+    - SAS Enterprise guide
+    - SAS base
     - Add-ins for Excel
 - Stata
 - SPSS
