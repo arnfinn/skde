@@ -2,11 +2,9 @@
 
 ## Koble til virtuelt møterom
 
-Are sin oppskrift
-
-- Per telefon, ring *77 60 21 00*, konferanse ID *997515*
+- Per telefon, ring *77602100*, konferanse ID *997515*
 - Videokonferanse over helsenettet, ring *997515*
-- Skype, *997515@uc.nhn.no* ev *tos.felles.c0-513@uc.nhn.no*
+- Skype, *997515@uc.nhn.no*
 - For deltagere utenfor helsenettet, gå til siden https://join.nhn.no/ (installere klient), velg Delta i samtale (Join call), tast inn Samtale ID (Call ID) *997515* (Kode ikke nødvendig) og tast inn navnet ditt
 
 ## Koble til skriver
