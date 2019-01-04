@@ -1,4 +1,4 @@
-# Diverse annet
+# Diverse
 
 ## Koble til virtuelt møterom
 
@@ -44,6 +44,39 @@ Ved å velge en annen stasjon enn `e:` kan man unngå at man må koble seg opp p
 \\tos-sas-skde-01\SKDE_Sensetiv
 ```
 
+## Mobilt kontor – programvare og tillegg
+
+Ved bestilling av PC med Mobilt kontor må ønsket programvare og eventuelle tillegg bestilles. På PC’er med mobilt kontor må man bruke adgangskortet og en pin-kode. Adgangskortet må aktiveres og pin-kode velges settes vekterne på UNN, Driftsavdelingen B.5.
+
+Følgende begrensninger gjelder for PC’er med mobilt kontor:
+
+1. Det er ikke mulig å logge på maskin uten kortet. Glemmer du kortet, må du enten kjøre/sykle hjem og hente det, eventuelt få utstedt ett nytt.
+2. Det er ikke mulig å opprette en lokal bruker. Uten nett kan du fortsatt bruke maskinen som om den ikke var på nett, med lokale dokumenter og programvare.
+
+Ønsket programvare og tillegg bestilles ved bestilling av PC med mobilt kontor (lista bygges ut over tid):
+
+- SAS
+    - Add-ins for Excel
+- Stata
+- SPSS
+- EndNote
+    - Add-ins for Word
+- Chrome
+- Firefox
+- Notepad++
+- [Visual Studio Code](https://code.visualstudio.com/)
+- 7Zip
+- Eduroam (hvis tilknyttet UiT)
+    - installasjonsfil, se https://uit.no/om/orakelet/frag?p_document_id=319282
+- [git](https://git-scm.com/downloads)
+- [R](https://www.r-project.org/)
+- [RStudio](https://www.rstudio.com/products/RStudio)
+- [Python 3](https://www.python.org/downloads/)
+- [MiKTeX](https://miktex.org/)
+
+Kontakt HelpDesk (07022) eller xxx (vi trenger egentlig en spesifikk kontaktperson for dette) for å bestille nye program/tillegg og fyll inn på lista over.
+
+
 ## Visual Studio Code
 
 ### Diverse oppsett
@@ -70,15 +103,16 @@ Når man åpner en type fil i VScode, vil en få forslag til utvidelser som kan 
 *VScode* kan brukes som tekstprogram for *LaTeX*, inkludert automatisk kompilering av dokumentet tilsvarende *Overleaf*.
 
 - Installer *MikTeX* eller lignende på maskinen.
-- Installer pakken `latexmk` gjennom *MikTeX package manager*.
+- Installer pakkene `latexmk` og `miktex-biber-bin-x64` gjennom *MikTeX package manager*.
 - Installer *vscode*-utvidelsen *LaTeX Workshop*
-- Hvis dokumentet må kompileres med *lualatex*, noe som gjelder de fleste av våre rapporter og notater, legges følgende inn helt først i dokumentet:
+- Hvis dokumentet må kompileres med *lualatex* og *biber*, noe som gjelder de fleste av våre rapporter og notater, legges følgende inn helt først i dokumentet:
 
 ```
 %! TEX program = lualatex
+%! BIB program = biber
 ```
 
-- Åpne pdf-filen i VScode ved å trykke på tegnet med liten rød strek og forstørrelsesglass oppe til høyre i en tex-fil.
+Hver gang en fil lagres i prosjektet, vil dokumentet kompileres. Åpne pdf-filen i *VScode* ved å trykke på tegnet med liten rød strek og forstørrelsesglass oppe til høyre i en tex-fil.
 
 ### Annet
 

@@ -5,7 +5,7 @@ book_filename: "SKDEdokumentasjon"
 rmd_files:
   html:
     - "index.Rmd"
-    - "rmd/mobiltkontor.Rmd"
+    - "rmd/diverse.Rmd"
     - "rmd/sas.Rmd"
     - "rmd/tilrettelegging.Rmd"
     - "rmd/ia.Rmd"
@@ -15,10 +15,9 @@ rmd_files:
     - "rmd/latex.Rmd"
     - "rmd/python.Rmd"
     - "rmd/linux.Rmd"
-    - "rmd/diverse.Rmd"
     - "rmd/arnfinn.Rmd"
   latex:
-    - "rmd/mobiltkontor.Rmd"
+    - "rmd/diverse.Rmd"
     - "rmd/sas.Rmd"
     - "rmd/tilrettelegging.Rmd"
     - "rmd/ia.Rmd"
@@ -28,5 +27,4 @@ rmd_files:
     - "rmd/latex.Rmd"
     - "rmd/python.Rmd"
     - "rmd/linux.Rmd"
-    - "rmd/diverse.Rmd"
     - "rmd/arnfinn.Rmd"
