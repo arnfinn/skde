@@ -1,6 +1,7 @@
 output_dir: "docs"
 delete_merged_file: TRUE
 book_filename: "SKDEdokumentasjon"
+favicon: "docs/favicon.ico"
 
 rmd_files:
   html:
