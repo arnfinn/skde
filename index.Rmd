@@ -6,6 +6,7 @@ documentclass: book
 description: Diverse dokumentasjon etc. for å (forhåpentligvis) gjøre hverdagen enklere
 papersize: A4
 site: bookdown::bookdown_site
+favicon: favicon.ico
 ---
 
 # {-}
