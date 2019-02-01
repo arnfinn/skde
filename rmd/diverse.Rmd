@@ -58,7 +58,7 @@ Ved å velge en annen stasjon enn `e:` kan man unngå at man må koble seg opp p
 
 ## Mobilt kontor – programvare og tillegg
 
-Ved bestilling av PC med Mobilt kontor må ønsket programvare og eventuelle tillegg bestilles. På PC’er med mobilt kontor må man bruke adgangskortet og en pin-kode. Adgangskortet må aktiveres og pin-kode velges settes vekterne på UNN, Driftsavdelingen B.5.
+Ved bestilling av PC med Mobilt kontor må ønsket programvare og eventuelle tillegg bestilles. På PC’er med mobilt kontor må man bruke adgangskortet og en pin-kode.
 
 Følgende begrensninger gjelder for PC’er med mobilt kontor:
 
@@ -87,8 +87,9 @@ Følgende begrensninger gjelder for PC’er med mobilt kontor:
 - [RStudio](https://www.rstudio.com/products/RStudio)
 - [Python 3](https://www.python.org/downloads/)
 - [MiKTeX](https://miktex.org/)
+- [.NET Core Runtime](https://dotnet.microsoft.com/download#/runtime)
 
-Kontakt HelpDesk (07022) eller xxx (vi trenger egentlig en spesifikk kontaktperson for dette) for å bestille nye program/tillegg og fyll inn på lista over.
+Kontakt HelpDesk (07022) for å bestille nye program/tillegg og fyll inn på lista over.
 
 
 ## Visual Studio Code
@@ -109,7 +110,7 @@ Når man åpner en type fil i VScode, vil en få forslag til utvidelser som kan 
 - `Excel Viewer` av *GrapeCity*
 - `LaTeX Workshop` av *James Yu*
 - `Python` av *Microsoft*
-- `R` av *Yuki Ueda*
+- `R` av *Yuki Ueda*. Denne oppdateres dessverre ikke lenger, men har ikke funnet et fullverdig alternativ enda.
 - `SAS-Syntax` av *77qingliu*
 
 ### LaTeX
