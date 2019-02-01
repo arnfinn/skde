@@ -6,7 +6,7 @@ SKDE disponerer fire virtuelle møterom:
 
 | Rom | Adresse | Alias | Nummer | Web |
 | :-- | :------ | :----- | :----- | :--- |
-SKDE                | 999363@uc.nhn.no | skde.forskning@vm.nhn.no | 999363 | https://join.nhn.no/webapp/conference/999363
+SKDE                | 999363@uc.nhn.no | skde@vm.nhn.no | 999363 | https://join.nhn.no/webapp/conference/999363
 SKDE Analyse        | 997297@uc.nhn.no | skde.analyse@vm.nhn.no   | 997297 | https://join.nhn.no/webapp/conference/997297
 SKDE Forskning      | 997298@uc.nhn.no | skde.forskning@vm.nhn.no | 997298 | https://join.nhn.no/webapp/conference/997298
 SKDE Servicemiljøet | 997515@uc.nhn.no |        | 997515 | https://join.nhn.no/webapp/conference/997515
