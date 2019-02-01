@@ -103,6 +103,13 @@ Kontakt HelpDesk (07022) for å bestille nye program/tillegg og fyll inn på lis
 }
 ```
 
+### Triks og tips
+
+- Hold inne &#8679;+Ctrl+Alt og piltast ned/opp for å få markør på flere linjer samtidig. Kan så trykke *Home* eller *End* for å få alle markørene helt først eller helt sist på linjene.
+- Ctrl-piltast for å hoppe ett og ett ord til siden (kan brukes sammen med trikset over).
+- &#8679;+Alt+høyreknapp mus for å markere rektangulært område. *Obs: Windows kan velge å bytte til annet tastaturoppsett når man trykker* &#8679;+Alt
+
+
 ### Extensions
 
 Når man åpner en type fil i VScode, vil en få forslag til utvidelser som kan installeres. Denne listen som kommer opp kan være lang, så her er en listen over utvidelser jeg har installert:
