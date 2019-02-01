@@ -41,7 +41,10 @@ Ved å velge en annen stasjon enn `e:` kan man unngå at man må koble seg opp p
 
 ```bash
 # SKDE
-\\hn.helsenord.no\unn-avdelinger\skde.avd
+\\hn.helsenord.no\RHF\SKDE
+
+# RHF
+\\hn.helsenord.no\RHF
 
 # Hjemmeområde, der <x> er første bokstav i brukernavn/fornavn.
 \\hn.helsenord.no\Ansatte\<x>-ans\<brukernavn>
