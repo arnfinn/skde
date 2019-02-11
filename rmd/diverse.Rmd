@@ -89,6 +89,13 @@ Følgende begrensninger gjelder for PC’er med mobilt kontor:
 
 Kontakt HelpDesk (07022) for å bestille nye program/tillegg og fyll inn på lista over.
 
+## Google Chrome
+
+I forbindelse med at Google Chrome blir standard nettleser i Helse Nord blir alle utvidelser i utgangspunktet svartelistet. Det er mulig å melde ønske om hvitelisting av utvidelser 
+
+Følgende utvidelser er hvitelistet:
+- [uBlock](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), alternativ til reklameblokkeringen *Adblock Plus*.
+- *LastPass*
 
 ## Visual Studio Code
 
