@@ -29,7 +29,7 @@ For å få dette til mest mulig smertefritt gjøres følgende:
 
 - Fjern unødvendige sider (forside, side 2, bakside etc.).
 - Slå av fancyheadings ved å bruke `\pagestyle{empty}` på hele dokumentet.
-- Bruk `\usepackage[none]{hyphenat}` for å tvinge LaTeX til å ikke bryte ord. Eventuelt kan følgende kode brukes
+- Bruk følgende kode for å tvinge LaTeX til å ikke bryte ord
 
 ```
 \tolerance=1
@@ -37,6 +37,8 @@ For å få dette til mest mulig smertefritt gjøres følgende:
 \hyphenpenalty=10000
 \hbadness=10000
 ```
+
+- Venstrejuster all tekst med `\raggedright`
 - Bruk `\usepackage[demo]{graphicx}` for å legge inn svarte bokser i steden for figurer. 
   Fungerer ikke alltid, så bruk eventuelt `\usepackage[allfiguresdraft]{draftfigure}` (*draftfigure.sty* må lastes ned og legges sammen med tex-dokumentet)
 - Bruk en font som er enkel å konvertere til word (f.eks `calibri`).
