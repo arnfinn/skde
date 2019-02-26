@@ -99,16 +99,25 @@ Følgende utvidelser er hvitelistet:
 
 ## Visual Studio Code
 
-### Diverse oppsett
+### File encoding
 
-- "Auto detection" av "file encoding": Gå inn på *File/Preferences/Settings/* og søk etter `encoding`. Huk av på `Files: Auto Guess Encoding`.
+For å slå på automatisk detektering av tegnsett i filene, gå inn på *File/Preferences/Settings/* og søk etter `encoding`. Huk av på `Files: Auto Guess Encoding`.
+
+*SAS*-filer må ha tegnsett `windows1252`. For å tvinge *vscode* til å åpne *SAS*-filer med dette tegnsettet kan følgende snutt legges inn i `settings.json` (man kan åpne denne filen ved å gå inn på *File/Preferences/Settings/*, velge *Text Editor* og *Files*. Der vil man få opp en link til *Edit in settings.json*):
+
+```
+"[SAS]": {
+    "files.encoding": "windows1252"
+}
+```
+
+Språkidentifikatoren `SAS` er definert av tillegget `SAS-Syntax` av *77qingliu*. Det betyr at dette tillegget må være installert før denne instillingen vil fungere. Hvis et annet *SAS*-tillegg er installert, vil denne språkidentifikasjonen sannsynligvis være `sas` (med små bokstaver).
 
 ### Triks og tips
 
 - Hold inne Shift+Ctrl+Alt og piltast ned/opp for å få markør på flere linjer samtidig. Kan så trykke *Home* eller *End* for å få alle markørene helt først eller helt sist på linjene.
 - Ctrl-piltast for å hoppe ett og ett ord til siden (kan brukes sammen med trikset over).
-- Shift+Alt+høyreknapp mus for å markere rektangulært område. *Obs: Windows kan velge å bytte til annet tastaturoppsett når man trykker* Shift+Alt
-
+- Shift+Alt+høyreknapp mus for å markere rektangulært område. *Obs: Windows kan velge å bytte til annet tastaturoppsett når man trykker* Shift+Alt.
 
 ### Extensions
 
