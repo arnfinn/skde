@@ -101,12 +101,7 @@ Følgende utvidelser er hvitelistet:
 
 ### Diverse oppsett
 
-- "Auto detection" av "file encoding": Gå inn på *File/Preferences/Settings/* og legg inn følgende kode:
-```json
-{
-    "files.autoGuessEncoding":true
-}
-```
+- "Auto detection" av "file encoding": Gå inn på *File/Preferences/Settings/* og søk etter `encoding`. Huk av på `Files: Auto Guess Encoding`.
 
 ### Triks og tips
 
