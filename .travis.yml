@@ -31,4 +31,8 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true  # Speed up the html-proofer
 
 notifications:
-  email: false
+  email:
+    recipients:
+      - arnfinn.steindal@gmail.com
+    on_success: never # default: change
+    on_failure: always # default: always
