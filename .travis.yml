@@ -16,7 +16,7 @@ before_install:
 script:
   - ./_installPandoc.sh
   - ./_build.sh
-  - htmlproofer --alt-ignore '/.*/'  --url-ignore "https://hnprint.hn.helsenord.no/,Anneli@allegro-as.no,http://www-proxy.helsenord.no:8080/,https://www-proxy.helsenord.no:8080/" ./docs 
+  - htmlproofer --alt-ignore '/.*/'  --url-ignore "https://www.r-project.org/,https://cran.r-project.org/bin/windows/base/,https://hnprint.hn.helsenord.no/,Anneli@allegro-as.no,http://www-proxy.helsenord.no:8080/,https://www-proxy.helsenord.no:8080/" ./docs 
 
 deploy:
   provider: pages                         # Specify the gh-pages deployment method
@@ -31,4 +31,8 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true  # Speed up the html-proofer
 
 notifications:
-  email: false
+  email:
+    recipients:
+      - arnfinn.steindal@gmail.com
+    on_success: never # default: change
+    on_failure: always # default: always
