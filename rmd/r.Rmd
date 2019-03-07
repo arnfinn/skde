@@ -37,18 +37,26 @@ deployApp(appName = "tabellverk")
 
 ## Rstudio og github-pakker
 
-- Skriv følgende i rstudio-konsollen
+R-pakker som ligger på github kan installeres med
+
+```r
+devtools::install_github("<brukernavn>/<pakkenavn>")
+```
+
+For å kunne gjøre dette når man sitter bak proxy, må en av følgende koder kjøres først. Enten
+
+```r
+Sys.setenv(http_proxy="http://www-proxy.helsenord.no:8080")
+Sys.setenv(https_proxy="http://www-proxy.helsenord.no:8080")
+```
+
+eller
+
 ```r
 install.packages("httr")
 library(httr)
 set_config(use_proxy(url="http://www-proxy.helsenord.no", port=8080))
 ```
-- For å installere pakker fra github
-```r
-devtools::install_github("SKDE-Analyse/dynamiskTabellverk")
-```
-
-
 
 ## Hvordan opprette en ny Rshiny applikasjon
 
