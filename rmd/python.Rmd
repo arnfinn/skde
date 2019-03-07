@@ -1,6 +1,6 @@
 # Python
 
-- Installér Python 3, lastet ned fra [python.org](http://python.org/downloads)
+- Installér Python 3, lastet ned fra [python.org](https://www.python.org/downloads/)
 - For å installere numpy (og andre python-pakker), last ned wheel-pakke [herfra](http://www.lfd.uci.edu/~gohlke/pythonlibs/) og installer med *pip* (i en terminal)
 ```
 $ pip install filename.whl
