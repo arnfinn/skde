@@ -83,6 +83,7 @@ Følgende begrensninger gjelder for PC’er med mobilt kontor:
 - [git](https://git-scm.com/downloads)
 - [R](https://www.r-project.org/)
 - [RStudio](https://www.rstudio.com/products/RStudio)
+- [Rtools](https://cran.r-project.org/bin/windows/Rtools/)
 - [Python 3](https://www.python.org/downloads/)
 - [MiKTeX](https://miktex.org/)
 - [.NET Core Runtime](https://dotnet.microsoft.com/download#/runtime)
