@@ -113,13 +113,9 @@ Installerer alt på `c/Users/ast046/AppData/Local/Programs/`
 4. Installér [r](https://cran.r-project.org/bin/windows/base/)
 5. Installér [RStudio](https://www.rstudio.com/products/rstudio/download/)
 6. Installér [MiKTeX](https://miktex.org/download) (basic MiKTeX installer)
-7. Installèr [Texmaker](http://www.xm1math.net/texmaker/download.html)
+7. Installér [vscode](https://code.visualstudio.com/download)
 8. Installèr [gvim](http://mirror.netinch.com/pub/vim/pc/) (for å kunne få bedre vimdiff)
 9. Installèr [python](https://www.python.org/downloads/) 3 (custom installasjon, slik at man kan skru av "for alle")
-
-### Legge til skriver
-
-- *TOS-UNN-C0.511A-03*
 
 ### RStudio
 
@@ -145,10 +141,6 @@ install.packages("BH")
 install.packages(c("DBI","DT","assertthat","caTools","dplyr", "htmlwidgets", "lazyeval","rmarkdown","tibble"))
 install.packages("tidyr")
 ```
-
-## Bytte standard nettleser
-
-- Kan kun endres hvis man har administratorrettigheter på maskinen. Dette må Helse-Nord IKT gi brukeren.
 
 ## Oversettelse, Helseatlas
 
