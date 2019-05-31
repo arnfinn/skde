@@ -54,7 +54,7 @@
 ```
 python /e/Analyse/Data/python/script/skde/extract_hdiag3tegn.py ICD-10_2017.txt > tmp.sas
 ```
-3. Gå gjennom filen `tmp.sas` og fiks feil. Skriptet ser etter linjer som begynner på `Xnn `, der X er en bokstav og n er et tall. I [denne](https://ehelse.no/Documents/Helsefaglig%20kodeverk/ICD-10%20-%202017.pdf) filen vil f.eks linjen "C74 gis tilleggskode E27.5, og et basofilt adenom i hypofyse med Cushings syndrom med koden" nederst på side 54, under merknader, bli ekstrahert.
+3. Gå gjennom filen `tmp.sas` og fiks feil. Skriptet ser etter linjer som begynner på `Xnn `, der X er en bokstav og n er et tall. Linjer som dette: "C74 gis tilleggskode E27.5, og et basofilt adenom i hypofyse med Cushings syndrom med koden" bli også bli ekstrahert om må manuelt fjernes.
 
 ## Tilrettelegging av innbyggertall fra SSB
 
