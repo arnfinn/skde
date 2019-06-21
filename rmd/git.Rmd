@@ -114,6 +114,14 @@ Host githubhn
     path = /p/.gitconfig
 ```
 
+- Hvis du skal laste ned pakker fra github i RStudio med devtools::install_github() må du først kjøre følgende:
+
+```bash
+Sys.setenv(http_proxy="http://www-proxy.helsenord.no:8080")
+Sys.setenv(https_proxy="http://www-proxy.helsenord.no:8080")
+```
+
+
 ## Diverse mer eller mindre obskure git-triks
 
 ### Ekskluder fil fra merge
