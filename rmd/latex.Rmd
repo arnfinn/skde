@@ -64,7 +64,7 @@ for i in *.tex; do sed -e 's/\([0-9]\)\\,\([0-9][0-9][0-9]\)/\1,\2/g' $i > tmp; 
 - Erstatte desimaltegn komma med punktum
 
 ```
-for i in *.tex; do sed -e 's/\([0-9]\)\\,\([0-9][0-9][0-9]\)/\1.\2/g' $i > tmp; mv tmp $i; done
+for i in *.tex; do sed -e 's/\([0-9]\),\([0-9]\)/\1.\2/g' $i > tmp; mv tmp $i; done
 ```
 
 ## En enkel start
