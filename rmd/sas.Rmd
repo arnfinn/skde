@@ -35,52 +35,8 @@ knitr::include_graphics("figurer/nySASserver0.png")
 knitr::include_graphics("figurer/nySASserver1.png")
 ```
 
-- Skriv inn omtrent som her (*Name* og *Description* er valgfritt; bruk eget brukernavn og passord; Machine: `tos-sas-skde-01`; Port: `8561`), og trykk på *Save*
-
-```{r, echo=FALSE}
-knitr::include_graphics("figurer/nySASserver2.png")
-```
-
-- Markér din nylagde profil og trykk på *Set Active*. Trykk *OK* på advarsel som kommer opp.
-
-```{r, echo=FALSE}
-knitr::include_graphics("figurer/nySASserver3.png")
-```
-
-<!--
-## *filbane*
-
-- Makroer, formater etc. er nå flyttet til den nye serveren. Det som ligger på ANALYSE/data brukes ikke lenger. `filbane` må derfor endres, og resten skal fungere stort sett som før
-```
-%let filbane=\\tos-sas-skde-01\skde_sas\felleskoder\master;
-```
--->
-
-## Koble til sas-server i utforskeren
-
-- Åpne utforsker og gå inn på *Verktøy/Koble til nettverksstasjon...*
-
-```{r, echo=FALSE}
-knitr::include_graphics("figurer/nySASserver_utforsker1.png")
-```
-
-- Velg stasjon og skriv inn `\\tos-sas-skde-01\skde_sas\` for å få tilgang til sas-koder (det som tidligere lå under `Analyse\Data\SAS\`)
-
-```{r, echo=FALSE}
-knitr::include_graphics("figurer/nySASserver_utforsker2.png")
-```
-
-- Velg stasjon og skriv inn `\\tos-sas-skde-01\skde_felles\` for å få tilgang til området der felles ikke-sensitive datasett ligger.
-
-```{r, echo=FALSE}
-knitr::include_graphics("figurer/nySASserver_utforsker3.png")
-```
-
-- Velg stasjon og skriv inn `\\tos-sas-skde-01\skde_analytikere\` for å få tilgang til området der dine ikke-sensitive datasett ligger.
-
-```{block2, sensmappe, type='rmdinfo'}
-De felles sensitive datesettene ligger på `\\tos-sas-skde-01\SKDE_Sensetiv`, men vi har ikke tilgang til denne stasjonen gjennom utforskeren.
-```
+- Fyll inn (*Name* og *Description* er valgfritt; bruk eget brukernavn og passord; Machine: `xxxx`; Port: `yyyy`), og trykk på *Save*
+- Markér din nylagde profil og trykk på *Set Active*. 
 
 ## Laste inn vår egen autocomplete-fil
 
@@ -89,7 +45,7 @@ Dette gjøres slik at man kan enkelt få inn rateprogram etc. i sas-prosjektet
 1. Gå inn på *Program/Editor Macros/Macros*
 2. Marker alle og slett dem (hvis du ikke har lagd dine egne makroer du vil ta vare på)
 3. *Import...*
-4. Gå inn på `\\tos-sas-skde-01\skde_sas\felleskoder\master\makroer\` og velg *autocomplete.kmf*
+4. Gå inn på `<server>\felleskoder\master\makroer\` og velg *autocomplete.kmf*
 5. *Close*
 
 ```{block2, abbmacro, type='rmdinfo'}
@@ -104,12 +60,6 @@ Med ujevne mellomrom oppdateres *autocomplete.kmf*, og man må da kjøre stegene
 - `DATA_MAGNUS` legger inn datasteg for å laste inn de fem årgangene av `T17_magnus_avd_`
 - `DATA_AVTSPES` legger inn datasteg for å laste inn tre årganger av `T17_magnus_avtspes_`
 - ...
-
-Som et eksempel, hvis man nå begynner å skrive *auto* vil `AUTO_MACRO` kommer opp i en liste. Denne har grønn skrift, i motsetning til blå for de innebygde autocompletene. Hvis man velger denne vil følgende tekst legge seg inn i sas-programmet ditt
-```
-%let filbane=\\tos-sas-skde-01\SKDE_SAS\felleskoder\master;
-options sasautos=("&filbane\makroer" SASAUTOS);
-```
 
 ## Makroer
 
@@ -129,10 +79,10 @@ run &datasett;
 
 %mend macronavn;
 ```
-- Hvis man lagrer en fil med navn `macronavn.sas` i `\\tos-sas-skde-01\SKDE_SAS\felleskoder\master\makroer\` kan andre bruke denne hvis de har kjørt følgende kode i SAS-prosjektet:
+- Hvis man lagrer en fil med navn `macronavn.sas` i `<server>\felleskoder\master\makroer\` kan andre bruke denne hvis de har kjørt følgende kode i SAS-prosjektet:
 
 ```
-%let filbane=\\tos-sas-skde-01\SKDE_SAS\felleskoder\master;
+%let filbane=<server>\felleskoder\master;
 options sasautos=("&filbane\makroer" SASAUTOS);
 ```
 
@@ -142,10 +92,10 @@ Makroene i `&filbane\makroer\` ligger på [github](https://github.com/SKDE-Analy
 
 ## Formater
 
-Bruk de formatene som ligger under `\\tos-sas-skde-01\SKDE_SAS\felleskoder\master\formater\`, som f.eks
+Bruk de formatene som ligger under `<server>\felleskoder\master\formater\`, som f.eks
 
 ```
-%let filbane=\\tos-sas-skde-01\SKDE_SAS\felleskoder\master\;
+%let filbane=<server>\felleskoder\master\;
 %include "&filbane\Formater\SKDE_somatikk.sas";
 %include "&filbane\Formater\bo.sas";
 %include "&filbane\Formater\beh.sas";
@@ -164,11 +114,6 @@ Hvis man vil ha spesialtilpasset formater, kan man enten
 ### Feilmelding ala `ERROR: Libref NPR_SKDE is not assigned.`
 
 - Dette betyr at man må *assigne* mappen `NPR_SKDE` (den vil vises som grå i SAS Enterprise)
-
-```{r, echo=FALSE}
-knitr::include_graphics("figurer/nySASserver4.png")
-```
-
 - Det gjøres ved å gå inn til denne mappen, høyreklikk og velg *Assign*
 
 ```{r, echo=FALSE}
