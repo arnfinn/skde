@@ -23,7 +23,7 @@ For å bli kvitt denne informasjonen kan man
 
 ### Hvordan få et LaTeX-dokument klar for oversettelse
 
-Oversettelse av Helseatlas (rapporter og faktaark) har blir gjort av [Anneli Olsbø](mailto:Anneli@allegro-as.no) ved Allegro AS. 
+Oversettelse av Helseatlas (rapporter og faktaark) har blir gjort av *Anneli Olsbø* ved Allegro AS. 
 Før dokumentene sendes til Allegro for oversettelse, må de konverteres til Word. 
 For å få dette til mest mulig smertefritt gjøres følgende:
 
@@ -177,7 +177,7 @@ knitr::include_graphics("figurer/miktex_roots.png")
 ```{r, echo=FALSE}
 knitr::include_graphics("figurer/miktex_repository1.png")
 ```  
-    2. Her legger man inn en proxy med adresse `www-proxy.helsenord.no` og port nummer `8080`:  
+    2. Her legger man inn en proxy med adresse `<helsenord-proxy>` og port nummer `<port>`:  
 ```{r, echo=FALSE}
 knitr::include_graphics("figurer/miktex_repository_proxy.png")
 ```

@@ -13,8 +13,8 @@ devtools::install_github("<brukernavn>/<pakkenavn>")
 For å kunne gjøre dette når man sitter bak proxy, må en av følgende koder kjøres først. Enten
 
 ```r
-Sys.setenv(http_proxy="http://www-proxy.helsenord.no:8080")
-Sys.setenv(https_proxy="http://www-proxy.helsenord.no:8080")
+Sys.setenv(http_proxy="<helsenord-proxy>:<port>")
+Sys.setenv(https_proxy="<helsenord-proxy>:<port>")
 ```
 
 eller
@@ -22,7 +22,7 @@ eller
 ```r
 install.packages("httr")
 library(httr)
-set_config(use_proxy(url="http://www-proxy.helsenord.no", port=8080))
+set_config(use_proxy(url="<helsenord-proxy>", port=<port>))
 ```
 
 ## Rstudio og shinyapps
@@ -43,7 +43,7 @@ knitr::include_graphics("figurer/rshiny_5.png")
 - Dette må gjøres gjennom proxy hvis man sitter på Helse Nord sitt nett. Følgende kommandoer må da kjøres først:
 
 ```r
-options(RCurlOptions = list(proxy = "http://www-proxy.helsenord.no:8080"))
+options(RCurlOptions = list(proxy = "<helsenord-proxy>:<port>"))
 options(shinyapps.http = "rcurl")
 ```
 

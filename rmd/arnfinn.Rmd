@@ -73,21 +73,6 @@ notifications:
 theme: jekyll-theme-minimal
 ```
 
-
-## Proxy
-
-- curl gjennom proxy (f.eks for å få været i Tromsø:)):
-
-```
-curl.exe --proxy http://www-proxy.helsenord.no:8080/ wttr.in/Tromso
-```
-- Sette opp proxy generelt (kan eventuelt legges inn i `.bash_profile`:
-
-```bash
-export http_proxy=http://www-proxy.helsenord.no:8080/
-export https_proxy=https://www-proxy.helsenord.no:8080/
-```
-
 ## Diverse om figurer
 
 ### Fjerne hvit bakgrunn på eps/pdf-filer
@@ -122,12 +107,9 @@ Installerer alt på `c/Users/ast046/AppData/Local/Programs/`
 - bytte libpath
 
 ```r
+> .libPaths("C:/Users/<user>/AppData/Local/Programs/R-3.3.1/library")
 > .libPaths()
-[1] "\\\\hn.helsenord.no/unn-ansatte/a-ans/ast046/R/library"
-[2] "C:/Users/ast046/AppData/Local/Programs/R-3.3.1/library"
-> .libPaths("C:/Users/ast046/AppData/Local/Programs/R-3.3.1/library")
-> .libPaths()
-[1] "C:/Users/ast046/AppData/Local/Programs/R-3.3.1/library"
+[1] "C:/Users/<user>/AppData/Local/Programs/R-3.3.1/library"
 ```
 
 - Installere pakker

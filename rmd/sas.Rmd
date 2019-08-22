@@ -249,13 +249,13 @@ Legg følgende i en fil kalt `UserDefineLang.xml` og lagre den i mappen `C:\Bruk
             <WordsStyle name="DEFAULT" styleID="0" fgColor="000000" bgColor="FFFFFF" fontName="&#xFFFF;&#x0013;&#x08A2;&#x0005;&#x6FA3;&#x5534;s&#x8A00;&#x6150;&#x7372;e&#x2E01;&#x6FA1;&#x5534;.&#x8000;R" fontStyle="0" nesting="0" />
             <WordsStyle name="COMMENTS" styleID="1" fgColor="008000" bgColor="FFFFCA" fontName='&quot;ourier New' fontStyle="2" fontSize="10" nesting="139296" />
             <WordsStyle name="LINE COMMENTS" styleID="2" fgColor="008000" bgColor="FFFFFF" fontName="&amp;ourier New" fontStyle="2" nesting="139552" />
-            <WordsStyle name="NUMBERS" styleID="3" fgColor="008080" bgColor="FFFFFF" fontName="&#x0002;" fontStyle="1" nesting="0" />
+            <WordsStyle name="NUMBERS" styleID="3" fgColor="00<port>" bgColor="FFFFFF" fontName="&#x0002;" fontStyle="1" nesting="0" />
             <WordsStyle name="KEYWORDS1" styleID="4" fgColor="000080" bgColor="FFFFFF" fontName="N" fontStyle="1" nesting="0" />
             <WordsStyle name="KEYWORDS2" styleID="5" fgColor="0000FF" bgColor="FFFFFF" fontName="z&#x0013;" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS3" styleID="6" fgColor="008080" bgColor="FFFFFF" fontName="|&#x0013;&#xA8A8;&#x0013;&#x6FE9;&#x5534;" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS3" styleID="6" fgColor="00<port>" bgColor="FFFFFF" fontName="|&#x0013;&#xA8A8;&#x0013;&#x6FE9;&#x5534;" fontStyle="0" nesting="0" />
             <WordsStyle name="KEYWORDS4" styleID="7" fgColor="FF8000" bgColor="FFFFFF" fontName="L&#x0013;" fontStyle="1" nesting="0" />
             <WordsStyle name="KEYWORDS5" styleID="8" fgColor="000000" bgColor="FFFFFF" fontName="J" fontStyle="3" nesting="0" />
-            <WordsStyle name="KEYWORDS6" styleID="9" fgColor="008080" bgColor="FFFFFF" fontName="R" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS6" styleID="9" fgColor="00<port>" bgColor="FFFFFF" fontName="R" fontStyle="0" nesting="0" />
             <WordsStyle name="KEYWORDS7" styleID="10" fgColor="FF0000" bgColor="FFFFFF" fontName="&#x0006;&#x2201;&#x1368;&#x01E6;&#x6FAD;&#x5534;&#x433B;&#x8C00;&#xA86C;&#x0013;&#x0001;" fontStyle="1" nesting="0" />
             <WordsStyle name="KEYWORDS8" styleID="11" fgColor="FF80C0" bgColor="FFFFFF" fontName="&#x0008;&#x2201;&#x7379;&#x6574;&#x6FA9;&#x5534;&#x6257;&#x8000;&#x000C;&#x2200;&#x6957;&#x646E;&#x6F97;&#x5534;&#x7953;&#x8000;&#x000E;&#x2101;_C&#x6F95;&#x5534;" fontStyle="3" nesting="0" />
             <WordsStyle name="OPERATORS" styleID="12" fgColor="000000" bgColor="FFFFFF" fontName="&#x000C;&#x2200;&#x6957;&#x646E;&#x6F97;&#x5534;&#x7953;&#x8000;&#x000E;&#x2101;_C&#x6F95;&#x5534;" fontStyle="0" nesting="0" />
@@ -265,7 +265,7 @@ Legg følgende i en fil kalt `UserDefineLang.xml` og lagre den i mappen `C:\Bruk
             <WordsStyle name="DELIMITERS1" styleID="16" fgColor="800080" bgColor="FFFFFF" fontName="&#x0012;&#x2100;&#x5353;&#x524F;&#x6FF7;&#x5534;&#x4948;&#x8C00;&#xA8E4;&#x0013;" fontStyle="0" nesting="0" />
             <WordsStyle name="DELIMITERS2" styleID="17" fgColor="800080" bgColor="FFFFFF" fontName=".&#x2301;&#x2E3B;&#x5357;&#x6F89;&#x5534;&#x4353;&#x8000;&#x0012;&#x2100;&#x5353;&#x524F;&#x6FF7;&#x5534;&#x4948;&#x8C00;&#xA8E4;&#x0013;" fontStyle="0" nesting="0" />
             <WordsStyle name="DELIMITERS3" styleID="18" fgColor="000000" bgColor="C0C0C0" fontName=",&#x2300;_C&#x6F8B;&#x5534;" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS4" styleID="19" fgColor="008080" bgColor="FFFFFF" fontName="*&#x2401;&#xEF6B;" fontStyle="1" nesting="0" />
+            <WordsStyle name="DELIMITERS4" styleID="19" fgColor="00<port>" bgColor="FFFFFF" fontName="*&#x2401;&#xEF6B;" fontStyle="1" nesting="0" />
             <WordsStyle name="DELIMITERS5" styleID="20" fgColor="000000" bgColor="FF0000" fontName="v&#x2400;&#xCC18;M&#x6E31;&#x5534;" fontStyle="0" nesting="0" />
             <WordsStyle name="DELIMITERS6" styleID="21" fgColor="000000" bgColor="FF8000" fontName="t" fontStyle="1" nesting="0" />
             <WordsStyle name="DELIMITERS7" styleID="22" fgColor="000000" bgColor="FFFFFF" fontName="r&#x2300;&#x7461;&#x5C61;&#x6E35;&#x5534;&#xA415;&#x8000;t" fontStyle="0" nesting="0" />

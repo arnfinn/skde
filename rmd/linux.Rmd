@@ -25,8 +25,8 @@ Det er [mange distroer](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linu
 - Legg inn følgende i `.bashrc`:
 
 ```
-export http_proxy=http://www-proxy.helsenord.no:8080/
-export https_proxy=https://www-proxy.helsenord.no:8080/
+export http_proxy=<helsenord-proxy>:<port>/
+export https_proxy=<helsenord-proxy>:<port>/
 ```
 - Kjør programvareoppdatering
 - Installer `at-spi2-core` for å unngå advarsler senere
@@ -49,8 +49,8 @@ knitr::include_graphics("figurer/linux_proxy.png")
 - Legg følgende i `.bashrc`:
 
 ```
-export http_proxy=http://www-proxy.helsenord.no:8080/
-export https_proxy=https://www-proxy.helsenord.no:8080/
+export http_proxy=<helsenord-proxy>:<port>/
+export https_proxy=<helsenord-proxy>:<port>/
 ```
 
 ```{block2, sudo-E, type='rmdimportant'}
@@ -66,10 +66,10 @@ sudo -E apt install r-base-core
 
 ### Lubuntu
 
-Under installasjonen får man spørsmål om proxy, hvis man installerer *Alternate*-versjonen. Da skriver man inn `http://www-proxy.helsenord.no:8080/`. Hvis man ikke blir spurt om dette, kan man legge følgende inn i `/etc/apt/apt.conf`:
+Under installasjonen får man spørsmål om proxy, hvis man installerer *Alternate*-versjonen. Da skriver man inn `<helsenord-proxy>:<port>/`. Hvis man ikke blir spurt om dette, kan man legge følgende inn i `/etc/apt/apt.conf`:
 
 ```
-ACQUIRE::http::Proxy "http://www-proxy.helsenord.no:8080/";
+ACQUIRE::http::Proxy "<helsenord-proxy>:<port>/";
 ```
 
 Proxy for *Firefox* legges inn i instillinger. Proxy for *Chrome* var ikke like enkelt... (enklere i Ubuntu). 
@@ -82,7 +82,7 @@ Proxy for *Firefox* legges inn i instillinger. Proxy for *Chrome* var ikke like 
 Host githubhn
         HostName github.com
         User git
-        ProxyCommand /bin/nc -X connect -x www-proxy.helsenord.no:8080 %h %p
+        ProxyCommand /bin/nc -X connect -x www-proxy.helsenord.no:<port> %h %p
 ```
 
 ## R/RStudio

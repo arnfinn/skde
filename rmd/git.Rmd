@@ -56,7 +56,7 @@ Enter same passphrase again:
 Host githubhn
    Hostname github.com
    User git
-   ProxyCommand /mingw64/bin/connect.exe -H www-proxy.helsenord.no:8080 %h %p
+   ProxyCommand /mingw64/bin/connect.exe -H <helsenord-proxy>:<port> %h %p
 ```
 
 - Hvis du har lyst til å prøve å lage denne filen gjennom terminal, gjør følgende:
@@ -90,11 +90,11 @@ Travis-CI vil dytte html-filer, produsert av bookdown, til branchen gh-pages med
 
 ### Hvordan sette opp git i rstudio
 
-- Hvis du skal bruke git sammen med RStudio må du lage en ny ssh-nøkkel og legge denne på `c:`, slik at Rstudio kan lese den (bytt ut `ast046` med ditt brukernavn; bare trykk Enter når hun spør om passphrase).
+- Hvis du skal bruke git sammen med RStudio må du lage en ny ssh-nøkkel og legge denne på `c:`, slik at Rstudio kan lese den (bytt ut `<user>` med ditt brukernavn; bare trykk Enter når hun spør om passphrase).
 ```bash
-$ mkdir /c/Users/ast046/.ssh
+$ mkdir /c/Users/<user>/.ssh
 $ ssh-keygen
-Enter file in which to save the key (/p/.ssh/id_rsa): /c/Users/ast046/.ssh/id_rsa
+Enter file in which to save the key (/p/.ssh/id_rsa): /c/Users/<user>/.ssh/id_rsa
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 ```
@@ -105,7 +105,7 @@ Enter same passphrase again:
 Host githubhn
    Hostname github.com
    User git
-   ProxyCommand /mingw64/bin/connect.exe -H www-proxy.helsenord.no:8080 %h %p
+   ProxyCommand /mingw64/bin/connect.exe -H <helsenord-proxy>:<port> %h %p
 ```
 - Legg inn følgende i `/c/Users/$USERNAME/.gitconfig` (Rstudio leser denne i steden for den på p-disken):
 
@@ -117,8 +117,8 @@ Host githubhn
 - Hvis du skal laste ned pakker fra github i RStudio med devtools::install_github() må du først kjøre følgende:
 
 ```bash
-Sys.setenv(http_proxy="http://www-proxy.helsenord.no:8080")
-Sys.setenv(https_proxy="http://www-proxy.helsenord.no:8080")
+Sys.setenv(http_proxy="<helsenord-proxy>:<port>")
+Sys.setenv(https_proxy="<helsenord-proxy>:<port>")
 ```
 
 

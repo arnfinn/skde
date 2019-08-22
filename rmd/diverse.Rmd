@@ -20,39 +20,13 @@ Disse kan ringes opp på følgende måter, med Servicemiljøet som eksempel:
   - Løsningen fungerer ikke bak brannmuren til Helse Nord.  
 - Videokonferanse over helsenettet: ring *997515*
 
-## Koble til skriver
-
-1. Gå inn på https://hnprint.hn.helsenord.no/ med Internett Explorer.
-2. Søk etter `TOS-FP.S3-01`
-3. Trykk på *Koble til*
-
 ## Koble til nettverksstasjoner
 
 For å koble til nettverksstasjon i Windows 7 gjør man følgende:
 
 - Velg `Verktøy/Koble til nettverksstajon...` i utforskeren
-- Legg inn stasjon i Feltet *Mappe* (se liste under)
-- Valg av stasjon er irrelevant, men mange bruker `Q:` for `\\hn.helsenord.no\RHF\SKDE`.
+- Legg inn stasjon i Feltet *Mappe*
 - Velg *Koble til på nytt ved pålogging*
-
-### Liste over stasjoner
-
-```bash
-# SKDE
-\\hn.helsenord.no\RHF\SKDE
-
-# RHF
-\\hn.helsenord.no\RHF
-
-# Hjemmeområde, der <x> er første bokstav i brukernavn/fornavn.
-\\hn.helsenord.no\Ansatte\<x>-ans\<brukernavn>
-
-# SAS
-\\tos-sas-skde-01\skde_sas
-\\tos-sas-skde-01\skde_felles
-\\tos-sas-skde-01\SKDE_Analytikere
-\\tos-sas-skde-01\SKDE_Sensetiv
-```
 
 ## Mobilt kontor – programvare og tillegg
 
