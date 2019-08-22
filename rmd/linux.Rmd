@@ -42,10 +42,6 @@ export https_proxy=<helsenord-proxy>:<port>/
 
 - `Menu/Control Center/Internett and Network/Network Proxy/Proxy Configuration/Manual proxy configuration`
 
-```{r, echo=FALSE}
-knitr::include_graphics("figurer/linux_proxy.png")
-```
-
 - Legg følgende i `.bashrc`:
 
 ```
