@@ -131,9 +131,15 @@ install.packages("tidyr")
 
 ### Diverse bash-kode
 
-`
+```bash
 cat faktaark-eldre-til-oversettelse_-EN.tex |grep '\\section' | cut -d '{' -f 3 | sed 's/..............$//' > ../../list_factsheets_elderly.txt
-`
+```
+
+#### Endre navn på fil (samme navn med forskjellig fil-endelse)
+
+```bash
+for i in <filename>.*; do mv $i <newfile>.${i##*.}; done
+```
 
 
 
