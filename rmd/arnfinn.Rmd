@@ -7,20 +7,26 @@ Mine egne notater, som er lite interessant for andre
 - Her kan man teste ut sine *regular expressions*: [regex101.com](https://regex101.com/)
 - Søke etter `per` som ikke har bokstaver ved siden av seg. Vil ikke få treff på f.eks. `Per Sandberg` (stor `P`) eller `ropert` (bokstaver inntil).
 
-```
+```bash
 [^a-zæøåA-ZÆØÅ]per[^a-zæøåA-ZÆØÅ]
 ```
 
 - Søke med start (`^`) og slutt (`$`) på linje.
 
-```
+```bash
 ^Dette er en setning på egen linje$
 ```
 
 - Definere argument 1, 2 etc. ved å bruke `\(` og `\)`, som så kan brukes etterpå. Her vil man kunne erstatte komma med punktum som desimaltegn (norsk til engelsk):
 
-```
+```bash
  sed -e 's/\([0-9]\),\([0-9][^0-9]\)/\1.\2/g'
+```
+
+- Sette inn tusenskilletegn (mellomrom)
+
+```bash
+sed -e 's/\([0-9]\)\([0-9][0-9][0-9][^0-9]\)/\1\\,\2/g' <file>
 ```
 
 ## Bash
