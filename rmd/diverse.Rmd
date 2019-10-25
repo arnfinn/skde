@@ -89,6 +89,18 @@ For å slå på automatisk detektering av tegnsett i filene, gå inn på *File/P
 
 Språkidentifikatoren `SAS` er definert av tillegget `SAS-Syntax` av *77qingliu*. Det betyr at dette tillegget må være installert før denne instillingen vil fungere. Hvis et annet *SAS*-tillegg er installert, vil denne språkidentifikasjonen sannsynligvis være `sas` (med små bokstaver).
 
+### Git for source control
+
+If Git was installed before VScode, then VScode should automatically pick up Git as a source control.  
+If VScode was installed before Git, then one can modify the settings to point to Git.
+
+Go to settings.json as above for 'File Encoding', add:
+
+```
+    "git.enabled": true,
+    "git.path":"C:\users\<user name>\AppData\Local\Programs\Git\bin\git.exe"
+```
+
 ### Triks og tips
 
 - Hold inne Shift+Ctrl+Alt og piltast ned/opp for å få markør på flere linjer samtidig. Kan så trykke *Home* eller *End* for å få alle markørene helt først eller helt sist på linjene.
