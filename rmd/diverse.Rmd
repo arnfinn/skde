@@ -75,13 +75,33 @@ Følgende utvidelser er hvitelistet:
 
 ## Visual Studio Code
 
+### Settings-fil
+
+Man åpner `settings.json` ved å gå inn på *File/Preferences/Settings/* og trykke på `{}`-symbol oppe til høyre hjørne (se figur).
+
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/vscode_settings.png")
+```
+
+Husk komma etter hver linje på samme nivå, bortsett fra siste linje på gitt nivå. Eksempel:
+
+```json
+{
+    "[SAS]": {
+        "files.encoding": "windows1252"
+    },
+    "files.autoGuessEncoding": true,
+    "telemetry.enableTelemetry": false
+}
+```
+
 ### File encoding
 
 For å slå på automatisk detektering av tegnsett i filene, gå inn på *File/Preferences/Settings/* og søk etter `encoding`. Huk av på `Files: Auto Guess Encoding`.
 
-*SAS*-filer må ha tegnsett `windows1252`. For å tvinge *vscode* til å åpne *SAS*-filer med dette tegnsettet kan følgende snutt legges inn i `settings.json` (man kan åpne denne filen ved å gå inn på *File/Preferences/Settings/*, velge *Text Editor* og *Files*. Der vil man få opp en link til *Edit in settings.json*):
+*SAS*-filer må ha tegnsett `windows1252`. For å tvinge *vscode* til å åpne *SAS*-filer med dette tegnsettet kan følgende snutt legges inn i `settings.json`:
 
-```
+```json
 "[SAS]": {
     "files.encoding": "windows1252"
 }
@@ -94,16 +114,30 @@ Språkidentifikatoren `SAS` er definert av tillegget `SAS-Syntax` av *77qingliu*
 If Git was installed before VScode, then VScode should automatically pick up Git as a source control.  
 If VScode was installed before Git, then one can modify the settings to point to Git.
 
-Go to settings.json as above for 'File Encoding', add:
+Go to `settings.json` as above for 'File Encoding', add:
 
-```
+```json
     "git.enabled": true,
     "git.path":"C:\users\<user name>\AppData\Local\Programs\Git\bin\git.exe"
 ```
 
+På noen Windows10-maskiner er ikke *git* installert slik at *vscode* kan se *git*. Da kan man legge inn noe ala dette i `settings.json`:
+
+```json
+    "git.enabled": true,
+    "git.path": "c:\\ProgramData\\App-V\\0F29C83E-A275-4BEE-9296-92C3138DC9BC\\32D66D7D-55BA-4223-802C-F435F81AD5AD\\Root\\VFS\\ProgramFilesX64\\Git\\mingw64\\bin\\git.exe",
+    "terminal.integrated.shell.windows": "c:\\ProgramData\\App-V\\0F29C83E-A275-4BEE-9296-92C3138DC9BC\\32D66D7D-55BA-4223-802C-F435F81AD5AD\\Root\\VFS\\ProgramFilesX64\\Git\\usr\\bin\\bash.exe",
+```
+Adressen `0F29C83E-A275-4BEE-9296-92C3138DC9BC\\32D66D7D-55BA-4223-802C-F435F81AD5AD` kan sees hvis man åpner `git bash` og ser på vinduet som åpnes smatidig. Der vil denne adressen stå (se figur).
+
+```{r, echo=FALSE}
+knitr::include_graphics("figurer/vscode_gitpath.png")
+```
+
+
 ### Triks og tips
 
-- Hold inne Shift+Ctrl+Alt og piltast ned/opp for å få markør på flere linjer samtidig. Kan så trykke *Home* eller *End* for å få alle markørene helt først eller helt sist på linjene.
+- Hold inne `Shift-Ctrl-Alt` og piltast ned/opp for å få markør på flere linjer samtidig (eventuelt `Shift-Alt` og venstre museknapp). `Esc` for å komme seg ut igjen. Kan så trykke *Home* eller *End* for å få alle markørene helt først eller helt sist på linjene.
 - Ctrl-piltast for å hoppe ett og ett ord til siden (kan brukes sammen med trikset over).
 - Shift+Alt+høyreknapp mus for å markere rektangulært område. *Obs: Windows kan velge å bytte til annet tastaturoppsett når man trykker* Shift+Alt.
 
@@ -126,17 +160,12 @@ Når man åpner en type fil i VScode, vil en få forslag til utvidelser som kan 
 - Installer *vscode*-utvidelsen *LaTeX Workshop*
 - Hvis dokumentet må kompileres med *lualatex* og *biber*, noe som gjelder de fleste av våre rapporter og notater, legges følgende inn helt først i dokumentet:
 
-```
+```tex
 %! TEX program = lualatex
 %! BIB program = biber
 ```
 
 Hver gang en fil lagres i prosjektet, vil dokumentet kompileres. Åpne pdf-filen i *VScode* ved å trykke på tegnet med liten rød strek og forstørrelsesglass oppe til høyre i en tex-fil.
-
-### Annet
-
-- Hold inne `Shift-Alt` og venstre museknapp for å velge flere linjer og blokk
-med tekst. Eventuelt `Shift-Ctrl-Alt` og piltastene. `Esc` for å komme seg ut igjen.
 
 ## Atom text editor
 
