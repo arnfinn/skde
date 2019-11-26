@@ -100,13 +100,12 @@ Installerer alt på `c/Users/ast046/AppData/Local/Programs/`
 
 1. Installér Chrome og prøv å logg på
 2. Installér [git](https://git-scm.com/download/win)
-3. Installér [Nodepad++](https://notepad-plus-plus.org/download)
-4. Installér [r](https://cran.r-project.org/bin/windows/base/)
-5. Installér [RStudio](https://www.rstudio.com/products/rstudio/download/)
-6. Installér [MiKTeX](https://miktex.org/download) (basic MiKTeX installer)
-7. Installér [vscode](https://code.visualstudio.com/download)
-8. Installèr [gvim](http://mirror.netinch.com/pub/vim/pc/) (for å kunne få bedre vimdiff)
-9. Installèr [python](https://www.python.org/downloads/) 3 (custom installasjon, slik at man kan skru av "for alle")
+3. Installér [r](https://cran.r-project.org/bin/windows/base/)
+4. Installér [RStudio](https://www.rstudio.com/products/rstudio/download/)
+5. Installér [MiKTeX](https://miktex.org/download) (basic MiKTeX installer)
+6. Installér [vscode](https://code.visualstudio.com/download)
+7. Installèr [gvim](http://mirror.netinch.com/pub/vim/pc/) (for å kunne få bedre vimdiff)
+8. Installèr [python](https://www.python.org/downloads/) 3 (custom installasjon, slik at man kan skru av "for alle")
 
 ### RStudio
 
