@@ -2,6 +2,16 @@
 
 Hvis det oppstår problemer med noen av disse fremgangsmåtene, send gjerne en beskjed til <A HREF="mailto:&#097;&#114;&#110;&#102;&#105;&#110;&#110;&#046;&#115;&#116;&#101;&#105;&#110;&#100;&#097;&#108;&#064;&#115;&#107;&#100;&#101;&#046;&#110;&#111;">arnfinn</A>.
 
+## Sette globale instillinger
+
+Når man starter en R-session leses filen `<R_USER>/.Rprofile`, hvis den finnes. Her kan man legge inn instillinger man vil ha hver gang man åpner en ny *session* (Mappen `<R_USER>` finnes ved å kjøre kommandoen `Sys.getenv("R_USER")`. Denne er som regel `p`-disken.). Eksempelvis kan RStudio finne LaTeX ved å legge følgende kommando i `.Rprofile`:
+
+```
+Sys.setenv(PATH = paste(Sys.getenv("PATH"), "C:\\ProgramData\\App-V\\5667D610-8377-430E-9529-F9EA42A7D0E5\\78EEF753-8FA5-476F-9F66-E1D5ECB7A7FE\\Root\\VFS\\ProgramFilesX64\\MiKTeX\ 2.9\\miktex\\bin\\x64", sep=.Platform$path.sep))
+```
+
+(Stien til LaTeX kan finnes ved å kjøre følgende kommando i git-bash: `which pdflatex`)
+
 ## Rstudio og github-pakker
 
 R-pakker som ligger på github kan installeres med
