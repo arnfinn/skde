@@ -25,6 +25,7 @@ deploy:
   local_dir: docs                         # Deploy the docs folder
   on:
     branch: master
+    type: push
 
 env:
   global:
