@@ -15,6 +15,7 @@ rmd_files:
     - "rmd/latex.Rmd"
     - "rmd/python.Rmd"
     - "rmd/linux.Rmd"
+    - "rmd/docker.Rmd"
     - "rmd/arnfinn.Rmd"
   latex:
     - "rmd/diverse.Rmd"
@@ -27,4 +28,5 @@ rmd_files:
     - "rmd/latex.Rmd"
     - "rmd/python.Rmd"
     - "rmd/linux.Rmd"
+    - "rmd/docker.Rmd"
     - "rmd/arnfinn.Rmd"
