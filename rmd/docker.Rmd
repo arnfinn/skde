@@ -1,6 +1,9 @@
 # Docker
 
-Følgende er prøvd ut på Mac OSX 10.15.1 med Docker Desktop 2.1.0.5.
+Diverse sider med info
+- https://hackernoon.com/docker-and-best-practices-for-devops-c53ta30ki
+- https://towardsdatascience.com/15-docker-commands-you-should-know-970ea5203421
+- https://docker-curriculum.com/
 
 ## Docker image
 
