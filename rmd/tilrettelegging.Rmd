@@ -24,14 +24,14 @@
 
 #### NCMP, NCRP, NCSP
 
-- Koder hentet fra [Direktoratet for e-helse](https://ehelse.no/referansekatalog/referansekatalogen-for-e-helse#Helsefaglige%20kodeverk)
+- Koder hentet fra [Direktoratet for e-helse](https://ehelse.no/kodeverk/regler-og-veiledning-for-kliniske-kodeverk-i-spesialisthelsetjenesten-icd-10-ncsp-ncmp-og-ncrp)
 - Filene ligger på ANALYSE/Data/Kodeverk/NCMP_NCSP_NCRP/
 - txt-filer med tab-mellomrom mellom kode og tekst
 
 
 #### ICD-10
 
-- Koder hentet fra [Direktoratet for e-helse](https://ehelse.no/referansekatalog/referansekatalogen-for-e-helse#Helsefaglige%20kodeverk)
+- Koder hentet fra [Direktoratet for e-helse](https://ehelse.no/kodeverk/regler-og-veiledning-for-kliniske-kodeverk-i-spesialisthelsetjenesten-icd-10-ncsp-ncmp-og-ncrp)
 - Filene ligger på ANALYSE/Data/Kodeverk/ICD10/
 - txt-filer med tab-mellomrom mellom kode og tekst
 
@@ -45,7 +45,7 @@
 
 #### Hente ut Hdiag3tegn formater
 
-1. Lagre pdf, som hentes fra [Direktoratet for e-helse sine hjemmesider](https://ehelse.no/referansekatalog/referansekatalogen-for-e-helse#Helsefaglige%20kodeverk), som tekstfil (`*.txt*`).
+1. Lagre pdf, som hentes fra [Direktoratet for e-helse sine hjemmesider](https://ehelse.no/kodeverk/regler-og-veiledning-for-kliniske-kodeverk-i-spesialisthelsetjenesten-icd-10-ncsp-ncmp-og-ncrp), som tekstfil (`*.txt*`).
   - Åpne dokumentet
   - Merk all tekst (`CTRL + a`)
   - Kopier (`CTRL + c`)
