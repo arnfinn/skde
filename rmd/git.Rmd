@@ -97,6 +97,7 @@ ssh-keygen -f id_rsa
 openssl base64 -A -in id_rsa > id
 ```
 
+- Lag en `branch` i prosjektet som heter `gh-pages`.
 - Gå inn på *Settings/Deploy keys*  på github-prosjektet og legg inn `id_rsa.pub` som en ny nøkkel.
 - Gå inn på *Settings* på Travis-prosjektet, legg inn ny *Environment Variables* med navnet `id_rsa` med innholdet i filen `id`.
 
