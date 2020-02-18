@@ -90,6 +90,16 @@ Om jeg husker rett må du gjøre følgende før dette vil fungere:
 
 Travis-CI vil dytte html-filer, produsert av bookdown, til branchen gh-pages med `--force`.
 
+### Lage github pages med `pkgdown::deploy_site_github()` i Travis
+
+```
+ssh-keygen -f id_rsa
+openssl base64 -A -in id_rsa > id
+```
+
+- Gå inn på *Settings/Deploy keys*  på github-prosjektet og legg inn `id_rsa.pub` som en ny nøkkel.
+- Gå inn på *Settings* på Travis-prosjektet, legg inn ny *Environment Variables* med navnet `id_rsa` med innholdet i filen `id`.
+
 ## Rstudio, git og github på Windows gjennom proxy
 
 ### Hvordan sette opp git i rstudio
