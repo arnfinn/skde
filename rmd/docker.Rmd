@@ -1,8 +1,8 @@
 # Docker
 
 Diverse sider med info
+
 - https://hackernoon.com/docker-and-best-practices-for-devops-c53ta30ki
-- https://towardsdatascience.com/15-docker-commands-you-should-know-970ea5203421
 - https://docker-curriculum.com/
 
 ## Docker image
