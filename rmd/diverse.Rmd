@@ -27,7 +27,9 @@ Disse kan ringes opp på følgende måter, med Servicemiljøet som eksempel:
 
 Hvis man opplever kraftig piping når man ringer med Teams skyldes det som regel at **Skype** også kjører i bakgrunnen. Denne kan slås av i *Oppgavebehandling*.
 
-Trykk `ctrl-alt-delete` og velg *Oppgavebehandling*. Finn `Skype for Business` her og drep denne prosessen.
+Trykk `ctrl-alt-delete` og velg *Oppgavebehandling*.
+Finn `Skype for Business` her og drep denne prosessen.
+Det kan være den ligger under *Flere detaljer*.
 
 ### Koble seg til virtuelt møterom
 
