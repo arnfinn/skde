@@ -2,6 +2,37 @@
 
 Mine egne notater, som er lite interessant for andre
 
+## Splitte pdf
+
+```bash
+#!/usr/bin/env bash
+
+num_pages=`qpdf --show-npages $1`
+
+if [ "$num_pages" -ne "13" ]
+then
+echo "Number of pages ($num_pages) not equal 13"
+echo "Something wrong with your pdf file"
+exit 0
+fi
+
+qpdf --split-pages $1 tmp.pdf
+
+mv tmp-01.pdf kvalitet_samlet_res.pdf
+mv tmp-02.pdf kvalitet_hjerteinfarkt.pdf
+mv tmp-03.pdf kvalitet_karkirurgi.pdf
+mv tmp-04.pdf kvalitet_hjerneslag.pdf
+mv tmp-05.pdf kvalitet_invasiv_kardio.pdf
+mv tmp-06.pdf kvalitet_tarmkreft.pdf
+mv tmp-07.pdf kvalitet_brystkreft.pdf
+mv tmp-08.pdf kvalitet_lungekreft.pdf
+mv tmp-09.pdf kvalitet_prostatakreft.pdf
+mv tmp-10.pdf kvalitet_barnediabetes.pdf
+mv tmp-11.pdf kvalitet_voksendiabetes.pdf
+mv tmp-12.pdf kvalitet_hoftebrudd.pdf
+mv tmp-13.pdf kvalitet_nyre.pdf
+```
+
 ## Regular expressions
 
 - Her kan man teste ut sine *regular expressions*: [regex101.com](https://regex101.com/)
